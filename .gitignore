@@ -60,3 +60,10 @@ Temporary Items
 
 # GMRT build directory
 Build
+
+.cache/
+local_settings.json
+*.tmp
+*.lock
+*.bak
+.yyp~
