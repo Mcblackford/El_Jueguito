@@ -81,7 +81,7 @@ if jumpTimer > 0 {
 
 // Walljump
 
-if place_meeting(x, y, walljumpableObj) && contSuelo = false && jump {
+if place_meeting(x, y, walljumpableObj) && contSuelo = false && jump && (izq or der) {
 	jumpCount = jumpCount -1;
 	yspd = walljumpYspd
 	walljumpTimer = walljumpFrames;
