@@ -21,6 +21,8 @@ accelTimer=0;
 moveSpd = 9;
 jumpSpd = -12;
 gravedad = 0.65;
+wallGrav= 0.15;
+wallFallMax= 8;
 
 jumpMax = 1;
 jumpCount = 0;

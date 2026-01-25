@@ -16,7 +16,7 @@ if ( yspd >= 0 ) && place_meeting(x, y + 1, colisionObj) {
 
 xspd = ( der - izq ) * moveSpd;
 
-if !der && !izq && (image_xscale = -2.5) {
+if !der && !izq && (image_xscale == -2.5) {
 	xspd = 3
 }
 
@@ -47,9 +47,10 @@ if coyoteHangTmr > 0 {
 	setOnground(false)
 }
 //deslizamiento babosa
-if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0
+if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && ( izq or der )
 {
-	yspd = min(yspd, 4); //cambia el 4, si quieres cambiar la velocidad have (valor alto, ma rapido, menor valor, ma lento)
+	yspd += wallGrav;
+	yspd = min(yspd, wallFallMax)
 }
 if contSuelo == true {
 	jumpCount = 0;
@@ -86,11 +87,11 @@ if jumpTimer > 0 {
 
 // Walljump
 
-if place_meeting(x, y, walljumpableObj) && contSuelo = false && jump && (izq or der) {
+if place_meeting(x, y, walljumpableObj) && contSuelo == false && jump && (izq or der) {
 	jumpCount = jumpCount -1;
 	yspd = walljumpYspd
 	walljumpTimer = walljumpFrames;
-} else if contSuelo = true {
+} else if contSuelo == true {
 	walljumpTimer = 0
 }
 
