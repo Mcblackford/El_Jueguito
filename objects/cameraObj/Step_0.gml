@@ -10,7 +10,7 @@ abajo = keyboard_check( ord("S") );
 jump = keyboard_check_pressed( vk_space );
 jumphold = keyboard_check(vk_space);
 
-x += (xTo - x) / 15;
-y += (yTo - y) / 10;
+x += (xTo - x) / 20;
+y += (yTo - y) / 20;
 
-camera_set_view_pos(view_camera[0], x - (camLar*0.5), y - (camAlt*0.75));
+camera_set_view_pos(view_camera[0], x - (camLar*0.5), y - (camAlt*0.6));
