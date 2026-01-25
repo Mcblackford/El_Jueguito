@@ -48,12 +48,14 @@ if coyoteHangTmr > 0 {
 	yspd += gravedad;
 	setOnground(false)
 }
-//deslizamiento babosa
-if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && ( izq or der )
-{
+
+// Deslizamiento babosa
+
+if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && !(izq && der) {
 	yspd += wallGrav;
-	yspd = min(yspd, wallFallMax)
+	yspd = min(yspd, wallFallMax);
 }
+
 if contSuelo == true {
 	jumpCount = 0;
 	coyoteJumpTmr = coyoteJumpFrm;
@@ -89,9 +91,9 @@ if jumpTimer > 0 {
 
 // Walljump
 
-if place_meeting(x, y, walljumpableObj) && contSuelo == false && jump && (izq or der) {
+if place_meeting(x, y, walljumpableObj) && contSuelo == false && jump && (izq or der) && !(izq && der) {
 	jumpCount = jumpCount -1;
-	yspd = walljumpYspd
+	yspd = walljumpYspd;
 	walljumpTimer = walljumpFrames;
 } else if contSuelo == true {
 	walljumpTimer = 0
@@ -164,7 +166,7 @@ if ( yspd > 4 ) && !place_meeting( x + xspd, y + yspd, colisionObj) {
 	}
 }
 
-if izq && der {
+if (izq && der) && (contSuelo == true) {
 	sprite_index = tiesoSpr;
 }
 
@@ -172,10 +174,10 @@ if ( accelTimer > 0 ) && !izq && !der {
 	sprite_index = inbtwSpr;
 }
 
-if place_meeting(x, y, walljumpableObj) && (yspd > 0) && ( izq or der ) {
+if place_meeting(x, y, walljumpableObj) && (izq or der) && (yspd > 0) && !(izq && der) {
 	sprite_index = wallcaidaSpr;
 }
 
-if place_meeting(x, y, walljumpableObj) && (yspd <= 0) && ( izq or der ) && contSuelo = false {
+if place_meeting(x, y, walljumpableObj) && (yspd <= 0) && (izq or der) && !(izq && der) && contSuelo == false {
 	sprite_index = wallsubidaSpr;
 }

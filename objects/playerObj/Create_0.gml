@@ -21,7 +21,8 @@ accelTimer=0;
 moveSpd = 9;
 jumpSpd = -12;
 gravedad = 0.65;
-wallGrav= 0.07;
+
+wallGrav= 0.04;
 wallFallMax= 12;
 wallAcel = 7;
 wallinispd = 40 * ( keyboard_check( ord("A") ) - keyboard_check( ord("D") ) ) ;
