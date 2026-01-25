@@ -1,7 +1,7 @@
 camLar = 1280;
 camAlt = 720;
 
-follow = playerObj;
+follow = camerafollowObj;
 
 xTo = x;
 yTo = y;
