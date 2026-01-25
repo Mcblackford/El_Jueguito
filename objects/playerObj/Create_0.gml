@@ -35,7 +35,7 @@ jumpTimer = 0;
 walljumpYspd = -18;
 walljumpXspd = 20;
 
-walljumpFrames = 20;
+walljumpFrames = 16;
 walljumpTimer = 0;
 
 // Coyote Time Var
