@@ -46,7 +46,12 @@ if coyoteHangTmr > 0 {
 	yspd += gravedad;
 	setOnground(false)
 }
-if contSuelo = true {
+//deslizamiento babosa
+if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0
+{
+	yspd = min(yspd, 4); //cambia el 4, si quieres cambiar la velocidad have (valor alto, ma rapido, menor valor, ma lento)
+}
+if contSuelo == true {
 	jumpCount = 0;
 	coyoteJumpTmr = coyoteJumpFrm;
 } else {
@@ -124,7 +129,7 @@ y += yspd;
 
 // Sprites
 
-if ( izq or der ) && ( yspd = 0 ) && !place_meeting( x, y + yspd, colisionObj) {
+if ( izq or der ) && ( yspd == 0 ) && !place_meeting( x, y + yspd, colisionObj) {
 	sprite_index = caminSpr;
 	if der {
 	image_xscale = -2.5;
