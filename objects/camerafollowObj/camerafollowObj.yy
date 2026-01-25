@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"cameraObj",
+  "%Name":"camerafollowObj",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"cameraObj",
+  "name":"camerafollowObj",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -31,9 +30,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"camOrig",
-    "path":"sprites/camOrig/camOrig.yy",
+    "name":"camFollow",
+    "path":"sprites/camFollow/camFollow.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
