@@ -1,7 +1,9 @@
 // Inputs
+if walljumpTimer <= 0 {
+	der = keyboard_check( ord("D") );
+	izq = keyboard_check( ord("A") );
+}
 
-der = keyboard_check( ord("D") );
-izq = keyboard_check( ord("A") );
 arriba = keyboard_check( ord("W") );
 abajo = keyboard_check( ord("S") );
 jump = keyboard_check_pressed( vk_space );
@@ -95,14 +97,14 @@ if place_meeting(x, y, walljumpableObj) && contSuelo == false && jump && (izq or
 	walljumpTimer = 0
 }
 
-if walljumpTimer > 10 {
-	xspd = -walljumpXspd * ( xspd * 0.06 )
+if walljumpTimer > 0 {
+	wallspd += wallAcel * (izq - der);
+	xspd = wallinispd + wallAcel * (izq - der);
 	walljumpTimer--;
 }
 
-if (walljumpTimer > 0) && (walljumpTimer < 10) {
-	xspd = -walljumpXspd * ( xspd * 0.4 )
-	walljumpTimer--;
+if walljumpTimer <= 0 {
+	wallspd = 0;
 }
 
 // Colision
@@ -142,7 +144,7 @@ if ( izq or der ) && ( yspd == 0 ) && !place_meeting( x, y + yspd, colisionObj) 
 	sprite_index = tiesoSpr;
 }
 
-if ( yspd < -2 ) {
+if ( yspd < -4 ) {
 	sprite_index = saltoSpr;
 	if der {
 	image_xscale = -2.5;
@@ -152,7 +154,7 @@ if ( yspd < -2 ) {
 	}
 }
 
-if ( yspd > 2 ) && !place_meeting( x + xspd, y + yspd, colisionObj) {
+if ( yspd > 4 ) && !place_meeting( x + xspd, y + yspd, colisionObj) {
 	sprite_index = caidaSpr;
 	if der {
 	image_xscale = -2.5;
