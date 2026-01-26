@@ -24,8 +24,12 @@ gravedad = 0.65;
 
 wallGrav= 0.04;
 wallFallMax= 12;
-wallAcel = 7;
-wallinispd = 40 * ( keyboard_check( ord("A") ) - keyboard_check( ord("D") ) ) ;
+
+wallxspd = 8;
+wallyspd = -18;
+
+walljumpFrames = 16;
+walljumpTimer = 0;
 
 jumpMax = 1;
 jumpCount = 0;
@@ -33,17 +37,8 @@ jumpCount = 0;
 jumpHoldFrames = 14;
 jumpTimer = 0;
 
-walljumpYspd = -18;
-walljumpXspd = 20;
+coyoteHangFrm = 3;
+coyoteHangTmr = 0;
 
-walljumpFrames = 16;
-walljumpTimer = 0;
-
-// Coyote Time Var
-
-	//Hang time
-	coyoteHangFrm = 3;
-	coyoteHangTmr = 0;
-	//Jump buffer time
-	coyoteJumpFrm = 5;
-	coyoteJumpTmr = 0;
+coyoteJumpFrm = 5;
+coyoteJumpTmr = 0;

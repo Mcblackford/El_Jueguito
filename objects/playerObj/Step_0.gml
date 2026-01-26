@@ -14,28 +14,17 @@ if ( yspd >= 0 ) && place_meeting(x, y + 1, colisionObj) {
 	setOnground(true);
 }
 
-// Movimiento (Spd)
+// Movimiento
 
 xspd = ( der - izq ) * moveSpd;
 
-if !der && !izq && (image_xscale == -2.5) {
-	xspd = 3
-}
-
-if !der && !izq && (image_xscale = 2.5) {
-	xspd = -3
-}
-
-if izq {
-	accelTimer = accelFrames
-}
-
-if der {
-	accelTimer = accelFrames
-}
-
 if !der && !izq {
+	xspd = -1.2 * image_xscale
 	accelTimer--;
+}
+
+if izq or der {
+	accelTimer = accelFrames
 }
 
 if accelTimer <= 0 {
@@ -49,7 +38,7 @@ if coyoteHangTmr > 0 {
 	setOnground(false)
 }
 
-// Deslizamiento babosa
+// Deslizamiento Babosa
 
 if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && !(izq && der) {
 	yspd += wallGrav;
@@ -64,10 +53,6 @@ if contSuelo == true {
 	if jumpCount == 0 && coyoteJumpTmr <= 0 {
 		jumpCount = 1;
 	}
-}
-
-if place_meeting(x + 1, y, colisionObj) {
-	jumpMax = 1
 }
 
 if place_meeting(x, y, jumpOrb) {
@@ -85,23 +70,22 @@ if !jumphold {
 
 if jumpTimer > 0 {
 	yspd = jumpSpd;
-	
 	jumpTimer--;
 }
 
 // Walljump
 
-if place_meeting(x, y, walljumpableObj) && contSuelo == false && jump && (izq or der) && !(izq && der) {
+if place_meeting(x, y, walljumpableObj) && (contSuelo == false) && jump && (izq or der) && !(izq && der) {
 	jumpCount = jumpCount -1;
-	yspd = walljumpYspd;
+	yspd = wallyspd;
 	walljumpTimer = walljumpFrames;
 } else if contSuelo == true {
 	walljumpTimer = 0
 }
 
 if walljumpTimer > 0 {
-	wallspd += wallAcel * (izq - der);
-	xspd = wallinispd + wallAcel * (izq - der);
+	wallspd = wallxspd * (izq - der);
+	xspd = wallspd;
 	walljumpTimer--;
 }
 
@@ -120,7 +104,7 @@ while !place_meeting( x + _pixelcheck, y, colisionObj) {
 	xspd = 0;
 }
 
-if place_meeting( x + xspd, y + yspd, colisionObj) {
+if place_meeting( x, y + yspd, colisionObj) {
 	var _pixelcheck = sign(yspd);
 	while !place_meeting( x + xspd, y + _pixelcheck, colisionObj) {
 		y += _pixelcheck;
@@ -134,43 +118,32 @@ y += yspd;
 
 // Sprites
 
-if ( izq or der ) && ( yspd == 0 ) && !place_meeting( x, y + yspd, colisionObj) {
-	sprite_index = caminSpr;
-	if der {
+if der {
 	image_xscale = -2.5;
-	}
-	if izq {
+}
+if izq {
 	image_xscale = 2.5;
-	}
+}
+
+if ( izq or der ) && ( yspd == 0 ) && (contSuelo == true) {
+	sprite_index = caminSpr;
 } else {
 	sprite_index = tiesoSpr;
 }
 
-if ( yspd < -4 ) {
+if ( yspd < 4 ) && (contSuelo == false) {
 	sprite_index = saltoSpr;
-	if der {
-	image_xscale = -2.5;
-	}
-	if izq {
-	image_xscale = 2.5;
-	}
 }
 
-if ( yspd > 4 ) && !place_meeting( x + xspd, y + yspd, colisionObj) {
+if ( yspd > 4 ) && (contSuelo == false) {
 	sprite_index = caidaSpr;
-	if der {
-	image_xscale = -2.5;
-	}
-	if izq {
-	image_xscale = 2.5;
-	}
 }
 
 if (izq && der) && (contSuelo == true) {
 	sprite_index = tiesoSpr;
 }
 
-if ( accelTimer > 0 ) && !izq && !der {
+if ( accelTimer > 0 ) && !izq && !der && (contSuelo == true) {
 	sprite_index = inbtwSpr;
 }
 
