@@ -3,13 +3,6 @@ if follow != noone {
 	yTo = follow.y
 }
 
-der = keyboard_check( ord("D") );
-izq = keyboard_check( ord("A") );
-arriba = keyboard_check( ord("W") );
-abajo = keyboard_check( ord("S") );
-jump = keyboard_check_pressed( vk_space );
-jumphold = keyboard_check(vk_space);
-
 x += (xTo - x) / 20;
 y += (yTo - y) / 15;
 

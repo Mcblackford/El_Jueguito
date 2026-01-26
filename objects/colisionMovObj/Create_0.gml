@@ -1,4 +1,10 @@
-startx = 1792;
-finalx = 3584;
-hspeed = 1.5;
+origen = movpoint0;
+destino = movpoint1;
+
+startx = origen.x;
+starty = origen.y;
+finalx = destino.x;
+finaly = destino.y;
+
+hspeed = 4;
 dir =1;

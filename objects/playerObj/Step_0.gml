@@ -120,7 +120,8 @@ if yspd != 0 && place_meeting(x, y + yspd, colisionObj) || place_meeting(x, y + 
     yspd = 0;
 }
 
-// siempre despues nada debe ir por debajo de esto (que cambie las velocidades claro)
+// Siempre despues nada debe ir por debajo de esto (que cambie las velocidades claro)
+
 x += xspd;
 y += yspd;
 
