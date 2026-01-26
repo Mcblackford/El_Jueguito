@@ -40,7 +40,7 @@ if coyoteHangTmr > 0 {
 
 // Deslizamiento Babosa
 
-if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && !(izq && der) {
+if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && (izq or der) && !(izq && der) {
 	yspd += wallGrav;
 	yspd = min(yspd, wallFallMax);
 }
@@ -96,11 +96,10 @@ if walljumpTimer <= 0 {
 // Colision
 
 if place_meeting( x + xspd, y, colisionObj ) {
-	
 	var _pixelcheck = sign(xspd);
-while !place_meeting( x + _pixelcheck, y, colisionObj) {
-	x += _pixelcheck
-}
+	while !place_meeting( x + _pixelcheck, y, colisionObj) {
+		x += _pixelcheck
+	}
 	xspd = 0;
 }
 
@@ -109,7 +108,6 @@ if place_meeting( x, y + yspd, colisionObj) {
 	while !place_meeting( x + xspd, y + _pixelcheck, colisionObj) {
 		y += _pixelcheck;
 	}
-	
 	yspd = 0;
 }
 
