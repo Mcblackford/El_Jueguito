@@ -1,5 +1,12 @@
-if ( x > finalx && hspeed >= 0 ) {
-	hspeed *= -1;
-} else if ( x < startx && hspeed <= 0) {
-	hspeed *= -1;
+x += movex;
+y += movey;
+
+if goingtostart && point_distance(x, y, startx, starty) < currentspd {
+	goingtostart = false;
+	currentspd = 0;
+	alarm[0] = waitframes;
+} else if !goingtostart && point_distance(x, y, finalx, finaly) < currentspd {
+	goingtostart = true;
+	currentspd = 0;
+	alarm[0] = waitframes;
 }

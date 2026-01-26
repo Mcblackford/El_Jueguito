@@ -1,0 +1,2 @@
+
+currentspd = platformspd;

@@ -1,4 +1,5 @@
 // Inputs
+
 if walljumpTimer <= 0 {
 	der = keyboard_check( ord("D") );
 	izq = keyboard_check( ord("A") );
@@ -10,6 +11,7 @@ jump = keyboard_check_pressed( vk_space );
 jumphold = keyboard_check(vk_space);
 
 // Suelo
+
 if ( yspd >= 0 ) && (place_meeting(x, y + 1, colisionObj) || place_meeting(x, y + 1, colisionMovObj)) {
 	setOnground(true);
 }
@@ -17,7 +19,7 @@ else {
 	setOnground(false);
 }
 
-// Movimiento
+// Movimiento y Coyotehang
 
 xspd = ( der - izq ) * moveSpd;
 
@@ -58,6 +60,8 @@ if contSuelo == true {
 	}
 }
 
+// Salto
+
 if place_meeting(x, y, jumpOrb) {
 	jumpCount = jumpCount -1;
 }
@@ -96,31 +100,44 @@ if walljumpTimer <= 0 {
 	wallspd = 0;
 }
 
-// Colision
+// Colisionmove
 
-if xspd != 0 && place_meeting(x + xspd, y, colisionObj) || place_meeting(x + xspd , y , colisionMovObj)
-{
-    var _pixelcheck = sign(xspd);
-    while (!place_meeting(x + _pixelcheck, y, colisionObj) || place_meeting(x + _pixelcheck, y , colisionMovObj))
-    {
-        x += _pixelcheck;
-    }
-    xspd = 0;
+var _movingplatform = instance_place(x, y + max(1, yspd), colisionMovObj);
+if (_movingplatform && bbox_bottom <= _movingplatform.bbox_top) {
+	if yspd > 0 && !place_meeting(x, y + sign(yspd), colisionMovObj) {
+		while !place_meeting(x, y + sign(yspd), colisionMovObj) {
+			y += sign(yspd);
+		}
+		yspd = 0;
+	} 
 }
 
-if yspd != 0 && place_meeting(x, y + yspd, colisionObj) || place_meeting(x, y + yspd, colisionMovObj)
+if !(izq or der) && place_meeting(x, y+1, colisionMovObj) {
+	x += _movingplatform.movex;
+	y += _movingplatform.movey;
+}
 
-{
-    var _pixelcheck = sign(yspd);
-    while (!place_meeting(x, y + _pixelcheck, colisionObj) &&
-    !place_meeting(x, y + _pixelcheck, colisionMovObj))
-    {
-        y += _pixelcheck;
-    }
-    yspd = 0;
+
+// Colision
+
+if xspd != 0 && place_meeting(x + xspd, y, colisionObj) {
+	var _pixelcheck = sign(xspd);
+	while !place_meeting(x + _pixelcheck, y, colisionObj) {
+		x += _pixelcheck;
+	}
+	xspd = 0;
+}
+
+if yspd != 0 && place_meeting(x, y + yspd, colisionObj) {
+	var _pixelcheck = sign(yspd);
+	while !place_meeting(x, y + _pixelcheck, colisionObj) {
+	y += _pixelcheck;
+	}
+	yspd = 0;
 }
 
 // Siempre despues nada debe ir por debajo de esto (que cambie las velocidades claro)
+	// Yo hago lo q m da la gana
 
 x += xspd;
 y += yspd;
