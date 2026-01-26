@@ -105,14 +105,27 @@ if xspd != 0 && place_meeting(x + xspd, y, colisionObj)
     xspd = 0;
 }
 
-if yspd != 0 && place_meeting(x, y + yspd, colisionObj)
+if yspd != 0 && place_meeting(x, y + yspd, colisionObj) || place_meeting(x, y + yspd, colisionMovObj)
+
 {
     var _pixelcheck = sign(yspd);
-    while (!place_meeting(x, y + _pixelcheck, colisionObj))
+    while (!place_meeting(x, y + _pixelcheck, colisionObj) &&
+    !place_meeting(x, y + _pixelcheck, colisionMovObj))
     {
         y += _pixelcheck;
     }
     yspd = 0;
+}
+
+// colision con plataforma
+
+if place_meeting(x, y + 1, colisionMovObj)
+{
+    var _plat = instance_place(x, y + 1, colisionMovObj);
+    if _plat != noone
+    {
+        x += _plat.speed * _plat.dir;
+    }
 }
 
 x += xspd;
