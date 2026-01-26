@@ -103,7 +103,7 @@ if place_meeting( x + xspd, y, colisionObj ) {
 	xspd = 0;
 }
 
-if place_meeting( x, y + yspd, colisionObj) {
+if place_meeting( x + xspd, y + yspd, colisionObj) {
 	var _pixelcheck = sign(yspd);
 	while !place_meeting( x + xspd, y + _pixelcheck, colisionObj) {
 		y += _pixelcheck;
