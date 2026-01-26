@@ -96,13 +96,6 @@ if walljumpTimer <= 0 {
 	wallspd = 0;
 }
 
-// moviento del personaje-plataforma
-var _plat = instance_place(x, y + 1, colisionMovObj);
-if _plat != noone
-{
-    x += _plat.speed * _plat.dir;
-}
-
 // Colision
 
 if xspd != 0 && place_meeting(x + xspd, y, colisionObj) || place_meeting(x + xspd , y , colisionMovObj)
@@ -126,8 +119,6 @@ if yspd != 0 && place_meeting(x, y + yspd, colisionObj) || place_meeting(x, y + 
     }
     yspd = 0;
 }
-
-
 
 // siempre despues nada debe ir por debajo de esto (que cambie las velocidades claro)
 x += xspd;
