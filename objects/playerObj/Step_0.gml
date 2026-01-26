@@ -10,8 +10,11 @@ jump = keyboard_check_pressed( vk_space );
 jumphold = keyboard_check(vk_space);
 
 // Suelo
-if ( yspd >= 0 ) && place_meeting(x, y + 1, colisionObj) {
+if ( yspd >= 0 ) && (place_meeting(x, y + 1, colisionObj) || place_meeting(x, y + 1, colisionMovObj)) {
 	setOnground(true);
+}
+else {
+	setOnground(false);
 }
 
 // Movimiento
@@ -93,12 +96,19 @@ if walljumpTimer <= 0 {
 	wallspd = 0;
 }
 
+// moviento del personaje-plataforma
+var _plat = instance_place(x, y + 1, colisionMovObj);
+if _plat != noone
+{
+    x += _plat.speed * _plat.dir;
+}
+
 // Colision
 
-if xspd != 0 && place_meeting(x + xspd, y, colisionObj)
+if xspd != 0 && place_meeting(x + xspd, y, colisionObj) || place_meeting(x + xspd , y , colisionMovObj)
 {
     var _pixelcheck = sign(xspd);
-    while (!place_meeting(x + _pixelcheck, y, colisionObj))
+    while (!place_meeting(x + _pixelcheck, y, colisionObj) || place_meeting(x + _pixelcheck, y , colisionMovObj))
     {
         x += _pixelcheck;
     }
@@ -117,17 +127,9 @@ if yspd != 0 && place_meeting(x, y + yspd, colisionObj) || place_meeting(x, y + 
     yspd = 0;
 }
 
-// colision con plataforma
 
-if place_meeting(x, y + 1, colisionMovObj)
-{
-    var _plat = instance_place(x, y + 1, colisionMovObj);
-    if _plat != noone
-    {
-        x += _plat.speed * _plat.dir;
-    }
-}
 
+// siempre despues nada debe ir por debajo de esto (que cambie las velocidades claro)
 x += xspd;
 y += yspd;
 
