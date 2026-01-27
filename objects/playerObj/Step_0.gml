@@ -10,7 +10,7 @@ if walljumpTimer <= 0 {
 if (izq or der) && !(izq && der) {
 	moving = true;
 }
-if !(izq or der) || (izq & der) {
+if !(izq or der) || (izq && der) {
 	moving = false;
 }
 
@@ -116,10 +116,10 @@ if (_movingplatform && bbox_bottom <= _movingplatform.bbox_top) {
 			y += sign(yspd);
 		}
 		yspd = 0;
-	} 
+	}
 }
 
-if (moving == false) && place_meeting(x, y+1, colisionMovObj) {
+if (moving == false) && place_meeting(x, y + 1, colisionMovObj) {
 	x += _movingplatform.movex;
 	y += _movingplatform.movey;
 }
@@ -127,7 +127,7 @@ if (moving == false) && place_meeting(x, y+1, colisionMovObj) {
 
 // Colision
 
-if xspd != 0 && place_meeting(x + xspd, y, colisionObj) {
+if xspd != 0 && place_meeting(x + xspd, y, colisionObj){
 	var _pixelcheck = sign(xspd);
 	while !place_meeting(x + _pixelcheck, y, colisionObj) {
 		x += _pixelcheck;
