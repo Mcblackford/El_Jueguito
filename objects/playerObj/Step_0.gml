@@ -21,7 +21,7 @@ jumphold = keyboard_check(vk_space);
 
 // Suelo
 
-if ( yspd >= 0 ) && (place_meeting(x, y + 1, colisionObj) || collision_rectangle(x - 6, y, x + 6, y + 1, colisionMovObj, true, true)) {
+if (( yspd >= 0 ) && place_meeting(x, y + 1, colisionObj)) || ((yspd == 5) && collision_rectangle(x - 6, y, x + 6, y + 1, colisionMovObj, true, true)) {
 	setOnground(true);
 }
 else {
@@ -57,6 +57,8 @@ if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && (moving ==
 	yspd = min(yspd, wallFallMax);
 }
 
+// Salto
+
 if contSuelo == true {
 	jumpCount = 0;
 	coyoteJumpTmr = coyoteJumpFrm;
@@ -67,10 +69,8 @@ if contSuelo == true {
 	}
 }
 
-// Salto
-
 if place_meeting(x, y, jumpOrb) {
-	jumpCount = jumpCount -1;
+	jumpCount = 0;
 }
 
 if jump && ( jumpCount < jumpMax ) {
