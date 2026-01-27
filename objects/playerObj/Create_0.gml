@@ -1,14 +1,14 @@
 // Funciones
 
-	function setOnground(_val = true) {
-		if _val = true {
-			contSuelo = true;
-			coyoteHangTmr = coyoteHangFrm;
-		} else {
-			contSuelo = false;
-			coyoteHangTmr = 0;
-		}
+function setOnground(_val = true) {
+	if _val = true {
+		contSuelo = true;
+		coyoteHangTmr = coyoteHangFrm;
+	} else {
+		contSuelo = false;
+		coyoteHangTmr = 0;
 	}
+}
 
 // Variables
 

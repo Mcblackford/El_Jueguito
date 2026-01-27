@@ -21,7 +21,7 @@ jumphold = keyboard_check(vk_space);
 
 // Suelo
 
-if ( yspd >= 0 ) && (place_meeting(x, y + 1, colisionObj) || place_meeting(x, y + 1, colisionMovObj)) {
+if ( yspd >= 0 ) && (place_meeting(x, y + 1, colisionObj) || collision_rectangle(x - 6, y, x + 6, y + 1, colisionMovObj, true, true)) {
 	setOnground(true);
 }
 else {
@@ -107,24 +107,6 @@ if walljumpTimer <= 0 {
 	wallspd = 0;
 }
 
-// Colisionmove
-
-var _movingplatform = instance_place(x, y + max(1, yspd), colisionMovObj);
-if (_movingplatform && bbox_bottom <= _movingplatform.bbox_top) {
-	if yspd > 0 && !place_meeting(x, y + sign(yspd), colisionMovObj) {
-		while !place_meeting(x, y + sign(yspd), colisionMovObj) {
-			y += sign(yspd);
-		}
-		yspd = 0;
-	}
-}
-
-if (moving == false) && place_meeting(x, y + 1, colisionMovObj) {
-	x += _movingplatform.movex;
-	y += _movingplatform.movey;
-}
-
-
 // Colision
 
 if xspd != 0 && place_meeting(x + xspd, y, colisionObj){
@@ -158,7 +140,8 @@ if izq {
 	image_xscale = 2.5;
 }
 
-if (moving == true) && ( yspd == 0 ) && (contSuelo == true) {
+if (moving == true) && ( yspd == 0 ) && (contSuelo == true) ||
+collision_rectangle(x-6, y, x+6, y+1, colisionMovObj, true, true) && moving==true && yspd = 5{
 	sprite_index = caminSpr;
 } else {
 	sprite_index = tiesoSpr;
