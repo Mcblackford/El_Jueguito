@@ -1,8 +1,17 @@
 // Inputs
 
+moving = false
+
 if walljumpTimer <= 0 {
 	der = keyboard_check( ord("D") );
 	izq = keyboard_check( ord("A") );
+}
+
+if (izq or der) && !(izq && der) {
+	moving = true;
+}
+if !(izq or der) || (izq & der) {
+	moving = false;
 }
 
 arriba = keyboard_check( ord("W") );
@@ -23,12 +32,10 @@ else {
 
 xspd = ( der - izq ) * moveSpd;
 
-if !der && !izq {
+if moving == false {
 	xspd = -1.2 * image_xscale
 	accelTimer--;
-}
-
-if izq or der {
+} else {
 	accelTimer = accelFrames
 }
 
@@ -45,7 +52,7 @@ if coyoteHangTmr > 0 {
 
 // Deslizamiento Babosa
 
-if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && (izq or der) && !(izq && der) {
+if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && (moving == true) {
 	yspd += wallGrav;
 	yspd = min(yspd, wallFallMax);
 }
@@ -82,7 +89,7 @@ if jumpTimer > 0 {
 
 // Walljump
 
-if place_meeting(x, y, walljumpableObj) && (contSuelo == false) && jump && (izq or der) && !(izq && der) {
+if place_meeting(x, y, walljumpableObj) && (contSuelo == false) && jump && (moving == true) {
 	jumpCount = jumpCount -1;
 	yspd = wallyspd;
 	walljumpTimer = walljumpFrames;
@@ -112,7 +119,7 @@ if (_movingplatform && bbox_bottom <= _movingplatform.bbox_top) {
 	} 
 }
 
-if !(izq or der) && place_meeting(x, y+1, colisionMovObj) {
+if (moving == false) && place_meeting(x, y+1, colisionMovObj) {
 	x += _movingplatform.movex;
 	y += _movingplatform.movey;
 }
@@ -151,7 +158,7 @@ if izq {
 	image_xscale = 2.5;
 }
 
-if ( izq or der ) && ( yspd == 0 ) && (contSuelo == true) {
+if (moving == true) && ( yspd == 0 ) && (contSuelo == true) {
 	sprite_index = caminSpr;
 } else {
 	sprite_index = tiesoSpr;
@@ -165,18 +172,14 @@ if ( yspd > 4 ) && (contSuelo == false) {
 	sprite_index = caidaSpr;
 }
 
-if (izq && der) && (contSuelo == true) {
-	sprite_index = tiesoSpr;
-}
-
-if ( accelTimer > 0 ) && !izq && !der && (contSuelo == true) {
+if ( accelTimer > 0 ) && (moving == false) && (contSuelo == true) {
 	sprite_index = inbtwSpr;
 }
 
-if place_meeting(x, y, walljumpableObj) && (izq or der) && (yspd > 0) && !(izq && der) {
+if place_meeting(x, y, walljumpableObj) && (moving == true) && (yspd > 0) {
 	sprite_index = wallcaidaSpr;
 }
 
-if place_meeting(x, y, walljumpableObj) && (yspd <= 0) && (izq or der) && !(izq && der) && contSuelo == false {
+if place_meeting(x, y, walljumpableObj) && (yspd <= 0) && (moving = true) && contSuelo == false {
 	sprite_index = wallsubidaSpr;
 }
