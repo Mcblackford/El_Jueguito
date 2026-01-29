@@ -1,3 +1,3 @@
 roomtarget = testRoom2;
-xtarget = 64;
+xtarget = 96;
 ytarget = 1440;
