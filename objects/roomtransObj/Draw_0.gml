@@ -1,1 +1,3 @@
-draw_sprite_tiled(fadeOutSpr, image_index, 0,0)
+if place_meeting(playerObj.x, playerObj.y, playerObj){
+	draw_sprite_tiled(sprite_index, image_index, 0,0)
+}

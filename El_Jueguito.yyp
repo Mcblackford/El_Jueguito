@@ -38,7 +38,6 @@
     {"id":{"name":"movpoint0","path":"objects/movpoint0/movpoint0.yy",},},
     {"id":{"name":"movpoint1","path":"objects/movpoint1/movpoint1.yy",},},
     {"id":{"name":"playerObj","path":"objects/playerObj/playerObj.yy",},},
-    {"id":{"name":"roomswapObj","path":"objects/roomswapObj/roomswapObj.yy",},},
     {"id":{"name":"roomtransObj","path":"objects/roomtransObj/roomtransObj.yy",},},
     {"id":{"name":"walljumpableObj","path":"objects/walljumpableObj/walljumpableObj.yy",},},
     {"id":{"name":"testRoom1","path":"rooms/testRoom1/testRoom1.yy",},},
