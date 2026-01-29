@@ -1,0 +1,1 @@
+draw_sprite_tiled(fadeOutSpr, image_index, 0,0)
