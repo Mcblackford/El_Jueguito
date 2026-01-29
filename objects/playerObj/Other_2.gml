@@ -3,6 +3,7 @@ if (file_exists("checkpoint.ini")) {
 	
 	x = ini_read_real ("player", "x", x);
 	y = ini_read_real ("player", "y", y);
+	room = ini_read_real("player", "roomID", room);
 	
 	ini_close();
 }
