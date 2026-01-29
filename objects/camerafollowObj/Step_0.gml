@@ -1,3 +1,4 @@
+
 var _target = playerObj;
 if instance_exists(_target) {
 	var _max_dist = 160;

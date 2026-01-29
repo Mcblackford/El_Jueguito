@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"transitionScr",
+  "%Name":"CameraSpawner",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"transitionScr",
+  "name":"CameraSpawner",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
