@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"bloqueMovSpr",
-    "path":"sprites/bloqueMovSpr/bloqueMovSpr.yy",
+    "name":"switchSpr",
+    "path":"sprites/switchSpr/switchSpr.yy",
   },
   "spriteMaskId":null,
   "visible":true,
