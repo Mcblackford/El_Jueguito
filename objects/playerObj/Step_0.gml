@@ -5,6 +5,8 @@ moving = false
 if (walljumpTimer <= 0) && !place_meeting(x,y,roomwalkObj) {
 	der = keyboard_check( ord("D") );
 	izq = keyboard_check( ord("A") );
+	jump = keyboard_check_pressed( vk_space );
+	jumphold = keyboard_check(vk_space);
 }
 
 if (izq or der) && !(izq && der) {
@@ -16,8 +18,7 @@ if !(izq or der) || (izq && der) {
 interact = keyboard_check( ord("E"))
 arriba = keyboard_check( ord("W") );
 abajo = keyboard_check( ord("S") );
-jump = keyboard_check_pressed( vk_space );
-jumphold = keyboard_check(vk_space);
+
 
 // Suelo
 
@@ -35,10 +36,10 @@ depth = -99;
 xspd = ( der - izq ) * moveSpd;
 
 if place_meeting(x,y,roomwalkObj) {
-	xspd = -2 * image_xscale
+	xspd = -3 * image_xscale
 }
 
-if moving == false {
+if moving == false && !place_meeting(x,y,roomwalkObj) {
 	xspd = -1.2 * image_xscale
 	accelTimer--;
 } else {
@@ -162,7 +163,7 @@ if ( yspd > 4 ) && (contSuelo == false) {
 	sprite_index = caidaSpr;
 }
 
-if ( accelTimer > 0 ) && (moving == false) && (contSuelo == true) {
+if ( accelTimer > 0 ) && (moving == false) && (contSuelo == true) && !place_meeting(x,y,roomwalkObj) {
 	sprite_index = inbtwSpr;
 }
 
