@@ -1,5 +1,5 @@
-interact = keyboard_check( ord("E"))
 
-if place_meeting(x, y , playerObj) && interact {
+
+if place_meeting(x, y , playerObj) && keyboard_check( ord("E")) {
 	palanca = !palanca;
 }
