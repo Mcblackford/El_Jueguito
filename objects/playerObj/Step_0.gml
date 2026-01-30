@@ -147,7 +147,7 @@ collision_rectangle(x-6, y, x+6, y+1, colisionMovObj, true, true) && moving==tru
 	sprite_index = tiesoSpr;
 }
 
-if ( yspd < 4 ) && (contSuelo == false) {
+if ( yspd < 0 ) && (contSuelo == false) {
 	sprite_index = saltoSpr;
 }
 
