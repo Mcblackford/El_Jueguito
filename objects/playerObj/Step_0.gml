@@ -2,7 +2,7 @@
 
 moving = false
 
-if walljumpTimer <= 0 {
+if (walljumpTimer <= 0) && !place_meeting(x,y,roomwalkObj) {
 	der = keyboard_check( ord("D") );
 	izq = keyboard_check( ord("A") );
 }
@@ -28,9 +28,15 @@ else {
 	setOnground(false);
 }
 
+depth = -99;
+
 // Movimiento y Coyotehang
 
 xspd = ( der - izq ) * moveSpd;
+
+if place_meeting(x,y,roomwalkObj) {
+	xspd = -2 * image_xscale
+}
 
 if moving == false {
 	xspd = -1.2 * image_xscale
@@ -39,7 +45,7 @@ if moving == false {
 	accelTimer = accelFrames
 }
 
-if accelTimer <= 0 {
+if (accelTimer <= 0) && !place_meeting(x,y,roomwalkObj) {
 	xspd = 0
 }
 
@@ -141,7 +147,8 @@ if izq {
 }
 
 if (moving == true) && ( yspd == 0 ) && (contSuelo == true) ||
-collision_rectangle(x-6, y, x+6, y+1, colisionMovObj, true, true) && moving==true && yspd = 5{
+collision_rectangle(x-6, y, x+6, y+1, colisionMovObj, true, true) && moving==true && yspd = 5 ||
+place_meeting(x,y,roomwalkObj) {
 	sprite_index = caminSpr;
 } else {
 	sprite_index = tiesoSpr;

@@ -1,2 +1,4 @@
-sequenceTimer = 0;
-sequenceFrames = 60;
+roomx = 0;
+roomy = 0;
+newroom = undefined;
+fadelevel = 0.1;

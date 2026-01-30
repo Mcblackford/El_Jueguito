@@ -1,3 +1,5 @@
+depth = -100;
+
 if instance_exists(SwitchObj) {
 var _sw = instance_find(SwitchObj,0);
 if _sw.palanca == true
