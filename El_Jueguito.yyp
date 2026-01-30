@@ -39,7 +39,6 @@
     {"id":{"name":"jumpOrb","path":"objects/jumpOrb/jumpOrb.yy",},},
     {"id":{"name":"movpoint0","path":"objects/movpoint0/movpoint0.yy",},},
     {"id":{"name":"movpoint1","path":"objects/movpoint1/movpoint1.yy",},},
-    {"id":{"name":"playerdepthObj","path":"objects/playerdepthObj/playerdepthObj.yy",},},
     {"id":{"name":"playerObj","path":"objects/playerObj/playerObj.yy",},},
     {"id":{"name":"puertaObj","path":"objects/puertaObj/puertaObj.yy",},},
     {"id":{"name":"roomchangeObj","path":"objects/roomchangeObj/roomchangeObj.yy",},},
