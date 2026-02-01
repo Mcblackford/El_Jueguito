@@ -10,7 +10,14 @@ if _sw.palanca == true
 		{y +=10} 
 		else 
 			{
-			//aqui coloca lo q quieras q pase si el jugador si esta debajo de la puerta//
+			if (file_exists("checkpoint.ini")) {
+	ini_open("checkpoint.ini")
+	
+	playerObj.x = ini_read_real ("player", "x", x);
+	playerObj.y = ini_read_real ("player", "y", y);
+	
+	ini_close();
+}
 			}
 		}
 }
