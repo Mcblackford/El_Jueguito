@@ -1,1 +1,2 @@
 palanca = false;
+switchID = IDnumberD;
