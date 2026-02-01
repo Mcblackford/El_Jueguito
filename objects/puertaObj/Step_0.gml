@@ -1,8 +1,7 @@
 depth = -100;
-if (SwitchObj.switchID == doorID) {
-if instance_exists(SwitchObj) {
-var _sw = instance_find(SwitchObj,0);
-if (_sw.palanca == true)
+
+if switchObj.switchID == doorID {
+if switchObj.palanca == true
 {
    if (start_y - sprite_height < y) {y -= 3}
 } else {
@@ -20,6 +19,5 @@ if (_sw.palanca == true)
 }
 			}
 		}
-}
 }
 }

@@ -44,7 +44,7 @@
     {"id":{"name":"roomchangeObj","path":"objects/roomchangeObj/roomchangeObj.yy",},},
     {"id":{"name":"roomtransObj","path":"objects/roomtransObj/roomtransObj.yy",},},
     {"id":{"name":"roomwalkObj","path":"objects/roomwalkObj/roomwalkObj.yy",},},
-    {"id":{"name":"SwitchObj","path":"objects/SwitchObj/SwitchObj.yy",},},
+    {"id":{"name":"switchObj","path":"objects/switchObj/switchObj.yy",},},
     {"id":{"name":"walljumpableObj","path":"objects/walljumpableObj/walljumpableObj.yy",},},
     {"id":{"name":"testRoom1","path":"rooms/testRoom1/testRoom1.yy",},},
     {"id":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},},
