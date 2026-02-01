@@ -132,9 +132,6 @@ if yspd != 0 && place_meeting(x, y + yspd, colisionObj) {
 	yspd = 0;
 }
 
-// Siempre despues nada debe ir por debajo de esto (que cambie las velocidades claro)
-	// Yo hago lo q m da la gana
-
 x += xspd;
 y += yspd;
 
@@ -147,35 +144,36 @@ if izq {
 	image_xscale = 2.5;
 }
 
-if (moving == true) && ( yspd == 0 ) && (contSuelo == true) ||
-collision_rectangle(x-6, y, x+6, y+1, colisionMovObj, true, true) && moving==true && yspd = 5 ||
-place_meeting(x,y,roomwalkObj) {
-	sprite_index = caminSpr;
+if !place_meeting(x, y, deathObj) {
+	
+	if (moving == true) && ( yspd == 0 ) && (contSuelo == true) ||
+	collision_rectangle(x-6, y, x+6, y+1, colisionMovObj, true, true) && moving==true && yspd = 5 ||
+	place_meeting(x,y,roomwalkObj) {
+		sprite_index = caminSpr;
+	} else {
+		sprite_index = tiesoSpr;
+	}
+	
+	if ( yspd < 0 ) && (contSuelo == false) {
+		sprite_index = saltoSpr;
+	}
+	
+	if ( yspd > 4 ) && (contSuelo == false) {
+		sprite_index = caidaSpr;
+	}
+		
+	if ( accelTimer > 0 ) && (moving == false) && (contSuelo == true) && !place_meeting(x,y,roomwalkObj) {
+		sprite_index = inbtwSpr;
+	}
+	
+	if place_meeting(x, y, walljumpableObj) && (moving == true) && (yspd > 0) {
+		sprite_index = wallcaidaSpr;
+	}
+	
+	if place_meeting(x, y, walljumpableObj) && (yspd <= 0) && (moving = true) && contSuelo == false {
+		sprite_index = wallsubidaSpr;
+	}	
 } else {
-	sprite_index = tiesoSpr;
-}
-
-if ( yspd < 0 ) && (contSuelo == false) {
-	sprite_index = saltoSpr;
-}
-
-if ( yspd > 4 ) && (contSuelo == false) {
-	sprite_index = caidaSpr;
-}
-
-if ( accelTimer > 0 ) && (moving == false) && (contSuelo == true) && !place_meeting(x,y,roomwalkObj) {
-	sprite_index = inbtwSpr;
-}
-
-if place_meeting(x, y, walljumpableObj) && (moving == true) && (yspd > 0) {
-	sprite_index = wallcaidaSpr;
-}
-
-if place_meeting(x, y, walljumpableObj) && (yspd <= 0) && (moving = true) && contSuelo == false {
-	sprite_index = wallsubidaSpr;
-}
-
-if place_meeting(x, y, deathObj) {
 	sprite_index = deathSpr;
 	depth = -120;
 }

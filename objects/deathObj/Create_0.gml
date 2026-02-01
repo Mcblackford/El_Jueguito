@@ -1,2 +1,2 @@
 deathTimer = 0;
-deathMaxTimer = 40;
+deathMaxTimer = 30;

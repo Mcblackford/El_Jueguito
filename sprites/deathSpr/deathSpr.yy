@@ -91,7 +91,7 @@
     },
     "name":"deathSpr",
     "playback":1,
-    "playbackSpeed":14.0,
+    "playbackSpeed":22.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
