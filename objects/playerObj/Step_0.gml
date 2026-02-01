@@ -2,7 +2,7 @@
 
 moving = false
 
-if (walljumpTimer <= 0) && !place_meeting(x,y,roomwalkObj) {
+if (walljumpTimer <= 0) && !place_meeting(x,y,roomwalkObj) && !place_meeting(x, y, deathObj) {
 	der = keyboard_check( ord("D") );
 	izq = keyboard_check( ord("A") );
 	jump = keyboard_check_pressed( vk_space );
@@ -173,4 +173,9 @@ if place_meeting(x, y, walljumpableObj) && (moving == true) && (yspd > 0) {
 
 if place_meeting(x, y, walljumpableObj) && (yspd <= 0) && (moving = true) && contSuelo == false {
 	sprite_index = wallsubidaSpr;
+}
+
+if place_meeting(x, y, deathObj) {
+	sprite_index = deathSpr;
+	depth = -120;
 }
