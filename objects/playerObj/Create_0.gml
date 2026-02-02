@@ -42,3 +42,6 @@ coyoteHangTmr = 0;
 
 coyoteJumpFrm = 5;
 coyoteJumpTmr = 0;
+
+deathTimer = 0;
+deathMaxTimer = 45;

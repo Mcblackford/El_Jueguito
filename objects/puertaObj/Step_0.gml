@@ -19,5 +19,5 @@ if switchObj.palanca == true
 }
 			}
 		}
-}
+	}
 }

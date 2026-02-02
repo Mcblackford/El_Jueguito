@@ -146,6 +146,8 @@ if izq {
 
 if !place_meeting(x, y, deathObj) {
 	
+	deathTimer = 0;
+	
 	if (moving == true) && ( yspd == 0 ) && (contSuelo == true) ||
 	collision_rectangle(x-6, y, x+6, y+1, colisionMovObj, true, true) && moving==true && yspd = 5 ||
 	place_meeting(x,y,roomwalkObj) {
@@ -176,4 +178,16 @@ if !place_meeting(x, y, deathObj) {
 } else {
 	sprite_index = deathSpr;
 	depth = -120;
+	deathTimer++;
+	
+	if deathTimer >= deathMaxTimer {
+		if (file_exists("checkpoint.ini")) {
+			ini_open("checkpoint.ini")
+			
+			other.x = ini_read_real ("player", "x", x);
+			other.y = ini_read_real ("player", "y", y);
+			
+			ini_close();
+		}
+	}
 }
