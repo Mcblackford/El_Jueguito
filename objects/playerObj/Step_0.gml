@@ -160,7 +160,7 @@ if !place_meeting(x, y, deathObj) && !place_meeting(x, y, puertaObj) {
 		sprite_index = saltoSpr;
 	}
 	
-	if ( yspd > 4 ) && (contSuelo == false) {
+	if ( yspd > 6 ) && (contSuelo == false) {
 		sprite_index = caidaSpr;
 	}
 		

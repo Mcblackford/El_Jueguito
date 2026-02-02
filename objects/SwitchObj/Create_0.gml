@@ -1,2 +1,1 @@
-palanca = 1;
-switchID = IDnumberD;
+palanca = palancaID;
