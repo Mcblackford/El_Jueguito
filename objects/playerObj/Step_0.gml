@@ -7,6 +7,7 @@ if (walljumpTimer <= 0) && !place_meeting(x,y,roomwalkObj) && !place_meeting(x, 
 	izq = keyboard_check( ord("A") );
 	jump = keyboard_check_pressed( vk_space );
 	jumphold = keyboard_check(vk_space);
+	habilidad = mouse_check_button(mb_left);
 }
 
 if (izq or der) && !(izq && der) {
