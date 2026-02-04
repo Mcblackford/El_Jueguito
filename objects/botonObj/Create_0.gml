@@ -1,0 +1,2 @@
+puertasum= false;
+boton = botonID;
