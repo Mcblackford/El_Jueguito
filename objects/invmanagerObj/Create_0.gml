@@ -5,5 +5,6 @@ depth = -9999;
 potion =
 {
 	name : "Potion",
-	description : "Magic drink that restores HP"
+	description : "Magic drink that restores HP",
+	sprite : pocionSpr,
 }
