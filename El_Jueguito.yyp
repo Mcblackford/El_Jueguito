@@ -59,6 +59,7 @@
     {"id":{"name":"armoniaCur","path":"sprites/armoniaCur/armoniaCur.yy",},},
     {"id":{"name":"bloqueMovSpr","path":"sprites/bloqueMovSpr/bloqueMovSpr.yy",},},
     {"id":{"name":"bloqueSpr","path":"sprites/bloqueSpr/bloqueSpr.yy",},},
+    {"id":{"name":"botonactSpr","path":"sprites/botonactSpr/botonactSpr.yy",},},
     {"id":{"name":"botonSpr","path":"sprites/botonSpr/botonSpr.yy",},},
     {"id":{"name":"caidaSpr","path":"sprites/caidaSpr/caidaSpr.yy",},},
     {"id":{"name":"camFollow","path":"sprites/camFollow/camFollow.yy",},},

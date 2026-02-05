@@ -9,3 +9,5 @@ if place_meeting(x, y, playerObj) && (playerObj.interact == true) {
 }
 }
 }
+
+if boton_activo == true { sprite_index = botonactSpr } else { sprite_index = botonSpr }
