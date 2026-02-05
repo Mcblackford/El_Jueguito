@@ -40,6 +40,7 @@
     {"id":{"name":"cursorObj","path":"objects/cursorObj/cursorObj.yy",},},
     {"id":{"name":"deathObj","path":"objects/deathObj/deathObj.yy",},},
     {"id":{"name":"fireHab","path":"objects/fireHab/fireHab.yy",},},
+    {"id":{"name":"invmanagerObj","path":"objects/invmanagerObj/invmanagerObj.yy",},},
     {"id":{"name":"jumpOrb","path":"objects/jumpOrb/jumpOrb.yy",},},
     {"id":{"name":"movpoint0","path":"objects/movpoint0/movpoint0.yy",},},
     {"id":{"name":"movpoint1","path":"objects/movpoint1/movpoint1.yy",},},
