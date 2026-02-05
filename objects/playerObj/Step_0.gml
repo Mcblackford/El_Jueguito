@@ -16,7 +16,7 @@ if (izq or der) && !(izq && der) {
 if !(izq or der) || (izq && der) {
 	moving = false;
 }
-interact = keyboard_check( ord("E"))
+interact = keyboard_check_pressed( ord("E"))
 arriba = keyboard_check( ord("W") );
 abajo = keyboard_check( ord("S") );
 

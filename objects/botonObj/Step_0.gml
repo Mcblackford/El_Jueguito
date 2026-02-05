@@ -1,5 +1,4 @@
-
-if place_meeting(x, y, playerObj) && keyboard_check(ord("E")) {
+if place_meeting(x, y, playerObj) && (playerObj.interact == true) {
 	boton_activo = !boton_activo;
 	with (puertaSumObj) {
 	if boton == other.boton {
