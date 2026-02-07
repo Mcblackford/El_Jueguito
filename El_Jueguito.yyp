@@ -12,6 +12,7 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Inventario","folderPath":"folders/Inventario.yy","name":"Inventario","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Inventario/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Efectos de items","folderPath":"folders/Inventario/Scripts/Efectos de items.yy","name":"Efectos de items","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objetos","folderPath":"folders/Objetos.yy","name":"Objetos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"colisionMovPoints","folderPath":"folders/Objetos/colisionMovPoints.yy","name":"colisionMovPoints","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Habilidades","folderPath":"folders/Objetos/Habilidades.yy","name":"Habilidades","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -61,7 +62,10 @@
     {"id":{"name":"CameraSpawner","path":"scripts/CameraSpawner/CameraSpawner.yy",},},
     {"id":{"name":"crearItem","path":"scripts/crearItem/crearItem.yy",},},
     {"id":{"name":"initItems","path":"scripts/initItems/initItems.yy",},},
+    {"id":{"name":"itemNouso","path":"scripts/itemNouso/itemNouso.yy",},},
+    {"id":{"name":"itemPocion","path":"scripts/itemPocion/itemPocion.yy",},},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},},
+    {"id":{"name":"usarItem","path":"scripts/usarItem/usarItem.yy",},},
     {"id":{"name":"Fadein","path":"sequences/Fadein/Fadein.yy",},},
     {"id":{"name":"Fadeout","path":"sequences/Fadeout/Fadeout.yy",},},
     {"id":{"name":"armoniaCur","path":"sprites/armoniaCur/armoniaCur.yy",},},
