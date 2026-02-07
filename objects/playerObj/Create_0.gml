@@ -45,3 +45,6 @@ coyoteJumpTmr = 0;
 
 deathTimer = 0;
 deathMaxTimer = 45;
+
+cooldownFrm = 60;
+habilitycooldown = 0;

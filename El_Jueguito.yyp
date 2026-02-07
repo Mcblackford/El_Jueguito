@@ -41,7 +41,7 @@
     {"id":{"name":"colisionObj","path":"objects/colisionObj/colisionObj.yy",},},
     {"id":{"name":"cursorObj","path":"objects/cursorObj/cursorObj.yy",},},
     {"id":{"name":"deathObj","path":"objects/deathObj/deathObj.yy",},},
-    {"id":{"name":"fireHab","path":"objects/fireHab/fireHab.yy",},},
+    {"id":{"name":"fireballObj","path":"objects/fireballObj/fireballObj.yy",},},
     {"id":{"name":"jumpOrb","path":"objects/jumpOrb/jumpOrb.yy",},},
     {"id":{"name":"movpoint0","path":"objects/movpoint0/movpoint0.yy",},},
     {"id":{"name":"movpoint1","path":"objects/movpoint1/movpoint1.yy",},},

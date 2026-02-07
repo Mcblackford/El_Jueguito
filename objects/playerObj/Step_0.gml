@@ -20,6 +20,15 @@ interact = keyboard_check_pressed( ord("E"))
 arriba = keyboard_check( ord("W") );
 abajo = keyboard_check( ord("S") );
 
+// Habilidades
+
+	// --Fuego--
+
+ if habilidad && !instance_exists(fireballObj) {
+	var fireball = instance_create_layer (playerObj.x, playerObj.y - 64, "Instances", fireballObj);
+	fireball.direction = point_direction (x, y, mouse_x, mouse_y);
+	fireball.speed = 20;
+}
 
 // Suelo
 
