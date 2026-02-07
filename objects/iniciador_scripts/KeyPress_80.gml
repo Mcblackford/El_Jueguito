@@ -1,0 +1,1 @@
+usarItem(ITEM_POCION);

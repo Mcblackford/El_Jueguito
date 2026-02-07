@@ -45,6 +45,7 @@
     {"id":{"name":"cursorObj","path":"objects/cursorObj/cursorObj.yy",},},
     {"id":{"name":"deathObj","path":"objects/deathObj/deathObj.yy",},},
     {"id":{"name":"fireballObj","path":"objects/fireballObj/fireballObj.yy",},},
+    {"id":{"name":"iniciador_scripts","path":"objects/iniciador_scripts/iniciador_scripts.yy",},},
     {"id":{"name":"jumpOrb","path":"objects/jumpOrb/jumpOrb.yy",},},
     {"id":{"name":"movpoint0","path":"objects/movpoint0/movpoint0.yy",},},
     {"id":{"name":"movpoint1","path":"objects/movpoint1/movpoint1.yy",},},
