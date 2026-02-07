@@ -10,5 +10,6 @@ function macros(){
 	// nombre/items en general
 	#macro ITEM_POCION 0
 	#macro ITEM_IMPORTANTE 1
+	#macro ITEM_PAGINA 2
 	//------------------
 }

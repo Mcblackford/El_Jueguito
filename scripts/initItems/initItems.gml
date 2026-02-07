@@ -4,4 +4,5 @@ function initItems(){
 	
 	global.items[ITEM_POCION] = crearItem("Poción de salud", "Te da +10 puntos de vida.",pocionSpr, itemPocion);
 	global.items[ITEM_IMPORTANTE] = crearItem("Item importante", "Definitamente se ve como un item importante.", noone , itemNouso);
+	global.items[ITEM_PAGINA] = crearItem("Página", "Es una página", hfuegoPag, itemPagina);
 }
