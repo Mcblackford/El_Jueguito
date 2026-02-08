@@ -24,10 +24,18 @@ abajo = keyboard_check( ord("S") );
 
 	// --Fuego--
 
- if habilidad && !instance_exists(fireballObj) {
+ if habilidad && !instance_exists(fireballObj) && keyboard_check(ord("1")) {
 	var fireball = instance_create_layer (playerObj.x, playerObj.y - 64, "Instances", fireballObj);
-	fireball.direction = point_direction (x, y, mouse_x, mouse_y);
+	fireball.direction = point_direction (x, y, mouse_x, mouse_y - 64);
 	fireball.speed = 20;
+}
+
+	// --Rayo--
+	
+ if habilidad && !instance_exists(thunderballObj) && keyboard_check(ord("3")) {
+	var thunderball = instance_create_layer (playerObj.x, playerObj.y - 64, "Instances", thunderballObj);
+	thunderball.direction = point_direction (x, y, mouse_x, mouse_y + 64);
+	thunderball.speed = 30;
 }
 
 // Suelo
