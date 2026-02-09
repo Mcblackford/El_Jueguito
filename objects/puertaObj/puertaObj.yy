@@ -9,8 +9,8 @@
   "name":"puertaObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Plataformas y colisiones",
+    "path":"folders/Objetos/Plataformas y colisiones.yy",
   },
   "parentObjectId":{
     "name":"colisionObj",

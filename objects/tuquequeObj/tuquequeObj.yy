@@ -6,8 +6,8 @@
   "name":"tuquequeObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Entidades",
+    "path":"folders/Objetos/Entidades.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -12,8 +12,8 @@
   "name":"colisionMovObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Plataformas y colisiones",
+    "path":"folders/Objetos/Plataformas y colisiones.yy",
   },
   "parentObjectId":null,
   "persistent":false,

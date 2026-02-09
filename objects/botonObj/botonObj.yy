@@ -9,8 +9,8 @@
   "name":"botonObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Interruptores",
+    "path":"folders/Objetos/Interruptores.yy",
   },
   "parentObjectId":null,
   "persistent":false,
