@@ -1,4 +1,3 @@
-
 platformspd = 5;
 currentspd = 5;
 

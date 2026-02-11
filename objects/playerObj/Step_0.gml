@@ -1,3 +1,5 @@
+depth = -99;
+
 // Inputs
 
 moving = false
@@ -10,44 +12,48 @@ if (walljumpTimer <= 0) && !place_meeting(x,y,roomwalkObj) && !place_meeting(x, 
 	habilidad = mouse_check_button_pressed(mb_left);
 }
 
+interact = keyboard_check_pressed( ord("E"))
+arriba = keyboard_check( ord("W") );
+abajo = keyboard_check( ord("S") );
+
 if (izq or der) && !(izq && der) {
 	moving = true;
 }
 if !(izq or der) || (izq && der) {
 	moving = false;
 }
-interact = keyboard_check_pressed( ord("E"))
-arriba = keyboard_check( ord("W") );
-abajo = keyboard_check( ord("S") );
+
 
 // Habilidades
 
 	// --Fuego--
 
  if habilidad && !instance_exists(fireballObj) && keyboard_check(ord("1")) {
-	var fireball = instance_create_layer (playerObj.x, playerObj.y - 64, "Instances", fireballObj);
-	fireball.direction = point_direction (x, y, mouse_x, mouse_y - 64);
+	var fireball = instance_create_layer (playerObj.x, playerObj.y-64, "Instances", fireballObj);
+	fireball.direction = point_direction (x, y, mouse_x, mouse_y-64);
 	fireball.speed = 20;
 }
 
 	// --Rayo--
 	
  if habilidad && !instance_exists(thunderballObj) && keyboard_check(ord("3")) {
-	var thunderball = instance_create_layer (playerObj.x, playerObj.y - 64, "Instances", thunderballObj);
-	thunderball.direction = point_direction (x, y, mouse_x, mouse_y + 64);
+	var thunderball = instance_create_layer (playerObj.x, playerObj.y-64, "Instances", thunderballObj);
+	thunderball.direction = point_direction (x, y, mouse_x, mouse_y+64);
 	thunderball.speed = 30;
 }
 
+
 // Suelo
 
-if (( yspd >= 0 ) && place_meeting(x, y + 1, colisionObj)) || ((yspd == 5) && collision_rectangle(x - 6, y, x + 6, y + 1, colisionMovObj, true, true)) {
+if (( yspd >= 0 ) && place_meeting(x, y+1, colisionObj)) ||
+(( yspd == 0 ) && collision_rectangle(x-6, y, x+6, y+1, semisolidObj, true, true) && (semisolidObj.solidState == true)) ||
+((yspd == 5) && collision_rectangle(x-6, y, x+6, y+1, colisionMovObj, true, true)) {
 	setOnground(true);
 }
 else {
 	setOnground(false);
 }
 
-depth = -99;
 
 // Movimiento y Coyotehang
 
@@ -75,12 +81,14 @@ if coyoteHangTmr > 0 {
 	setOnground(false)
 }
 
+
 // Deslizamiento Babosa
 
 if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && (moving == true) {
 	yspd += wallGrav;
 	yspd = min(yspd, wallFallMax);
 }
+
 
 // Salto
 
@@ -112,6 +120,7 @@ if jumpTimer > 0 {
 	jumpTimer--;
 }
 
+
 // Walljump
 
 if place_meeting(x, y, walljumpableObj) && (contSuelo == false) && jump && (moving == true) {
@@ -131,6 +140,7 @@ if walljumpTimer > 0 {
 if walljumpTimer <= 0 {
 	wallspd = 0;
 }
+
 
 // Colision
 
@@ -152,6 +162,7 @@ if yspd != 0 && place_meeting(x, y + yspd, colisionObj) {
 
 x += xspd;
 y += yspd;
+
 
 // Sprites
 
