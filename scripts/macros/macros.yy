@@ -6,7 +6,7 @@
   "name":"macros",
   "parent":{
     "name":"Scripts",
-    "path":"folders/Inventario/Scripts.yy",
+    "path":"folders/Items/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

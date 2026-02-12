@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"usarItem",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Inventario/Scripts.yy",
+    "name":"Inventario",
+    "path":"folders/Items/Inventario.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

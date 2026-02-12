@@ -204,7 +204,7 @@ if !place_meeting(x, y, deathObj) && !place_meeting(x, y, puertaObj) {
 	if place_meeting(x, y, walljumpableObj) && (yspd <= 0) && (moving = true) && contSuelo == false {
 		sprite_index = wallsubidaSpr;
 	}	
-} else if place_meeting(x, y, deathObj) || place_meeting(x, y, puertaObj) {
+} else if (place_meeting(x, y, deathObj) || place_meeting(x, y, puertaObj) || place_meeting(x, y, puertaSumObj)) {
 	sprite_index = deathSpr;
 	depth = -120;
 	deathTimer++;

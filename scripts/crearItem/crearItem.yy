@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"crearItem",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Inventario/Scripts.yy",
+    "name":"Scripts items",
+    "path":"folders/Items/Scripts/Scripts items.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

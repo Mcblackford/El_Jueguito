@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"iniciador_scripts",
+  "%Name":"inventarioObj",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":80,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":79,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"iniciador_scripts",
+  "name":"inventarioObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Inventario/Scripts.yy",
+    "name":"Items",
+    "path":"folders/Items.yy",
   },
   "parentObjectId":null,
   "persistent":true,
