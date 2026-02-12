@@ -173,7 +173,7 @@ if izq {
 	image_xscale = 2.5;
 }
 
-if !place_meeting(x, y, deathObj) && !place_meeting(x, y, puertaObj) {
+if !place_meeting(x, y, deathObj) && !place_meeting(x, y, puertaObj) && !place_meeting(x, y, puertaSumObj) {
 	
 	deathTimer = 0;
 	
