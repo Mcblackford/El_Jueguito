@@ -1,1 +1,1 @@
-usarItem(ITEM_PAGINA);
+usarItem(ITEM_POCION)

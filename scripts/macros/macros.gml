@@ -5,6 +5,7 @@ function macros(){
 	#macro ITEM_VAR_DESCRP 1
 	#macro ITEM_VAR_SPRITE 2
 	#macro ITEM_VAR_ACCION 3
+	#macro ITEM_VAR_MAX 4
 	//------------------
 	
 	// nombre/items en general
@@ -12,4 +13,9 @@ function macros(){
 	#macro ITEM_IMPORTANTE 1
 	#macro ITEM_PAGINA 2
 	//------------------
+	
+	// Inventario argumentos
+	#macro INVENTARIO_ITEM 0
+	#macro INVENTARIO_CANTIDAD 1
+	//-------------------
 }

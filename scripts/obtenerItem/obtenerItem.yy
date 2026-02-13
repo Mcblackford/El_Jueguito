@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"macros",
+  "%Name":"obtenerItem",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"macros",
+  "name":"obtenerItem",
   "parent":{
-    "name":"Items",
-    "path":"folders/Items.yy",
+    "name":"Inventario",
+    "path":"folders/Items/Inventario.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

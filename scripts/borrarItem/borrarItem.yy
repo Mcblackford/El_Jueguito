@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"macros",
+  "%Name":"borrarItem",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"macros",
+  "name":"borrarItem",
   "parent":{
-    "name":"Items",
-    "path":"folders/Items.yy",
+    "name":"Inventario",
+    "path":"folders/Items/Inventario.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

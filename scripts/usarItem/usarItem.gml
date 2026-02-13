@@ -1,6 +1,16 @@
 function usarItem(itemID){
-	var item = global.items[itemID];
-	var action = item[ITEM_VAR_ACCION];
+	var item = obtenerItem(itemID);
+	
+	if (item != noone) {
+	var item_var = global.items[itemID];
+	var action = item_var[ITEM_VAR_ACCION];
 	
 	action();
+	
+	item[@ INVENTARIO_CANTIDAD] -= 1;
+	
+	if (item[INVENTARIO_CANTIDAD] <= 0) {
+	 borrarItem(itemID);
+	}
+	}
 }
