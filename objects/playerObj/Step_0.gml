@@ -1,5 +1,18 @@
 depth = -99;
 
+if !instance_exists(pantallaup) {
+	instance_create_depth(x,y,-98,pantallaup)
+}
+if !instance_exists(pantalladown) {
+	instance_create_depth(x,y,-98,pantalladown)
+}
+if !instance_exists(pantallaleft) {
+	instance_create_depth(x,y,-98,pantallaleft)
+}
+if !instance_exists(pantallaright) {
+	instance_create_depth(x,y,-98,pantallaright)
+}
+
 // Inputs
 
 moving = false
