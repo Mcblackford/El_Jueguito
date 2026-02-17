@@ -2,14 +2,18 @@ if (!activo) {exit;}
 
 draw_self();
 
-var inventariosize=min(ds_list_size(inventarioObj.inventario), 12);
+var inventariosize=ds_list_size(inventarioObj.inventario);
+var i1 =max( selector - 6, 0);
+var i2 =min(i1 + 12, inventariosize);
+var frame = (current_time / 300); //animacion momentanea para el selector
 
-for (var i=0;i<inventariosize;i++){ 
-	var posy = i * 39; 
+var posy = 0;
+
+for (var i=i1;i<i2;i++){ 
 	var item= inventarioObj.inventario[| i];
 	var itemVar= global.items[item[INVENTARIO_ITEM]];
 	
-	draw_sprite_ext(itemVar[ITEM_VAR_SPRITE], 0, x + 852, y + 204 , 5.5 , 5.5 ,0 ,c_white ,1);
+	
 
 	draw_set_font(short_story_x16);
 	draw_set_colour(c_gray);
@@ -19,5 +23,9 @@ for (var i=0;i<inventariosize;i++){
 	draw_text(x + 610, y + 202 + posy, "x" + string(item[INVENTARIO_CANTIDAD]));
 	draw_set_halign(fa_left);
 	
-	draw_sprite_ext(invselecSpr, 0, x + 175, y + 202 + posy,1 , 1,0,c_white,1);
+	if (i == selector) {
+		draw_sprite_ext(itemVar[ITEM_VAR_SPRITE], 0, x + 852, y + 204 , 5.5 , 5.5 ,0 ,c_white ,1);
+		draw_sprite_ext(invselecSpr, frame, x + 160, y + 191 + posy,2.84 , 3,0,c_white,0.5); // selector momentaneo
+	}
+	posy += 39;
 }

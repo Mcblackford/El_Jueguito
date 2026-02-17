@@ -35,8 +35,13 @@ if (izq or der) && !(izq && der) {
 if !(izq or der) || (izq && der) {
 	moving = false;
 }
-
+// inventario
 if (keyboard_check_pressed(vk_tab)){invGUIObj.activo = !invGUIObj.activo;}
+
+var ver =keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+if (ver !=0){
+	invGUIObj.selector = clamp(invGUIObj.selector + ver, 0, ds_list_size(inventarioObj.inventario) - 1);
+}
 
 // Habilidades
 
