@@ -1,1 +1,0 @@
-global.FUENTE_EGG =font_add_sprite_ext(fuenteeggSpr,"ABCDEFGHIJKLM NOPQRSTUVW XYZabcdefgh ijklmnopqrs tuvwxyz0123 456789_!\"#$%&'()*+,-./:;<=>?[\\]^_`{|}~@ÄÁÀÂÅÃÇÇäáàâåãÑñÏÍÌÎÜÚÙÛïíìîüúùûÖÓÒÔÕŸÝÝöóòôõÿýýËÉÈÊëéèêÆæßðÐÞþ¿¡Œœ",true,0);

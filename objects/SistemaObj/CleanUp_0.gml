@@ -1,1 +1,0 @@
-font_delete(global.FUENTE_EGG);
