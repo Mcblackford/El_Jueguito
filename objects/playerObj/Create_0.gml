@@ -48,3 +48,8 @@ deathMaxTimer = 45;
 
 cooldownFrm = 60;
 habilitycooldown = 0;
+
+// --Viento--
+
+vientoTmr = 0;
+vientoFrm = 60;

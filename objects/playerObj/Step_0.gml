@@ -41,7 +41,7 @@ if !(izq or der) || (izq && der) {
 
 	// --Fuego--
 
- if habilidad && !instance_exists(fireballObj) && keyboard_check(ord("1")) {
+ if habilidad && !instance_exists(fireballObj) && (cursorObj.sprite_index == fuegoCur) {
 	var fireball = instance_create_layer (playerObj.x, playerObj.y-64, "Instances", fireballObj);
 	fireball.direction = point_direction (x, y, mouse_x, mouse_y-64);
 	fireball.speed = 20;
@@ -49,12 +49,22 @@ if !(izq or der) || (izq && der) {
 
 	// --Rayo--
 	
- if habilidad && !instance_exists(thunderballObj) && keyboard_check(ord("3")) {
+ if habilidad && !instance_exists(thunderballObj) && (cursorObj.sprite_index == rayoCur) {
 	var thunderball = instance_create_layer (playerObj.x, playerObj.y-64, "Instances", thunderballObj);
 	thunderball.direction = point_direction (x, y, mouse_x, mouse_y+64);
 	thunderball.speed = 30;
 }
 
+	// --Viento--
+
+if habilidad && !instance_exists(windcolision) && (cursorObj.sprite_index == vientoCur) {
+	vientoTmr = vientoFrm;
+	vientoTmr--;
+	instance_create_layer(playerObj.x, playerObj.y, "Instances", windcolision);
+	if vientoTmr <= 0 {
+	instance_destroy(windcolision);
+	}
+}
 
 // Suelo
 
