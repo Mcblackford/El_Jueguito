@@ -36,6 +36,7 @@ if !(izq or der) || (izq && der) {
 	moving = false;
 }
 
+if (keyboard_check_pressed(vk_tab)){invGUIObj.activo = !invGUIObj.activo;}
 
 // Habilidades
 
