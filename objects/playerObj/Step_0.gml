@@ -195,7 +195,15 @@ if !place_meeting(x, y, deathObj) && !place_meeting(x, y, puertaObj) && !place_m
 	place_meeting(x,y,roomwalkObj) {
 		sprite_index = caminSpr;
 	} else {
+		if cursorObj.cursorstate <= 1 {
 		sprite_index = tiesoSpr;
+		}
+		if cursorObj.cursorstate == 2 {
+		sprite_index = tiesoupSpr;
+		}
+		if cursorObj.cursorstate == 3 {
+		sprite_index = tiesodownSpr;
+		}
 	}
 	
 	if ( yspd < 0 ) && (contSuelo == false) {

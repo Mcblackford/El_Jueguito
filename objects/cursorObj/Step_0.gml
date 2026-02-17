@@ -19,3 +19,16 @@ if key5 {sprite_index = imanCur}
 if key6 {sprite_index = ruidoCur}
 if key7 {sprite_index = armoniaCur}
 }
+
+if place_meeting(x, y, pantallaleft) {
+	cursorstate = 0;
+}
+if place_meeting(x, y, pantallaright) {
+	cursorstate = 1;
+}
+if place_meeting(x, y, pantallaup) {
+	cursorstate = 2;
+}
+if place_meeting(x, y, pantalladown) {
+	cursorstate = 3;
+}
