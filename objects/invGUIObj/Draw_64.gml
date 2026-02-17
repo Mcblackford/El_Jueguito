@@ -16,6 +16,8 @@ for (var i=0;i<inventariosize;i++){
 	draw_text(x + 175, y + 202 + posy,itemVar[ITEM_VAR_NAME]);
 
 	draw_set_halign(fa_right);
-	draw_text(x + 610, y + 202 + posy, "x" + string(item[INVENTARIO_CANTIDAD]))
+	draw_text(x + 610, y + 202 + posy, "x" + string(item[INVENTARIO_CANTIDAD]));
 	draw_set_halign(fa_left);
+	
+	draw_sprite_ext(invselecSpr, 0, x + 175, y + 202 + posy,1 , 1,0,c_white,1);
 }

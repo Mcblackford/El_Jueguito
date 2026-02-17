@@ -129,6 +129,7 @@
     {"id":{"name":"imanCur","path":"sprites/imanCur/imanCur.yy",},},
     {"id":{"name":"inbtwSpr","path":"sprites/inbtwSpr/inbtwSpr.yy",},},
     {"id":{"name":"inventarioSpr","path":"sprites/inventarioSpr/inventarioSpr.yy",},},
+    {"id":{"name":"invselecSpr","path":"sprites/invselecSpr/invselecSpr.yy",},},
     {"id":{"name":"jumporbSpr","path":"sprites/jumporbSpr/jumporbSpr.yy",},},
     {"id":{"name":"metalbloqueSpr","path":"sprites/metalbloqueSpr/metalbloqueSpr.yy",},},
     {"id":{"name":"muerteSpr","path":"sprites/muerteSpr/muerteSpr.yy",},},
