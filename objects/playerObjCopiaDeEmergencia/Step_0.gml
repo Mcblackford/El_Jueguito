@@ -1,0 +1,250 @@
+depth = -99;
+
+// Colisión de Pantalla
+
+if !instance_exists(pantallaup) {
+	instance_create_depth(x,y,-98,pantallaup)
+}
+if !instance_exists(pantalladown) {
+	instance_create_depth(x,y,-98,pantalladown)
+}
+if !instance_exists(pantallaleft) {
+	instance_create_depth(x,y,-98,pantallaleft)
+}
+if !instance_exists(pantallaright) {
+	instance_create_depth(x,y,-98,pantallaright)
+}
+
+// Inputs
+
+moving = false
+
+if (walljumpTimer <= 0) && !place_meeting(x,y,roomwalkObj) && !place_meeting(x, y, deathObj) {
+	der = keyboard_check( ord("D") );
+	izq = keyboard_check( ord("A") );
+	jump = keyboard_check_pressed( vk_space );
+	jumphold = keyboard_check(vk_space);
+	habilidad = mouse_check_button_pressed(mb_left);
+}
+
+interact = keyboard_check_pressed( ord("E"))
+arriba = keyboard_check( ord("W") );
+abajo = keyboard_check( ord("S") );
+
+if (izq or der) && !(izq && der) {
+	moving = true;
+}
+if !(izq or der) || (izq && der) {
+	moving = false;
+}
+
+// inventario
+if (keyboard_check_pressed(vk_tab)){invGUIObj.activo = !invGUIObj.activo;}
+
+var ver =keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+if (ver !=0){
+	invGUIObj.selector = clamp(invGUIObj.selector + ver, 0, ds_list_size(inventarioObj.inventario) - 1);
+}
+
+// Habilidades
+
+	// --Fuego--
+
+ if habilidad && !instance_exists(fireballObj) && (cursorObj.sprite_index == fuegoCur) {
+	var fireball = instance_create_layer (playerObj.x, playerObj.y-64, "Instances", fireballObj);
+	fireball.direction = point_direction (x, y, mouse_x, mouse_y-64);
+	fireball.speed = 20;
+}
+
+	// --Rayo--
+	
+ if habilidad && !instance_exists(thunderballObj) && (cursorObj.sprite_index == rayoCur) {
+	var thunderball = instance_create_layer (playerObj.x, playerObj.y-64, "Instances", thunderballObj);
+	thunderball.direction = point_direction (x, y, mouse_x, mouse_y+64);
+	thunderball.speed = 30;
+}
+
+	// --Viento--
+
+if habilidad && !instance_exists(windcolision) && (cursorObj.sprite_index == vientoCur) {
+	vientoTmr = vientoFrm;
+	vientoTmr--;
+	instance_create_layer(playerObj.x, playerObj.y, "Instances", windcolision);
+	if vientoTmr <= 0 {
+	instance_destroy(windcolision);
+	}
+}
+
+// Movimiento y Coyotehang
+
+xspd = ( der - izq ) * moveSpd;
+
+if place_meeting(x,y,roomwalkObj) {
+	xspd = -3 * image_xscale
+}
+
+if moving == false && !place_meeting(x,y,roomwalkObj) {
+	xspd = -1.2 * image_xscale
+	accelTimer--;
+} else {
+	accelTimer = accelFrames
+}
+
+if (accelTimer <= 0) && !place_meeting(x,y,roomwalkObj) {
+	xspd = 0
+}
+
+if coyoteHangTmr > 0 {
+	coyoteHangTmr--;
+} else {
+	yspd += gravedad;
+	setOnground(false)
+}
+
+
+// Deslizamiento Babosa
+
+if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && (moving == true) {
+	yspd += wallGrav;
+	yspd = min(yspd, wallFallMax);
+}
+
+
+// Salto
+
+if contSuelo == true {
+	jumpCount = 0;
+	coyoteJumpTmr = coyoteJumpFrm;
+} else {
+	coyoteJumpTmr--;
+	if jumpCount == 0 && coyoteJumpTmr <= 0 {
+		jumpCount = 1;
+	}
+}
+
+if place_meeting(x, y, jumpOrb) {
+	jumpCount = 0;
+}
+
+if jump && ( jumpCount < jumpMax ) {
+	jumpCount++;
+	jumpTimer = jumpHoldFrames;
+}
+
+if !jumphold {
+	jumpTimer = 0;
+}
+
+if jumpTimer > 0 {
+	yspd = jumpSpd;
+	jumpTimer--;
+}
+
+
+// Walljump
+
+if place_meeting(x, y, walljumpableObj) && (contSuelo == false) && jump && (moving == true) {
+	jumpCount = jumpCount -1;
+	yspd = wallyspd;
+	walljumpTimer = walljumpFrames;
+} else if contSuelo == true {
+	walljumpTimer = 0
+}
+
+if walljumpTimer > 0 {
+	wallspd = wallxspd * (izq - der);
+	xspd = wallspd;
+	walljumpTimer--;
+}
+
+if walljumpTimer <= 0 {
+	wallspd = 0;
+}
+
+
+// Colision
+
+if xspd != 0 && place_meeting(x + xspd, y, colisionObj){
+	var _pixelcheck = sign(xspd);
+	while !place_meeting(x + _pixelcheck, y, colisionObj) {
+		x += _pixelcheck;
+	}
+	xspd = 0;
+}
+
+if yspd != 0 && place_meeting(x, y + yspd, colisionObj) {
+	var _pixelcheck = sign(yspd);
+	while !place_meeting(x, y + _pixelcheck, colisionObj) {
+	y += _pixelcheck;
+	}
+	yspd = 0;
+}
+
+x += xspd;
+y += yspd;
+
+
+// Sprites
+
+if der {
+	image_xscale = -2.5;
+}
+if izq {
+	image_xscale = 2.5;
+}
+
+if !place_meeting(x, y, deathObj) && !place_meeting(x, y, puertaObj) && !place_meeting(x, y, puertaSumObj) {
+	
+	deathTimer = 0;
+	
+	if (moving == true) && ( yspd == 0 ) && (contSuelo == true) ||
+	collision_rectangle(x-6, y, x+6, y+1, colisionMovObj, true, true) && moving==true && yspd = 5 ||
+	place_meeting(x,y,roomwalkObj) {
+		sprite_index = caminSpr;
+	} else {
+		if cursorObj.cursorstate <= 1 {
+		sprite_index = tiesoSpr;
+		}
+		if cursorObj.cursorstate == 2 {
+		sprite_index = tiesoupSpr;
+		}
+		if cursorObj.cursorstate == 3 {
+		sprite_index = tiesodownSpr;
+		}
+	}
+	
+	if ( yspd < 0 ) && (contSuelo == false) {
+		sprite_index = saltoSpr;
+	}
+	
+	if ( yspd > 6 ) && (contSuelo == false) {
+		sprite_index = caidaSpr;
+	}
+		
+	if ( accelTimer > 0 ) && (moving == false) && (contSuelo == true) && !place_meeting(x,y,roomwalkObj) {
+		sprite_index = inbtwSpr;
+	}
+	
+	if place_meeting(x, y, walljumpableObj) && (moving == true) && (yspd > 0) {
+		sprite_index = wallcaidaSpr;
+	}
+	
+	if place_meeting(x, y, walljumpableObj) && (yspd <= 0) && (moving = true) && contSuelo == false {
+		sprite_index = wallsubidaSpr;
+	}	
+} else if (place_meeting(x, y, deathObj) || place_meeting(x, y, puertaObj) || place_meeting(x, y, puertaSumObj)) {
+	sprite_index = deathSpr;
+	depth = -120;
+	deathTimer++;
+	
+	if deathTimer >= deathMaxTimer {
+		if (file_exists("checkpoint.ini")) {
+			ini_open("checkpoint.ini")
+			
+			other.x = ini_read_real ("player", "x", x);
+			other.y = ini_read_real ("player", "y", y);
+			
+			ini_close();
+		}
+	}
+}

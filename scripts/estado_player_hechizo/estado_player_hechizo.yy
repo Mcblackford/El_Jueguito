@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"estado_player_hechizo",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"estado_player_hechizo",
+  "parent":{
+    "name":"Estados",
+    "path":"folders/Objetos/Jugador/Estados.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
