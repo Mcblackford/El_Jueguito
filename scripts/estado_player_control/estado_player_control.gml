@@ -38,31 +38,41 @@ if !(izq or der) || (izq && der) {
 
 xspd = ( der - izq ) * moveSpd;
 
-// Aceleración
-
-if moving == false && !place_meeting(x,y,roomwalkObj) {
-	xspd = -1.2 * image_xscale
-	accelTimer--;
+if collision_rectangle(x-22, y, x+22, y+5, colisionObj, true, true) {
+	contsuelo = true;
+	coyoteHangTmr = 0;
+	coyoteJumpTmr = 0;
 } else {
-	accelTimer = accelFrames
+	contsuelo = false;
+	coyoteHangTmr++;
+	coyoteJumpTmr++;
 }
 
-if (accelTimer <= 0) && !place_meeting(x,y,roomwalkObj) {
-	xspd = 0
+// Aceleración
+
+if moving == false {
+	xspd = -1.2 * image_xscale;
+	accelTimer--;
+} else {
+	accelTimer = accelFrames;
+}
+
+if (accelTimer <= 0) {
+	xspd = 0;
+	accelTimer = 0;
 }
 
 // CoyoteTime
 
-if coyoteHangTmr > 0 {
-	coyoteHangTmr--;
+if coyoteHangTmr < coyoteHangFrm {
+	yspd += 0;
 } else {
 	yspd += gravedad;
-	setOnground(false)
 }
 
 // Deslizamiento de babosa
 
-if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && (moving == true) {
+if place_meeting(x , y, walljumpableObj) && !contsuelo && yspd > 0 && (moving == true) {
 	yspd += wallGrav;
 	yspd = min(yspd, wallFallMax);
 }
@@ -74,12 +84,10 @@ if jumpTimer > 0 {
 	jumpTimer--;
 }
 
-if contSuelo == true {
+if contsuelo == true {
 	jumpCount = 0;
-	coyoteJumpTmr = coyoteJumpFrm;
 } else {
-	coyoteJumpTmr--;
-	if jumpCount == 0 && coyoteJumpTmr <= 0 {
+	if jumpCount == 0 && coyoteJumpTmr >= coyoteJumpFrm {
 		jumpCount = 1;
 	}
 }
@@ -99,12 +107,12 @@ if !jumphold {
 
 // Walljump
 
-if place_meeting(x, y, walljumpableObj) && (contSuelo == false) && jump && (moving == true) {
+if place_meeting(x, y, walljumpableObj) && (contsuelo == false) && jump && (moving == true) {
 	jumpCount = jumpCount -1;
 	yspd = wallyspd;
 	walljumpTimer = walljumpFrames;
 	estado = states.walljump;
-} else if contSuelo == true {
+} else if contsuelo == true {
 	walljumpTimer = 0
 }
 
@@ -160,7 +168,7 @@ if tab {
 
 // Sprites
 
-if (moving == true) && (contSuelo == true) && (yspd == 0) {
+if (moving == true) && (coyoteHangTmr < coyoteHangFrm) && (yspd == 0) {
 		sprite_index = caminSpr;
 	} else {
 		if cursorObj.cursorstate <= 1 {
@@ -174,15 +182,15 @@ if (moving == true) && (contSuelo == true) && (yspd == 0) {
 		}
 	}
 	
-	if ( yspd < 0 ) && (contSuelo == false) {
+	if ( yspd < 0 ) && (contsuelo == false) {
 		sprite_index = saltoSpr;
 	}
 	
-	if ( yspd > 6 ) && (contSuelo == false) {
+	if ( yspd > 0 ) && (contsuelo == false) {
 		sprite_index = caidaSpr;
 	}
 		
-	if ( accelTimer > 0 ) && (moving == false) && (contSuelo == true) && !place_meeting(x,y,roomwalkObj) {
+	if ( accelTimer > 0 ) && (moving == false) && (contsuelo == true) {
 		sprite_index = inbtwSpr;
 	}
 	
@@ -190,7 +198,7 @@ if (moving == true) && (contSuelo == true) && (yspd == 0) {
 		sprite_index = wallcaidaSpr;
 	}
 	
-	if place_meeting(x, y, walljumpableObj) && (yspd <= 0) && (moving = true) && contSuelo == false {
+	if place_meeting(x, y, walljumpableObj) && (yspd <= 0) && (moving = true) && contsuelo == false {
 		sprite_index = wallsubidaSpr;
 	}
 	

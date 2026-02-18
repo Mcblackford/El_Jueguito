@@ -2,6 +2,8 @@ function estado_player_hechizo(){ // Inicio del Script
 
 depth = -99;
 
+yspd = 0;
+
 // Colision
 
 if xspd != 0 && place_meeting(x + xspd, y, colisionObj){

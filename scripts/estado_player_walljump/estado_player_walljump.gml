@@ -30,10 +30,11 @@ if yspd != 0 && place_meeting(x, y + yspd, colisionObj) {
 if walljumpTimer > 0 {
 	wallspd = wallxspd * (izq - der);
 	xspd = wallspd;
+	xspd -= walldeccel * (izq -der);
 	walljumpTimer--;
 }
 
-if contSuelo == true {
+if contsuelo == true {
 	walljumpTimer = 0
 }
 
