@@ -101,6 +101,7 @@
     {"id":{"name":"estado_player_control","path":"scripts/estado_player_control/estado_player_control.yy",},},
     {"id":{"name":"estado_player_hechizo","path":"scripts/estado_player_hechizo/estado_player_hechizo.yy",},},
     {"id":{"name":"estado_player_muerte","path":"scripts/estado_player_muerte/estado_player_muerte.yy",},},
+    {"id":{"name":"estado_player_tieso","path":"scripts/estado_player_tieso/estado_player_tieso.yy",},},
     {"id":{"name":"estado_player_transicion","path":"scripts/estado_player_transicion/estado_player_transicion.yy",},},
     {"id":{"name":"estado_player_walljump","path":"scripts/estado_player_walljump/estado_player_walljump.yy",},},
     {"id":{"name":"initItems","path":"scripts/initItems/initItems.yy",},},

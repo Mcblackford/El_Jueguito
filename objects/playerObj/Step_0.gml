@@ -20,6 +20,10 @@ else if (estado == states.hechizo) {
 	estado_player_hechizo()
 }
 
+else if (estado == states.tieso) {
+	estado_player_tieso()
+}
+
 ///
 
 // Colisión de Pantalla
@@ -35,12 +39,4 @@ if !instance_exists(pantallaleft) {
 }
 if !instance_exists(pantallaright) {
 	instance_create_depth(x,y,-98,pantallaright)
-}
-
-// inventario
-if (keyboard_check_pressed(vk_tab)){invGUIObj.activo = !invGUIObj.activo;}
-
-var ver =keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
-if (ver !=0){
-	invGUIObj.selector = clamp(invGUIObj.selector + ver, 0, ds_list_size(inventarioObj.inventario) - 1);
 }

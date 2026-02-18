@@ -14,7 +14,7 @@ interact = keyboard_check_pressed( ord("E"))
 jump = keyboard_check_pressed( vk_space );
 jumphold = keyboard_check(vk_space);
 habilidad = mouse_check_button_pressed(mb_left);
-tab = keyboard_check(vk_tab);
+tab = keyboard_check_pressed(vk_tab);
 
 if der {
 	image_xscale = -2.5;
@@ -151,9 +151,16 @@ if (place_meeting(x,y, roomwalkObj)) {
 	estado = states.transicion
 }
 
+// Tieso
+
+if tab {
+	invGUIObj.activo = true;
+	estado = states.tieso
+}
+
 // Sprites
 
-if (moving == true) && (contSuelo == true) {
+if (moving == true) && (contSuelo == true) && (yspd == 0) {
 		sprite_index = caminSpr;
 	} else {
 		if cursorObj.cursorstate <= 1 {
