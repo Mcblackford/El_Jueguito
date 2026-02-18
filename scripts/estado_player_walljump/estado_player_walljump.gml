@@ -4,8 +4,6 @@ depth = -99;
 
 // Inputs
 
-der = keyboard_check( ord("D") );
-izq = keyboard_check( ord("A") );
 habilidad = mouse_check_button_pressed(mb_left);
 tab = keyboard_check(vk_tab);
 

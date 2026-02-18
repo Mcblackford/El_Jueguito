@@ -37,7 +37,7 @@ wallGrav= 0.04;
 wallFallMax= 12;
 
 wallxspd = 8;
-wallyspd = -18;
+wallyspd = -12;
 
 walljumpFrames = 16;
 walljumpTimer = 0;
