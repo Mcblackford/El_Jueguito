@@ -146,8 +146,7 @@ if (place_meeting(x,y, roomwalkObj)) {
 
 // Sprites
 
-if (moving == true) && ( yspd == 0 ) && (contSuelo == true) ||
-	collision_rectangle(x-6, y, x+6, y+1, colisionMovObj, true, true) && moving==true && yspd = 5 {
+if (moving == true) && (contSuelo == true) {
 		sprite_index = caminSpr;
 	} else {
 		if cursorObj.cursorstate <= 1 {
