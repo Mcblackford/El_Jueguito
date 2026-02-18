@@ -1,3 +1,11 @@
+enum states {
+	tieso,
+	control,
+	walljump,
+	transicion,
+	hechizo,
+	muerte
+}
 
 estado = states.control;
 
@@ -14,8 +22,6 @@ function setOnground(_val = true) {
 }
 
 // Variables
-
-moving = false
 
 xspd = 0;
 yspd = 0;

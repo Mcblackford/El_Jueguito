@@ -1,11 +1,4 @@
-enum states {
-	tieso,
-	control,
-	walljump,
-	transicion,
-	hechizo,
-	muerte
-}
+
 
 estado = states.control;
 

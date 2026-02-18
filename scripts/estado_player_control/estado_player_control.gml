@@ -17,6 +17,8 @@ tab = keyboard_check(vk_tab);
 // Estado de Movimiento
 	// (moving = true) = El personaje se está moviendo
 	// (moving = false) = El personaje está quieto
+	
+moving = false
 
 if (izq or der) && !(izq && der) {
 	moving = true;
@@ -28,9 +30,6 @@ if !(izq or der) || (izq && der) {
 // Movimiento
 
 xspd = ( der - izq ) * moveSpd;
-
-x += xspd;
-y += yspd;
 
 // Aceleración
 
@@ -123,6 +122,9 @@ if yspd != 0 && place_meeting(x, y + yspd, colisionObj) {
 	}
 	yspd = 0;
 }
+
+x += xspd;
+y += yspd;
 
 // Hechizo
 
