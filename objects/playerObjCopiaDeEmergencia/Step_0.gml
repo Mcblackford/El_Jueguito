@@ -38,43 +38,6 @@ if !(izq or der) || (izq && der) {
 	moving = false;
 }
 
-// inventario
-if (keyboard_check_pressed(vk_tab)){invGUIObj.activo = !invGUIObj.activo;}
-
-var ver =keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
-if (ver !=0){
-	invGUIObj.selector = clamp(invGUIObj.selector + ver, 0, ds_list_size(inventarioObj.inventario) - 1);
-}
-
-// Habilidades
-
-	// --Fuego--
-
- if habilidad && !instance_exists(fireballObj) && (cursorObj.sprite_index == fuegoCur) {
-	var fireball = instance_create_layer (playerObj.x, playerObj.y-64, "Instances", fireballObj);
-	fireball.direction = point_direction (x, y, mouse_x, mouse_y-64);
-	fireball.speed = 20;
-}
-
-	// --Rayo--
-	
- if habilidad && !instance_exists(thunderballObj) && (cursorObj.sprite_index == rayoCur) {
-	var thunderball = instance_create_layer (playerObj.x, playerObj.y-64, "Instances", thunderballObj);
-	thunderball.direction = point_direction (x, y, mouse_x, mouse_y+64);
-	thunderball.speed = 30;
-}
-
-	// --Viento--
-
-if habilidad && !instance_exists(windcolision) && (cursorObj.sprite_index == vientoCur) {
-	vientoTmr = vientoFrm;
-	vientoTmr--;
-	instance_create_layer(playerObj.x, playerObj.y, "Instances", windcolision);
-	if vientoTmr <= 0 {
-	instance_destroy(windcolision);
-	}
-}
-
 // Movimiento y Coyotehang
 
 xspd = ( der - izq ) * moveSpd;

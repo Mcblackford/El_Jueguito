@@ -44,12 +44,3 @@ var ver =keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 if (ver !=0){
 	invGUIObj.selector = clamp(invGUIObj.selector + ver, 0, ds_list_size(inventarioObj.inventario) - 1);
 }
-
-// Sprites
-
-if der {
-	image_xscale = -2.5;
-}
-if izq {
-	image_xscale = 2.5;
-}

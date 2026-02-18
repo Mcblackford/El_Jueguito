@@ -4,6 +4,8 @@ depth = -99;
 
 // Inputs
 
+moving = false
+
 der = keyboard_check( ord("D") );
 izq = keyboard_check( ord("A") );
 arriba = keyboard_check( ord("W") );
@@ -14,11 +16,16 @@ jumphold = keyboard_check(vk_space);
 habilidad = mouse_check_button_pressed(mb_left);
 tab = keyboard_check(vk_tab);
 
+if der {
+	image_xscale = -2.5;
+}
+if izq {
+	image_xscale = 2.5;
+}
+
 // Estado de Movimiento
 	// (moving = true) = El personaje se está moviendo
 	// (moving = false) = El personaje está quieto
-	
-moving = false
 
 if (izq or der) && !(izq && der) {
 	moving = true;
@@ -62,6 +69,11 @@ if place_meeting(x , y, walljumpableObj) && !contSuelo && yspd > 0 && (moving ==
 
 // Salto
 
+if jumpTimer > 0 {
+	yspd = jumpSpd;
+	jumpTimer--;
+}
+
 if contSuelo == true {
 	jumpCount = 0;
 	coyoteJumpTmr = coyoteJumpFrm;
@@ -83,11 +95,6 @@ if jump && ( jumpCount < jumpMax ) {
 
 if !jumphold {
 	jumpTimer = 0;
-}
-
-if jumpTimer > 0 {
-	yspd = jumpSpd;
-	jumpTimer--;
 }
 
 // Walljump
