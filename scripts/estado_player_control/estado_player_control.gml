@@ -2,6 +2,12 @@ function estado_player_control(){ // Inicio del Script
 
 depth = -99;
 
+// Cooldown
+
+if habilidadcooldown > 0 {
+	habilidadcooldown--;
+}
+
 // Inputs
 
 moving = false
@@ -143,7 +149,7 @@ y += yspd;
 
 // Hechizo
 
-if habilidad {
+if habilidad && (habilidadcooldown <= 0) {
 	estado = states.hechizo
 }
 

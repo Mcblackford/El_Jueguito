@@ -4,6 +4,20 @@ depth = -99;
 
 yspd = 0;
 
+habilidad = mouse_check_button_pressed(mb_left);
+
+// Cooldown
+
+if habilidadcooldown <= 0 {
+	if place_meeting(x, y+1, colisionObj) {
+		habilidadcooldown = 45;
+	} else {
+		habilidadcooldown = 90;
+	}
+} else {
+	habilidadcooldown--;
+}
+
 // Colision
 
 if xspd != 0 && place_meeting(x + xspd, y, colisionObj){
@@ -24,9 +38,11 @@ if yspd != 0 && place_meeting(x, y + yspd, colisionObj) {
 
 // Habilidades
 
+if (place_meeting(x,y+1,colisionObj) && (habilidadcooldown == 30)) || (!place_meeting(x,y+1,colisionObj) && (habilidadcooldown == 75)) {
+
 	// --Fuego--
 
- if !instance_exists(fireballObj) && (cursorObj.sprite_index == fuegoCur) {
+if !instance_exists(fireballObj) && (cursorObj.sprite_index == fuegoCur) {
 	var fireball = instance_create_layer (playerObj.x, playerObj.y-64, "Instances", fireballObj);
 	fireball.direction = point_direction (x, y, mouse_x, mouse_y-64);
 	fireball.speed = 20;
@@ -56,6 +72,8 @@ if !instance_exists(magnetObj) && (cursorObj.sprite_index == imanCur) {
 if !instance_exists(cloudObj) && (cursorObj.sprite_index == nubeCur) {
 	var nube = instance_create_layer(mouse_x,mouse_y, "instances", cloudObj);
 }
+
+} // Fin de Habilidad
 
 // Sprites
 

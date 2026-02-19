@@ -50,3 +50,5 @@ coyoteHangTmr = 0;
 
 coyoteJumpFrm = 5;
 coyoteJumpTmr = 0;
+
+habilidadcooldown = 0;
