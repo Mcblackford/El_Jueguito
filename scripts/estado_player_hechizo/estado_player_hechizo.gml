@@ -46,6 +46,17 @@ if !instance_exists(windcolision) && (cursorObj.sprite_index == vientoCur) {
 	instance_create_layer(playerObj.x, playerObj.y, "Instances", windcolision);
 }
 
+	// --Iman--
+	
+if !instance_exists(magnetObj) && (cursorObj.sprite_index == imanCur) {
+	var magnetpoint = instance_create_layer(mouse_x,mouse_y, "instances", magnetObj);
+}
+
+	// --Nube--
+if !instance_exists(cloudObj) && (cursorObj.sprite_index == nubeCur) {
+	var nube = instance_create_layer(mouse_x,mouse_y, "instances", cloudObj);
+}
+
 // Sprites
 
 if place_meeting(x, y+1, colisionObj) {
