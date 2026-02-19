@@ -28,18 +28,18 @@ for (var i=i1;i<i2;i++){
 	draw_text(x + 610, y + 202 + posy, "x" + string(item[INVENTARIO_CANTIDAD]));
 	draw_set_halign(fa_left);
 	
-	draw_set_font(scrambled_eggs_x20)
+	draw_set_font(scrambled_eggs_x30)
 	// botones
 	if (botones && sub_selector == 0) {
     draw_sprite_ext(invselecSpr, frame, x + 672, y + 618, 1.53, 3.2,0, c_white, 0.5); // Dibujar resaltado
 	}
-	draw_text(x + 489 + 90, y + 795 + 10, "xd");
+	draw_text(x + 730, y + 618, "XD");
 
 	//boton 2
 	if (botones && sub_selector == 1) {
     draw_sprite_ext(invselecSpr, frame, x + 962, y + 618, 1.53, 3.2,0, c_white, 0.5);
 	}
-	draw_text(700 + 90, 795 + 10, "USAR");
+	draw_text(x + 1010, y + 618, "USAR");
 	draw_set_font(short_story_x16)
 	posy += 39; // siempre ultimo
 }

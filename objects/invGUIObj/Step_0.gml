@@ -11,9 +11,8 @@ if (activo) {
             } 
             else if (sub_selector == 1) {
 				 // usar
-                show_message("Carayo!, te has curado 10 puntos de vida!, eso no es muy proplayer de tu parte...");
+               usarItem(item[INVENTARIO_ITEM]);
                 if (item[INVENTARIO_CANTIDAD] <= 0) {
-                    ds_list_delete(inventarioObj.inventario, selector);
                     selector = max(0, selector - 1);
                     botones = false;
                 }
