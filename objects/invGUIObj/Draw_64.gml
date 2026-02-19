@@ -28,5 +28,17 @@ for (var i=i1;i<i2;i++){
 	draw_text(x + 610, y + 202 + posy, "x" + string(item[INVENTARIO_CANTIDAD]));
 	draw_set_halign(fa_left);
 	
-	posy += 39;
+	// botones
+	if (botones && sub_selector == 0) {
+    draw_sprite_ext(invselecSpr, frame, x + 672, y + 618, 1.53, 3.2,0, c_white, 0.5); // Dibujar resaltado
+	}
+	draw_text(x + 489 + 90, y + 795 + 10, "USAR");
+
+	//boton 2
+	if (botones && sub_selector == 1) {
+    draw_sprite_ext(invselecSpr, frame, x + 962, y + 618, 1.53, 3.2,0, c_white, 0.5);
+	}
+	draw_text(700 + 90, 795 + 10, "OTRO");
+	
+	posy += 39; // siempre ultimo
 }

@@ -39,14 +39,33 @@ if yspd != 0 && place_meeting(x, y + yspd, colisionObj) {
 
 // Inventario
 
+
 if tab {
 	invGUIObj.activo = false;
 	estado = states.control;
 }
 
 var ver = abajo - arriba;
-if (ver !=0){
-	invGUIObj.selector = clamp(invGUIObj.selector + ver, 0, ds_list_size(inventarioObj.inventario) - 1);
+var hor= keyboard_check_pressed(ord("D")) - keyboard_check_pressed(ord("A"));
+if (!invGUIObj.botones) {
+	if (ver !=0){
+		invGUIObj.selector = clamp(invGUIObj.selector + ver, 0, ds_list_size(inventarioObj.inventario) - 1);
+	}
+	if (keyboard_check_pressed(ord("D"))) {
+		invGUIObj.botones=true;
+		invGUIObj.sub_selector=0;
+	}
+} else {
+    if (keyboard_check_pressed(ord("D"))) {
+        invGUIObj.sub_selector = min(invGUIObj.sub_selector + 1, 1);
+    }
+    if (keyboard_check_pressed(ord("A"))) {
+        if (invGUIObj.sub_selector > 0) {
+            invGUIObj.sub_selector -= 1;
+        } else {
+            invGUIObj.botones = false;
+        }
+    }
 }
 
 } // Fin del Script
