@@ -1,4 +1,3 @@
 endtimer = 0;
-
-deccelval = 1;
-deccel = 0;
+deccel = 0.5;
+vdec = 0;
