@@ -69,7 +69,7 @@ if !instance_exists(magnetObj) && (cursorObj.sprite_index == imanCur) {
 }
 
 	// --Nube--
-if !instance_exists(cloudObj) && (cursorObj.sprite_index == nubeCur) {
+if (cursorObj.sprite_index == nubeCur) {
 	var nube = instance_create_layer(mouse_x,mouse_y, "instances", cloudObj);
 }
 
