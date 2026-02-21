@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"nubedeath",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"nubedeath",
+  "parent":{
+    "name":"cloudHab",
+    "path":"folders/Objetos/Habilidades/cloudHab.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

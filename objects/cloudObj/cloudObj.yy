@@ -9,8 +9,8 @@
   "name":"cloudObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Habilidades",
-    "path":"folders/Objetos/Habilidades.yy",
+    "name":"cloudHab",
+    "path":"folders/Objetos/Habilidades/cloudHab.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"nubeSpr",
-    "path":"sprites/nubeSpr/nubeSpr.yy",
+    "name":"nubeSpawnSpr",
+    "path":"sprites/nubeSpawnSpr/nubeSpawnSpr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

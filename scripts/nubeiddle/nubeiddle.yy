@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"nubeiddle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"nubeiddle",
+  "parent":{
+    "name":"cloudHab",
+    "path":"folders/Objetos/Habilidades/cloudHab.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

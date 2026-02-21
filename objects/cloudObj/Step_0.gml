@@ -1,7 +1,24 @@
+depth = -110;
 endtimer++;
-	
-if endtimer > 340 {
-	instance_destroy()
+image_xscale = 2.7;
+image_yscale = 2.7;
+
+// Estados
+
+if estadonube == cloudstate.spawn {
+	nubespawn()
 }
 
-depth = -98;
+else if estadonube == cloudstate.iddle {
+	nubeiddle()
+}
+
+else if estadonube == cloudstate.death {
+	nubedeath()
+}
+
+// Comportamiento
+
+if electrifiedcloud == false && place_meeting(x,y,thunderballObj) {
+	electrifiedcloud = true;
+}

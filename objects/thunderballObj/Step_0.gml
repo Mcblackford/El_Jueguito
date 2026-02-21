@@ -1,4 +1,4 @@
-if place_meeting(x, y, colisionObj) || (place_meeting(x, y, semisolidObj) && semisolidObj.solidState == true) {
+if place_meeting(x, y, colisionObj) || place_meeting(x,y, cloudObj) {
 	instance_destroy()
 }
 

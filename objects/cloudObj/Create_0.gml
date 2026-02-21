@@ -1,3 +1,10 @@
 endtimer = 0;
-deccel = 0.5;
-vdec = 0;
+electrifiedcloud = false;
+
+enum cloudstate {
+	spawn,
+	iddle,
+	death
+}
+
+estadonube = cloudstate.spawn;
