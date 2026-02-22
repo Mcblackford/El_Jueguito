@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cofre_cerrado",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cofre_cerrado",
+  "parent":{
+    "name":"Cofre",
+    "path":"folders/Objetos/ItemsObjs/Cofre.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
