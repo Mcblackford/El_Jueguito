@@ -6,6 +6,10 @@ if estadodecofre == estadosdecofre.cerrado {
 	cofre_cerrado()
 }
 
+else if estadodecofre == estadosdecofre.espera {
+	cofre_espera()
+}
+
 else if estadodecofre == estadosdecofre.abriendo {
 	cofre_abriendo()
 }
