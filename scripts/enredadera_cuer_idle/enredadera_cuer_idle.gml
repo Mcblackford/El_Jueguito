@@ -2,12 +2,11 @@ function enredadera_cuer_idle(){
 
 sprite_index = enredaderaCuerdaSpr;
 
-var enredaderacontacto = place_meeting(x,y,enredaderaObj);
+target = instance_nearest(x,y,enredaderaObj)
 
-if enredaderacontacto {
-	if place_meeting(x,y,fireballObj) || (enredaderaObj.estadoenredacofre) {
-		estadoenredacuerda = enredestado.burn
-	}
+if place_meeting(x,y,fireballObj) {
+	estadoenredacuerda = enredestado.burn;
+	target.estadoenredacofre = enredestadocofre.burn;
 }
 
 }
