@@ -7,9 +7,9 @@ if estadodecofre == estadosdecofre.cerrado {
 }
 
 else if estadodecofre == estadosdecofre.abriendo {
-	cofre_cerrado()
+	cofre_abriendo()
 }
 
 else if estadodecofre == estadosdecofre.abierto {
-	cofre_cerrado()
+	cofre_abierto()
 }
