@@ -31,7 +31,7 @@
   "origin":4,
   "parent":{
     "name":"Partner",
-    "path":"folders/Sprites/Partner.yy",
+    "path":"folders/Sprites/Items/Partner.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
