@@ -6,3 +6,5 @@ enum estadosdecofre {
 }
 
 estadodecofre = estadosdecofre.cerrado;
+
+cofregravedad = 0.3;
