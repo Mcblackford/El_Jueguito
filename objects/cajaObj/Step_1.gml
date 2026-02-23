@@ -1,7 +1,6 @@
 depth = -96
 
 cajadecel++;
-cajahspd = cajaxspd * sidedvalue;
 
 if cursorObj.cursorstate == 1 {
 	sidedvalue = -1;
@@ -35,9 +34,15 @@ if cajaxspd == 0 {
 		randomwind = random_range(0.9,1.1);
 }
 
-if cajadecel >= cajaxspd || place_meeting(x+cajahspd,y,colisionObj) {
+if cajadecel >= cajaxspd || place_meeting(x+sidedvalue,y,colisionObj) {
 	cajadecel = 0;
 	cajaxspd = 0;
+	if place_meeting(x,y,ColisionDer) {
+		x += -1;
+	}
+	if place_meeting(x,y,ColisionIzq) {
+		x += 1;
+	}
 } else {
 	
 x += (cajaxspd - cajadecel) * randomwind * sidedvalue;
