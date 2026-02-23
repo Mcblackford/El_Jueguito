@@ -42,7 +42,7 @@
     ],
     "top":12,
   },
-  "origin":0,
+  "origin":6,
   "parent":{
     "name":"Colisiones",
     "path":"folders/Sprites/Colisiones.yy",
@@ -95,7 +95,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":0,
+    "yorigin":96,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

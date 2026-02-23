@@ -26,5 +26,5 @@ if !place_meeting(x,y,enredaderaObj) && !collision_rectangle(x-20,y,x+20,y+1,col
 	var plataforma = collision_rectangle(x-20,y,x+20,y+1,colisionObj,true,true)
 	if (plataforma) {
 		y = plataforma.y;
-}
+	}
 }
