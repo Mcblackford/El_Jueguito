@@ -6,8 +6,8 @@ if (playerObj.estado == states.hechizo) && (cursorObj.sprite_index == vientoCur)
 		x = playerObj.x;
 		y = playerObj.y;
 		
-		image_xscale = 15;
-		image_yscale = 15;
+		image_xscale = 18;
+		image_yscale = 18;
 		
 		if cursorObj.cursorstate == 1 {
 			sprite_index = windleftcolSpr;

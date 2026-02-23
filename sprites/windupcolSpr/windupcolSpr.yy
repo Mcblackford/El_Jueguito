@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"windupcolSpr",
   "bboxMode":0,
-  "bbox_bottom":4,
+  "bbox_bottom":6,
   "bbox_left":2,
   "bbox_right":13,
   "bbox_top":0,

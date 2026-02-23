@@ -3,7 +3,7 @@
   "%Name":"windrightcolSpr",
   "bboxMode":0,
   "bbox_bottom":13,
-  "bbox_left":11,
+  "bbox_left":9,
   "bbox_right":15,
   "bbox_top":2,
   "collisionKind":1,
