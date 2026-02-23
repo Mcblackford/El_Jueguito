@@ -1,62 +1,24 @@
 depth = -96
 
-cajadecel++;
-
-if cursorObj.cursorstate == 1 {
-	sidedvalue = -1;
-}
-if cursorObj.cursorstate == 0 {
-	sidedvalue = 1;
-}
-if cursorObj.cursorstate > 1 {
-	sidedvalue = 0;
+if estadocaja == cajastate.idle {
+	caja_iddle()
+	caja_moveable()
 }
 
-if place_meeting(x,y,windcolision) {
-	if cursorObj.cursordistance == 1 {
-		vientofuer = 5;
-		cajadecel = 0.1;
-	} else if cursorObj.cursordistance == 2 {
-		vientofuer = 10;
-		cajadecel = 0.5;
-	} else if cursorObj.cursordistance == 3 {
-		vientofuer = 20;
-		cajadecel = 9;
-	} else if cursorObj.cursordistance == 4 {
-		vientofuer = 26;
-		cajadecel = 1.2;
-	}
-	cajadecel = 0;
-	cajaxspd = vientofuer;
+else if estadocaja == cajastate.burning {
+	caja_burning()
+	caja_moveable()
 }
 
-if cajaxspd == 0 {
-		randomwind = random_range(0.9,1.1);
+else if estadocaja == cajastate.onfire {
+	caja_onfire()
+	caja_moveable()
 }
 
-if cajadecel >= cajaxspd || place_meeting(x+sidedvalue,y,colisionObj) {
-	cajadecel = 0;
-	cajaxspd = 0;
-	if place_meeting(x,y,ColisionDer) {
-		x += -1;
-	}
-	if place_meeting(x,y,ColisionIzq) {
-		x += 1;
-	}
-} else {
-	
-x += (cajaxspd - cajadecel) * randomwind * sidedvalue;
-
+else if estadocaja == cajastate.todust {
+	caja_todust()
 }
 
-if !collision_rectangle(x,y,x+sprite_width,y+1,colisionObj,true,true) {
-	cajagravedad++;
-	y += cajagravedad;
-} else {
-	y+= 0;
-	var plataforma = collision_rectangle(x,y,x+sprite_width,y+1,colisionObj,true,true)
-	if (plataforma) {
-		y = plataforma.y;
-		cajagravedad = 0;
-	}
+else if estadocaja == cajastate.dusted {
+	caja_dusted()
 }

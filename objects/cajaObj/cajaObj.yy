@@ -9,8 +9,8 @@
   "name":"cajaObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Plataformas y colisiones",
-    "path":"folders/Objetos/Plataformas y colisiones.yy",
+    "name":"Caja",
+    "path":"folders/Objetos/Plataformas y colisiones/Caja.yy",
   },
   "parentObjectId":null,
   "persistent":false,
