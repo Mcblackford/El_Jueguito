@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"item1_hidden",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"item1_hidden",
+  "parent":{
+    "name":"itemEjem1",
+    "path":"folders/Objetos/ItemsObjs/itemEjem1.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
