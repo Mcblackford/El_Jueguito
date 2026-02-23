@@ -10,8 +10,21 @@ if cursorObj.cursorstate == 0 {
 }
 
 if place_meeting(x,y,windcolision) {
+	if cursorObj.cursordistance == 1 {
+		vientofuer = 5;
+		cajadecel = 0.1;
+	} else if cursorObj.cursordistance == 2 {
+		vientofuer = 10;
+		cajadecel = 0.5;
+	} else if cursorObj.cursordistance == 3 {
+		vientofuer = 15;
+		cajadecel = 1;
+	} else if cursorObj.cursordistance == 4 {
+		vientofuer = 20;
+		cajadecel = 1.5;
+	}
 	cajadecel = 0;
-	cajaxspd = 20;
+	cajaxspd = vientofuer;
 }
 
 if cajadecel >= cajaxspd || place_meeting(x+cajaxspd,y,colisionObj) {

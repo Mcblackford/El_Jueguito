@@ -20,6 +20,8 @@ if key6 {sprite_index = ruidoCur}
 if key7 {sprite_index = armoniaCur}
 }
 
+// Estado de Colisión de Pantalla
+
 if place_meeting(x, y, pantallaleft) {
 	cursorstate = 0;
 }
@@ -32,3 +34,25 @@ if place_meeting(x, y, pantallaup) {
 if place_meeting(x, y, pantalladown) {
 	cursorstate = 3;
 }
+
+// Lejanía con el jugador
+
+var _target = playerObj;
+if instance_exists(_target) {
+	var _long_dist = 600;
+	var _medium_dist = 350;
+	var _close_dist = 200;
+	var _dist = point_distance(_target.x, _target.y-64, mouse_x, mouse_y);
+	
+	if _dist <= _close_dist {
+		cursordistance = 1;
+	} else if (_dist > _close_dist) && (_dist <= _medium_dist) {
+		cursordistance = 2;
+	} else if (_dist > _medium_dist) && (_dist <= _long_dist) {
+		cursordistance = 3;
+	} else if (_dist > _long_dist) {
+		cursordistance = 4;
+	}
+}
+		
+	

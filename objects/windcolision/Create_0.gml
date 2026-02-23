@@ -1,0 +1,1 @@
+windtimer = 0;

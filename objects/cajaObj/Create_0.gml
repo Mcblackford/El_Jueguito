@@ -4,3 +4,4 @@ cajadecel = 1.5;
 cajagravedad = 0.1;
 randomwind = 0;
 sidedvalue = 0;
+vientofuer = 0;
