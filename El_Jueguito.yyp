@@ -82,6 +82,7 @@
     {"id":{"name":"enredaderaCuerdaObj","path":"objects/enredaderaCuerdaObj/enredaderaCuerdaObj.yy",},},
     {"id":{"name":"enredaderaObj","path":"objects/enredaderaObj/enredaderaObj.yy",},},
     {"id":{"name":"fireballObj","path":"objects/fireballObj/fireballObj.yy",},},
+    {"id":{"name":"Fireballspawner","path":"objects/Fireballspawner/Fireballspawner.yy",},},
     {"id":{"name":"inventarioObj","path":"objects/inventarioObj/inventarioObj.yy",},},
     {"id":{"name":"invGUIObj","path":"objects/invGUIObj/invGUIObj.yy",},},
     {"id":{"name":"itemEjem1","path":"objects/itemEjem1/itemEjem1.yy",},},

@@ -8,6 +8,9 @@ if cursorObj.cursorstate == 1 {
 if cursorObj.cursorstate == 0 {
 	sidedvalue = 1;
 }
+if cursorObj.cursorstate > 1 {
+	sidedvalue = 0;
+}
 
 if place_meeting(x,y,windcolision) {
 	if cursorObj.cursordistance == 1 {
