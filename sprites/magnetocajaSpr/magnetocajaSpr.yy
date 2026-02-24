@@ -56,7 +56,7 @@
     ],
     "top":9,
   },
-  "origin":7,
+  "origin":6,
   "parent":{
     "name":"Colicajas",
     "path":"folders/Sprites/Colisiones/Colicajas.yy",
@@ -150,7 +150,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":96,
+    "xorigin":0,
     "yorigin":192,
   },
   "swatchColours":null,
