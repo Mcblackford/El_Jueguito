@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"magnetblock_movement",
+  "%Name":"magnetblock_stay",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"magnetblock_movement",
+  "name":"magnetblock_stay",
   "parent":{
     "name":"MagnetBlock",
     "path":"folders/Objetos/Plataformas y colisiones/MagnetBlock.yy",

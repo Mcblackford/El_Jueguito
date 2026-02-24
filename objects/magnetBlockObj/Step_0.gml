@@ -1,11 +1,21 @@
 depth = -96
 
-if magnetoestado == magnetstate.delectrified {
+if magnetoestado == magnetstate.staydelectrified {
 	magnetblock_regular()
-	magnetblock_movement()
+	magnetblock_stay()
 }
 
-else if magnetoestado == magnetstate.electrified {
+else if magnetoestado == magnetstate.stayelectrified {
 	magnetblock_electrified()
-	magnetblock_movement()
+	magnetblock_stay()
+}
+
+else if magnetoestado == magnetstate.movetodelectrified {
+	magnetblock_regular()
+	magnetblock_moveto()
+}
+
+else if magnetoestado == magnetstate.movetoelectrified {
+	magnetblock_electrified()
+	magnetblock_moveto()
 }
