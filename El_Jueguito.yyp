@@ -138,6 +138,7 @@
     {"id":{"name":"enredadera_cuer_burn","path":"scripts/enredadera_cuer_burn/enredadera_cuer_burn.yy",},},
     {"id":{"name":"enredadera_cuer_idle","path":"scripts/enredadera_cuer_idle/enredadera_cuer_idle.yy",},},
     {"id":{"name":"estado_player_control","path":"scripts/estado_player_control/estado_player_control.yy",},},
+    {"id":{"name":"estado_player_debug","path":"scripts/estado_player_debug/estado_player_debug.yy",},},
     {"id":{"name":"estado_player_hechizo","path":"scripts/estado_player_hechizo/estado_player_hechizo.yy",},},
     {"id":{"name":"estado_player_muerte","path":"scripts/estado_player_muerte/estado_player_muerte.yy",},},
     {"id":{"name":"estado_player_tieso","path":"scripts/estado_player_tieso/estado_player_tieso.yy",},},

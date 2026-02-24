@@ -144,7 +144,7 @@ if yspd != 0 && place_meeting(x, y + yspd, colisionObj) {
 	yspd = 0;
 }
 
-if place_meeting(x,y,colisionObj) {
+if place_meeting(x,y,colisionObj) && sprite_index != saltoSpr {
 	y += -1;
 } else {
 x += xspd;
@@ -174,6 +174,12 @@ if (place_meeting(x,y, roomwalkObj)) {
 if tab {
 	invGUIObj.activo = true;
 	estado = states.tieso
+}
+
+// Debug
+
+if keyboard_check(vk_control) && keyboard_check_pressed(ord("R")) || keyboard_check_pressed(vk_control) && keyboard_check(ord("R")) {
+	estado = states.debug
 }
 
 // Sprites

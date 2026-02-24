@@ -24,6 +24,10 @@ else if (estado == states.tieso) {
 	estado_player_tieso()
 }
 
+else if (estado == states.debug) {
+	estado_player_debug()
+}
+
 ///
 
 // Colisión de Pantalla

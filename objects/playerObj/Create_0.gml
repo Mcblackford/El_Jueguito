@@ -6,7 +6,8 @@ enum states {
 	walljump,
 	transicion,
 	hechizo,
-	muerte
+	muerte,
+	debug
 }
 
 estado = states.control;
