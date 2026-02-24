@@ -32,5 +32,5 @@
     "path":"sprites/ColisionCajaIzq/ColisionCajaIzq.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

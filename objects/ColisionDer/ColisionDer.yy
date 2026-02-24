@@ -32,5 +32,5 @@
     "path":"sprites/ColisionCajaDer/ColisionCajaDer.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

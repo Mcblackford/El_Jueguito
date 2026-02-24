@@ -144,8 +144,12 @@ if yspd != 0 && place_meeting(x, y + yspd, colisionObj) {
 	yspd = 0;
 }
 
+if place_meeting(x,y,colisionObj) {
+	y += -1;
+} else {
 x += xspd;
 y += yspd;
+}
 
 // Hechizo
 
