@@ -4,29 +4,37 @@ if instance_exists(magnetObj) {
 	var _target = instance_nearest(x,y,magnetObj);
 	var _distance = 700;
 	var _dist = point_distance(x,y,_target.x,_target.y);
+	
+	techo = (collision_rectangle(x+5,y-sprite_height-1,x+sprite_width-5,y-sprite_height, colisionObj,true,true) && (_target.y < (y-sprite_height)));
+	paredizq = (collision_rectangle(x-1,y-sprite_height+5,x,y-5, colisionObj,true,true) && (_target.x < x));
+	paredder = (collision_rectangle(x+sprite_width,y-sprite_height+5,x+sprite_width+1,y-5, colisionObj,true,true) && (_target.x > (x+sprite_width)));
+	suelo = (collision_rectangle(x+5,y,x+sprite_width-5,y+1,colisionObj,true,true) && (_target.y > y));
+	
 	if _dist <= _distance {
-		if collision_rectangle(x-1,y-sprite_height-1,x+sprite_width+1,y+1,colisionObj,true,true) {
-			direction = point_direction (x+(sprite_width*0.5), y-(sprite_height*0.5), _target.x-(sprite_width*0.5), _target.y+(sprite_height*0.5));
+		if techo || suelo {
+			direction = point_direction (x+(sprite_width*0.5), y, _target.x, y);
+		} else if paredder ||paredizq {
+			direction = point_direction (x, y-(sprite_height*0.5), x, _target.y);
 		} else {
 			direction = point_direction (x+(sprite_width*0.5), y-(sprite_height*0.5), _target.x, _target.y);
 		}
 		magnetaccel += magnetaccelval;
 		magnetobloquegrav = 0;
 		if !collision_rectangle(x+(sprite_width*0.5)-10,y-(sprite_height*0.5)-10,x+(sprite_width*0.5)+10,y-(sprite_height*0.5)+10,magnetObj,true,true) {
-			if collision_rectangle(x+5,y,x+sprite_width-5,y+1,colisionObj,true,true) && (_target.y > y) {
+			if suelo {
 				vspeed = 0;
 			}
-			else if collision_rectangle(x+5,y-sprite_height-1,x+sprite_width-5,y-sprite_height, colisionObj,true,true) && (_target.y < y) {
+			else if techo {
 				vspeed = 0;
 			}
-			else if collision_rectangle(x-1,y-sprite_height+5,x,y-5, colisionObj,true,true) && (_target.x < x) {
+			else if paredizq {
 				hspeed = 0;
 			}
-			else if collision_rectangle(x+sprite_width,y-sprite_height+5,x+sprite_width+1,y-5, colisionObj,true,true) && (_target.x > x) {
+			else if paredder {
 				hspeed = 0;
 			}
 			else {
-				speed = 10 + magnetaccel;
+				speed = 5 + magnetaccel;
 			}
 		} else {
 			speed = 0;
