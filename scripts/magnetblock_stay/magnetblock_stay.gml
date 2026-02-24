@@ -2,7 +2,7 @@ function magnetblock_stay(){///
 
 vspeed = 0;
 
-randomdir = random_range(0.9,1.1)
+randomdir = random_range(0.98,1.02)
 
 if !collision_rectangle(x,y,x+sprite_width,y+1,colisionObj,true,true) {
 	magnetobloquegrav++;
