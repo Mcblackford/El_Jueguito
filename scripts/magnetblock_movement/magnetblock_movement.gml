@@ -1,12 +1,5 @@
 function magnetblock_movement(){///
 
-if place_meeting(x,y,ColisionDer) || place_meeting(x,y,ColisionIzq) {
-	hspeed = 0;
-}
-else if place_meeting(x,y,ColisionArriba) || place_meeting(x,y,ColisionAbajo) {
-	vspeed = 0;
-}
-
 if instance_exists(magnetObj) {
 	var _target = instance_nearest(x,y,magnetObj);
 	var _distance = 700;
@@ -29,36 +22,30 @@ if instance_exists(magnetObj) {
 		} else {
 			direction = point_direction (x+(sprite_width*0.5), y-(sprite_height*0.5), _target.x, _target.y);
 		}
-		magnetaccel += magnetaccelval;
 		magnetobloquegrav = 0;
 		if !collision_rectangle(x+(sprite_width*0.5)-10,y-(sprite_height*0.5)-10,x+(sprite_width*0.5)+10,y-(sprite_height*0.5)+10,magnetObj,true,true) {
-			if suelo {
-				speed = 4 + magnetaccel;
+			if suelo || techo {
+				speed = 4 + (_dist*0.04);
 				vspeed = 0;
 			}
-			else if techo {
-				speed = 4 + magnetaccel;
-				vspeed = 0;
-			}
-			else if paredizq {
-				speed = 4 + magnetaccel;
-				hspeed = 0;
-			}
-			else if paredder {
-				speed = 4 + magnetaccel;
+			else if paredizq || paredder {
+				speed = 4 + (_dist*0.04);
 				hspeed = 0;
 			}
 			else {
-				speed = 2 + magnetaccel;
+				speed = 4 + (_dist*0.04);
 			}
 		} else {
 			speed = 0;
 		}
+		vdeccel = 1;
 	} else {
-		magnetaccel = 0;
+		if vdeccel > 0 {
+			vdeccel -= deccelvalue;
+		}
 		magnetobloquegrav += magnetograval;
 		vspeed = 0;
-		
+		hspeed *= vdeccel;
 		if !collision_rectangle(x,y,x+sprite_width,y+1,colisionObj,true,true) {
 			y += magnetobloquegrav;
 		} else {
@@ -71,17 +58,20 @@ if instance_exists(magnetObj) {
 		}
 	}
 } else {
-	magnetaccel = 0;
+	if vdeccel > 0 {
+		vdeccel -= deccelvalue;
+	}
 	magnetobloquegrav += magnetograval;
-	vspeed = 0;	
+	vspeed = 0;
+	hspeed *= vdeccel;
 	if !collision_rectangle(x,y,x+sprite_width,y+1,colisionObj,true,true) {
 		y += magnetobloquegrav;
 	} else {
 		y+= 0;
-		var plataforma = collision_rectangle(x,y,x+sprite_width,y+1,colisionObj,true,true)
+		var plataforma = collision_rectangle(x+10,y,x+sprite_width-10,y+1,colisionObj,true,true)
 		if (plataforma) {
 			y = plataforma.y;
-			cajagravedad = 0;
+			magnetobloquegrav = 0;
 		}
 	}
 }
@@ -96,6 +86,13 @@ if place_meeting(x,y,ColisionDer) {
 	y += 1;
 } else {
 	x += 0;
+}
+
+if place_meeting(x,y,ColisionDer) || place_meeting(x,y,ColisionIzq) {
+	hspeed = 0;
+}
+else if place_meeting(x,y,ColisionArriba) || place_meeting(x,y,ColisionAbajo) {
+	vspeed = 0;
 }
 
 }///

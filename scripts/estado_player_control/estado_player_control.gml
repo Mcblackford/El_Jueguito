@@ -153,7 +153,7 @@ y += yspd;
 
 // Hechizo
 
-if habilidad && (habilidadcooldown <= 0) {
+if habilidad && (habilidadcooldown <= 0) && !instance_exists(magnetObj) {
 	estado = states.hechizo
 }
 

@@ -45,7 +45,7 @@ if walljumpTimer <= 0 {
 
 // Hechizo
 
-if habilidad {
+if habilidad && (habilidadcooldown <= 0) && !instance_exists(magnetObj) {
 	estado = states.hechizo
 }
 
