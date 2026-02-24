@@ -1,12 +1,5 @@
 function magnetblock_moveto(){///
-
-if instance_exists(magnetObj) {
-	var _followto = instance_nearest(x, y, magnetObj)
-	direction = point_direction (x, y, _followto.x, _followto.y);
-	speed = 20;
-} else {
-	var _followto = playerObj
-}
+	
 
 if place_meeting(x,y,ColisionDer) {
 	x += -1;
@@ -18,10 +11,22 @@ else {
 	x+= 0;
 }
 
-airgrav += magnetoairgrav;
-y += airgrav;
+if place_meeting(x, y, magnetObj) {
+	airgrav += magnetoairgrav;
+	y += airgrav;
+}
 
-if place_meeting(x+hspeed,y+1,colisionObj) || place_meeting(x,y,magnetObj) {
+if instance_exists(magnetObj) {
+	var _followto = instance_nearest(x, y, magnetObj)
+	direction = point_direction (x, y, _followto.x*randomdir, _followto.y*randomdir);
+	speed = 20;
+	if place_meeting(x, y, _followto) {
+		speed = 0;
+		y += 0;
+	}
+}
+
+if place_meeting(x,y,colisionObj) {	
 	if electrified == true {
 		magnetoestado = magnetstate.stayelectrified
 	} else if electrified == false {
