@@ -11,10 +11,14 @@ if instance_exists(magnetObj) {
 	suelo = (collision_rectangle(x+5,y,x+sprite_width-5,y+1,colisionObj,true,true) && (_target.y > y));
 	
 	if _dist <= _distance {
-		if techo || suelo {
-			direction = point_direction (x+(sprite_width*0.5), y, _target.x, y);
-		} else if paredder ||paredizq {
-			direction = point_direction (x, y-(sprite_height*0.5), x, _target.y);
+		if techo {
+			direction = point_direction (x+(sprite_width*0.5), y, _target.x, y+(sprite_height*0.5));
+		} else if suelo {
+			direction = point_direction (x+(sprite_width*0.5), y, _target.x, y-(sprite_height*0.5));
+		} else if paredder {
+			direction = point_direction (x, y-(sprite_height*0.5), x-(sprite_width*0.5), _target.y);
+		} else if paredizq {
+			direction = point_direction (x, y-(sprite_height*0.5), x+(sprite_width*0.5), _target.y);
 		} else {
 			direction = point_direction (x+(sprite_width*0.5), y-(sprite_height*0.5), _target.x, _target.y);
 		}
