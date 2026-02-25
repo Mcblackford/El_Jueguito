@@ -53,3 +53,13 @@ coyoteJumpFrm = 5;
 coyoteJumpTmr = 0;
 
 habilidadcooldown = 0;
+
+// Habilidades
+
+fuegospell = true;
+vientospell = true;
+imanspell = true;
+rayospell = true;
+nubespell = true;
+luzspell = true;
+armoniaspell = true;

@@ -5,32 +5,89 @@ depth = -9000;
 arriba = keyboard_check( ord("W") );
 abajo = keyboard_check( ord("S") );
 
-key1 = keyboard_check(ord("1"));
-key2 = keyboard_check(ord("2"));
-key3 = keyboard_check(ord("3"));
-key4 = keyboard_check(ord("4"));
-key5 = keyboard_check(ord("5"));
-key6 = keyboard_check(ord("6"));
-key7 = keyboard_check(ord("7"));
-key8 = keyboard_check(ord("8"));
-
-if !(key1 || key2 || key3 || key4 || key5 || key6 || key7 || key8) {sprite_index = standarCur} else {
-if key1 {sprite_index = fuegoCur}
-if key2 {sprite_index = vientoCur}
-if key3 {sprite_index = rayoCur}
-if key4 {sprite_index = nubeCur}
-if key5 {sprite_index = imanCur}
-if key6 {sprite_index = ruidoCur}
-if key7 {
-	if arriba {
-		sprite_index = armoniaCurB
-	} else if abajo {
-		sprite_index = armoniaCurC
-	} else {
-		sprite_index = armoniaCur
-	}
+function nullcursor() {
+	sprite_index = standarCur;
 }
-if key8 {sprite_index = luzCur}
+
+
+if instance_exists(spellswheelObj) {
+	
+	
+	if spellswheelObj.nullselect == true {
+		nullcursor()
+	}
+	
+// Habilidades
+	
+	else if spellswheelObj.fuegoselect == true {
+		if playerObj.fuegospell == true {
+			sprite_index = fuegoCur;
+		} else {
+			nullcursor()
+		}
+	}
+	
+	else if spellswheelObj.vientoselect == true {
+		if playerObj.vientospell == true {
+			sprite_index = vientoCur;
+		} else {
+			nullcursor()
+		}
+	}
+	
+	else if spellswheelObj.imanselect == true {
+		if playerObj.imanspell == true {
+			sprite_index = imanCur;
+		} else {
+			nullcursor()
+		}
+	}
+		
+	else if spellswheelObj.rayoselect == true {
+		if playerObj.rayospell == true {
+			sprite_index = rayoCur;
+		} else {
+			nullcursor()
+		}
+	}
+	
+	else if spellswheelObj.nubeselect == true {
+		if playerObj.nubespell == true {
+			sprite_index = nubeCur;
+		} else {
+			nullcursor()
+		}
+	}
+	
+	else if spellswheelObj.luzselect == true {
+		if playerObj.luzspell == true {
+			sprite_index = luzCur;
+		} else {
+			nullcursor()
+		}
+	}
+	
+	else if spellswheelObj.armoniaselect == true {
+		if playerObj.armoniaspell == true {
+			if arriba {
+				sprite_index = armoniaCurB;
+			} else if abajo {
+				sprite_index = armoniaCurC;
+			} else {
+				sprite_index = armoniaCur;
+			}
+		} else {
+			nullcursor()
+		}
+	}
+	
+	else {
+		nullcursor()
+	}
+
+
+} else {
+	nullcursor()
 }
 
 // Estado de Colisión de Pantalla

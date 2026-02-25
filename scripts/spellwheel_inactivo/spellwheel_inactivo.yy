@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"spellwheel_inactivo",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"spellwheel_inactivo",
+  "parent":{
+    "name":"Spellwheel",
+    "path":"folders/Objetos/Spellwheel.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

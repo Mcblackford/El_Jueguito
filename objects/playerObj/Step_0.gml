@@ -32,6 +32,10 @@ else if (estado == states.debug) {
 
 // Colisión de Pantalla
 
+if !instance_exists(spellswheelObj) {
+	var _ruedadehechizos = instance_create_layer(0,0,"instances",spellswheelObj)
+}
+
 if !instance_exists(pantallaup) {
 	instance_create_depth(x,y,-98,pantallaup)
 }
