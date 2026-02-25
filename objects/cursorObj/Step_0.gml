@@ -2,6 +2,9 @@ x = mouse_x;
 y = mouse_y;
 depth = -9000;
 
+arriba = keyboard_check( ord("W") );
+abajo = keyboard_check( ord("S") );
+
 key1 = keyboard_check(ord("1"));
 key2 = keyboard_check(ord("2"));
 key3 = keyboard_check(ord("3"));
@@ -18,7 +21,15 @@ if key3 {sprite_index = rayoCur}
 if key4 {sprite_index = nubeCur}
 if key5 {sprite_index = imanCur}
 if key6 {sprite_index = ruidoCur}
-if key7 {sprite_index = armoniaCur}
+if key7 {
+	if arriba {
+		sprite_index = armoniaCurB
+	} else if abajo {
+		sprite_index = armoniaCurC
+	} else {
+		sprite_index = armoniaCur
+	}
+}
 if key8 {sprite_index = luzCur}
 }
 

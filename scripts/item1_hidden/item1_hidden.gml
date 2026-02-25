@@ -2,7 +2,7 @@ function item1_hidden(){
 
 sprite_index = emptycollSpr;
 randomhspd = random_range(-5,5);
-randomitemvalue = random_range(0.8,2);
+randomitemvalue = random_range(1,2);
 
 target = instance_nearest(x,y,cofreComunObj)
 

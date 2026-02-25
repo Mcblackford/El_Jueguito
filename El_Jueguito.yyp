@@ -168,6 +168,8 @@
     {"id":{"name":"Fadein","path":"sequences/Fadein/Fadein.yy",},},
     {"id":{"name":"Fadeout","path":"sequences/Fadeout/Fadeout.yy",},},
     {"id":{"name":"armoniaCur","path":"sprites/armoniaCur/armoniaCur.yy",},},
+    {"id":{"name":"armoniaCurB","path":"sprites/armoniaCurB/armoniaCurB.yy",},},
+    {"id":{"name":"armoniaCurC","path":"sprites/armoniaCurC/armoniaCurC.yy",},},
     {"id":{"name":"bloqueMovSpr","path":"sprites/bloqueMovSpr/bloqueMovSpr.yy",},},
     {"id":{"name":"bloqueSpr","path":"sprites/bloqueSpr/bloqueSpr.yy",},},
     {"id":{"name":"botonactSpr","path":"sprites/botonactSpr/botonactSpr.yy",},},
