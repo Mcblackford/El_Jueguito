@@ -27,7 +27,9 @@ if instance_exists(magnetObj) {
 			if suelo || techo {
 				speed = 4 + (_dist*0.04);
 				vspeed = 0;
-				x+= 0;
+				if paredizq || paredder {
+					speed = 0;
+				}
 			}
 			else if paredizq || paredder {
 				speed = 4 + (_dist*0.04);
