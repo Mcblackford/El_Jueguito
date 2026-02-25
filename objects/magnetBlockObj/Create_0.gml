@@ -13,3 +13,4 @@ magnetaccel = 0;
 magnetaccelval = 0.25;
 deccelvalue = 0.005;
 vdeccel = 0;
+randommagnet = 0;
