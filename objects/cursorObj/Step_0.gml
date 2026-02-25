@@ -9,8 +9,9 @@ key4 = keyboard_check(ord("4"));
 key5 = keyboard_check(ord("5"));
 key6 = keyboard_check(ord("6"));
 key7 = keyboard_check(ord("7"));
+key8 = keyboard_check(ord("8"));
 
-if !(key1 || key2 || key3 || key4 || key5 || key6 || key7) {sprite_index = standarCur} else {
+if !(key1 || key2 || key3 || key4 || key5 || key6 || key7 || key8) {sprite_index = standarCur} else {
 if key1 {sprite_index = fuegoCur}
 if key2 {sprite_index = vientoCur}
 if key3 {sprite_index = rayoCur}
@@ -18,6 +19,7 @@ if key4 {sprite_index = nubeCur}
 if key5 {sprite_index = imanCur}
 if key6 {sprite_index = ruidoCur}
 if key7 {sprite_index = armoniaCur}
+if key8 {sprite_index = luzCur}
 }
 
 // Estado de Colisión de Pantalla

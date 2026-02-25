@@ -73,6 +73,12 @@ if (cursorObj.sprite_index == nubeCur) {
 	var nube = instance_create_layer(mouse_x,mouse_y, "instances", cloudObj);
 }
 
+// --Iman--
+	
+if !instance_exists(lightHabObj) && (cursorObj.sprite_index == luzCur) {
+	var hagaselaluz = instance_create_layer(mouse_x,mouse_y, "instances", lightHabObj);
+}
+
 } // Fin de Habilidad
 
 // Sprites

@@ -1,5 +1,3 @@
-endtimer++;
-
 if instance_exists(cursorObj) {
 	var _cursor = instance_nearest(x,y, cursorObj);
 	var _distance = point_distance(x,y, _cursor.x,_cursor.y)
@@ -8,7 +6,7 @@ if instance_exists(cursorObj) {
 }
 	
 
-if endtimer >= 180 || !mouse_check_button(mb_left) || (cursorObj.sprite_index != imanCur) {
+if !mouse_check_button(mb_left) || (cursorObj.sprite_index != luzCur) {
 	instance_destroy()
 }
 
