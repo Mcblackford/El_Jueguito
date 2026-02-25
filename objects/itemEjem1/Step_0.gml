@@ -17,3 +17,7 @@ else if estadoitem == itemstate.transition {
 else if estadoitem == itemstate.takeable {
 	item1_takeable()
 }
+
+else if estadoitem == itemstate.pocket {
+	item1_pocket()
+}

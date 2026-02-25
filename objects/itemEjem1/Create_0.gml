@@ -5,9 +5,11 @@ enum itemstate {
 	hidden,
 	emerging,
 	transition,
-	takeable
+	takeable,
+	pocket
 }
 
 estadoitem = itemstate.hidden;
 itemgravedad = 0.3;
 randomhspd = 0;
+randomitemvalue = 0;

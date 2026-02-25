@@ -12,4 +12,8 @@ if endtimer >= 180 || !mouse_check_button(mb_left) {
 	instance_destroy()
 }
 
+with playerObj {
+	habilidadcooldown = 60;
+}
+
 depth = -98;
