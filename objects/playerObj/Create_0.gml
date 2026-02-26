@@ -63,3 +63,5 @@ rayospell = true;
 nubespell = true;
 luzspell = true;
 armoniaspell = true;
+
+ruedaselect = 0;

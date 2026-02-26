@@ -10,11 +10,11 @@ if ruedamove > 2 {
 	ruedamove = 0;
 }
 
-if ruedaselect > 7 {
-	ruedaselect = 0;
+if playerObj.ruedaselect > 7 {
+	playerObj.ruedaselect = 0;
 }
-if ruedaselect < 0 {
-	ruedaselect = 7;
+if playerObj.ruedaselect < 0 {
+	playerObj.ruedaselect = 7;
 }
 
 if mouse_wheel_up() || mouse_wheel_down() {
@@ -25,11 +25,11 @@ if mouse_wheel_up() || mouse_wheel_down() {
 
 if ruedamove = 1 {
 	if mouse_wheel_up() {
-		ruedaselect += -1;
+		playerObj.ruedaselect += -1;
 	} else if mouse_wheel_down() {
-		ruedaselect += 1
+		playerObj.ruedaselect += 1
 	} else {
-		ruedaselect += 0;
+		playerObj.ruedaselect += 0;
 	}
 }
 

@@ -5,7 +5,6 @@ enum ruedaestado {
 
 estadoderueda = ruedaestado.inactivo;
 
-ruedaselect = 0;
 ruedamove = 0;
 ruedatimer = 0;
 alfasumaspr = 0.1;

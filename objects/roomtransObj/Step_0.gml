@@ -1,3 +1,4 @@
+depth = -9999
 
 if (room != newroom) {
 	fadelevel += 0.025;

@@ -13,49 +13,49 @@ else if estadoderueda = ruedaestado.activo {
 
 // Habilidades
 
-if ruedaselect == 0 {
+if playerObj.ruedaselect == 0 {
 	nullselect = true;
 } else {
 	nullselect = false;
 }
 
-if ruedaselect == 1 {
+if playerObj.ruedaselect == 1 {
 	fuegoselect = true;
 } else {
 	fuegoselect = false;
 }
 
-if ruedaselect == 2 {
+if playerObj.ruedaselect == 2 {
 	vientoselect = true;
 } else {
 	vientoselect = false;
 }
 
-if ruedaselect == 3 {
+if playerObj.ruedaselect == 3 {
 	imanselect = true;
 } else {
 	imanselect = false;
 }
 
-if ruedaselect == 4 {
+if playerObj.ruedaselect == 4 {
 	rayoselect = true;
 } else {
 	rayoselect = false;
 }
 
-if ruedaselect == 5 {
+if playerObj.ruedaselect == 5 {
 	nubeselect = true;
 } else {
 	nubeselect = false;
 }
 
-if ruedaselect == 6 {
+if playerObj.ruedaselect == 6 {
 	luzselect = true;
 } else {
 	luzselect = false;
 }
 
-if ruedaselect == 7 {
+if playerObj.ruedaselect == 7 {
 	armoniaselect = true;
 } else {
 	armoniaselect = false;
