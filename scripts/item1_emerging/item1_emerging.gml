@@ -1,6 +1,10 @@
 function item1_emerging(){
 
-sprite_index = itemAcont;
+if itemtier == 0 {
+	sprite_index = itemAcont;
+} else if itemtier == 1 {
+	sprite_index = itemBcont;
+}
 
 if !collision_rectangle(x-20,y,x+20,y+1,colisionObj,true,true) {
 	itemgravedad++;

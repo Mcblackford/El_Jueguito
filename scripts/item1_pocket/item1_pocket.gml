@@ -1,6 +1,11 @@
 function item1_pocket(){
 
-sprite_index = itemAdesbanecer;
+if itemtier == 0 {
+	sprite_index = itemAdesbanecer;
+} else if itemtier == 1 {
+	sprite_index = itemBdesbanecer;
+}
+
 sprite_set_speed(sprite_index, 20*randomitemvalue, spritespeed_framespersecond)
 
 var _target = instance_nearest(x,y,playerObj);

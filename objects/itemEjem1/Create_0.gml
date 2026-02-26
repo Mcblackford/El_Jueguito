@@ -13,3 +13,4 @@ estadoitem = itemstate.hidden;
 itemgravedad = 0.3;
 randomhspd = 0;
 randomitemvalue = 0;
+itemtier = tiervar;
