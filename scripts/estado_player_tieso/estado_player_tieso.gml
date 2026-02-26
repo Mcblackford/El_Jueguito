@@ -46,15 +46,17 @@ if tab {
 }
 
 var ver = abajo - arriba;
-var hor= keyboard_check_pressed(ord("D")) - keyboard_check_pressed(ord("A"));
+var cantidad_visible = cantidadItem(invGUIObj.sec_act);
+
 if (!invGUIObj.botones) {
-	if (ver !=0){
-		invGUIObj.selector = clamp(invGUIObj.selector + ver, 0, ds_list_size(inventarioObj.inventario) - 1);
-	}
-	if (keyboard_check_pressed(ord("D"))) {
-		invGUIObj.botones=true;
-		invGUIObj.sub_selector=0;
-	}
+    if (ver != 0) {
+        invGUIObj.selector = clamp(invGUIObj.selector + ver, 0, max(0, cantidad_visible - 1));
+    }
+
+    if (keyboard_check_pressed(ord("D")) && cantidad_visible > 0) {
+        invGUIObj.botones = true;
+        invGUIObj.sub_selector = 0;
+    }
 } else {
     if (keyboard_check_pressed(ord("D"))) {
         invGUIObj.sub_selector = min(invGUIObj.sub_selector + 1, 1);
@@ -67,5 +69,4 @@ if (!invGUIObj.botones) {
         }
     }
 }
-
 } // Fin del Script

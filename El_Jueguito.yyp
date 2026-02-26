@@ -135,6 +135,7 @@
     {"id":{"name":"caja_onfire","path":"scripts/caja_onfire/caja_onfire.yy",},},
     {"id":{"name":"caja_todust","path":"scripts/caja_todust/caja_todust.yy",},},
     {"id":{"name":"CameraSpawner","path":"scripts/CameraSpawner/CameraSpawner.yy",},},
+    {"id":{"name":"cantidadItem","path":"scripts/cantidadItem/cantidadItem.yy",},},
     {"id":{"name":"cofre_abierto","path":"scripts/cofre_abierto/cofre_abierto.yy",},},
     {"id":{"name":"cofre_abriendo","path":"scripts/cofre_abriendo/cofre_abriendo.yy",},},
     {"id":{"name":"cofre_cerrado","path":"scripts/cofre_cerrado/cofre_cerrado.yy",},},
