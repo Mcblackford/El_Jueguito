@@ -8,7 +8,6 @@ var i2 =min(i1 + 12, inventariosize);
 var frame = (current_time / 300); //animacion momentanea para el selector
 
 var dibujo = 0;
-var posy = dibujo * 39;
 
 for (var i=i1;i<i2;i++){ 
 	var item= inventarioObj.inventario[| i];
@@ -16,6 +15,7 @@ for (var i=i1;i<i2;i++){
 	if (itemVar[ITEM_VAR_TIPO]) == sec_act {
 	draw_set_font(short_story_x16);
 	draw_set_colour(c_gray);
+	var posy = dibujo * 39;
 	
 	if (dibujo == selector) {
 		draw_sprite_ext(itemVar[ITEM_VAR_SPRITE], 0, x + 852, y + 204 , 5.5 , 5.5 ,0 ,c_white ,1);
@@ -30,6 +30,10 @@ for (var i=i1;i<i2;i++){
 		draw_text(x + 610, y + 202 + posy, "x" + string(item[INVENTARIO_CANTIDAD]));
 		draw_set_halign(fa_left);
 	}
+
+	dibujo++; // siempre ultimo
+	}
+}
 	draw_set_font(scrambled_eggs_x30)
 	// botones
 	if (botones && sub_selector == 0) {
@@ -43,6 +47,3 @@ for (var i=i1;i<i2;i++){
 	}
 	draw_text(x + 1010, y + 618, "USAR");
 	draw_set_font(short_story_x16)
-	dibujo++; // siempre ultimo
-	}
-}

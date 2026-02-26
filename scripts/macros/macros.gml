@@ -13,6 +13,8 @@ function macros(){
 	#macro ITEM_POCION 0
 	#macro ITEM_IMPORTANTE 1
 	#macro ITEM_PAGINA 2
+	#macro ITEM_POCION1 3
+	#macro ITEM_POCION2 4
 	//------------------
 	
 	// Inventario argumentos
