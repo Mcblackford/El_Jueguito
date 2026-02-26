@@ -1,3 +1,7 @@
+depth = -90;
+if !instance_exists(spellwheelSelec) {
+	var _seleccion = instance_create_layer(x,y,"instances",spellwheelSelec);
+}
 
 if estadoderueda = ruedaestado.inactivo {
 	spellwheel_inactivo()
