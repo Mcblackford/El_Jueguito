@@ -7,10 +7,12 @@ function usarItem(itemID){
 	
 	action();
 	
-	item[@ INVENTARIO_CANTIDAD] -= 1;
+	if (item_var[ITEM_VAR_TIPO] !=TIPO_CLAVE) {
+		item[@ INVENTARIO_CANTIDAD] -= 1;
 	
-	if (item[INVENTARIO_CANTIDAD] <= 0) {
-	 borrarItem(itemID);
+		if (item[INVENTARIO_CANTIDAD] <= 0) {
+		 borrarItem(itemID);
+		}
 	}
 	}
 }
