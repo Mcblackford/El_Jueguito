@@ -27,12 +27,12 @@ if electrifiedcloud == false && place_meeting(x,y,thunderballObj) {
 
 if place_meeting(x,y,windcolision) && speed == 0 {
 	
-	movingtime = 45;
+	movingtime = 200;
 	
 	if speed <= 30 {
 		nubespd += nubeaccel;
 	}
-	speed = nubespd
+	speed = 10
 	point_direction(x,y,x-1,y)
 }
 
