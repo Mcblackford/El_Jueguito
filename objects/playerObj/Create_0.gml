@@ -7,7 +7,8 @@ enum states {
 	transicion,
 	hechizo,
 	muerte,
-	debug
+	debug,
+	song
 }
 
 estado = states.control;

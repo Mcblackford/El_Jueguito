@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"music_inactive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"music_inactive",
+  "parent":{
+    "name":"songHab",
+    "path":"folders/Objetos/Habilidades/songHab.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

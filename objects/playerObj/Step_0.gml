@@ -28,6 +28,10 @@ else if (estado == states.debug) {
 	estado_player_debug()
 }
 
+else if (estado == states.song) {
+	estado_player_song()
+}
+
 ///
 
 // Colisión de Pantalla
