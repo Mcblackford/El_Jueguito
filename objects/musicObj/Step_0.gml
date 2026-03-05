@@ -5,5 +5,3 @@ if estadomus == musicstate.active {
 else {
 	music_inactive()
 }
-
-

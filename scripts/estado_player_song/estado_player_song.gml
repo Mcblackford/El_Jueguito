@@ -2,6 +2,12 @@ function estado_player_song(){ //
 
 sprite_index = caidaSpr;
 
+if !instance_exists(musicObj) {
+	var _musicaobj = instance_create_layer(x,y, "instances", musicObj);
+	_musicaobj.x = mouse_x;
+	_musicaobj.y = mouse_y;
+}
+
 // Hechizo
 
 if habilidad && (habilidadcooldown <= 0) && (cursorObj.sprite_index != standarCur) && cursorObj.sprite_index != armoniaCur && cursorObj.sprite_index != armoniaCurB && cursorObj.sprite_index != armoniaCurC {
