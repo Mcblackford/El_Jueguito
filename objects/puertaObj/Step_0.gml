@@ -1,11 +1,18 @@
 depth = -100;
+image_yscale = yscale;
 
-
-if puerta == true
-{
-   if (start_y - sprite_height < y) {y -= 6}
-   puerta = false;
-} else {
-	if (y < start_y)
-		{y += 14}
+if (palancacount >= palancaneces) {
+	
+	if yscale > 0 {
+		yscale -= yscalespd;
+	} else {
+		yscale += 0;
 	}
+} else {
+
+	if yscale < 1 {
+		yscale += yscalespd;
+	} else {
+		yscale += 0;
+	}
+}

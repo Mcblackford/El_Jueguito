@@ -1,11 +1,18 @@
 depth = -100;
+image_yscale = yscale;
 
 if (botoncount >= botonneces) {
-	if (start_y - sprite_height < y) {
-		y -= 6;
+	
+	if yscale > 0 {
+		yscale -= yscalespd;
+	} else {
+		yscale += 0;
 	}
 } else {
-	if (y < start_y) {
-		y += 14;
+
+	if yscale < 1 {
+		yscale += yscalespd;
+	} else {
+		yscale += 0;
 	}
 }

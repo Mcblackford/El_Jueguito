@@ -1,3 +1,3 @@
-puertasum= false;
+puertasum = false;
 boton = botonID;
-boton_activo= false;
+boton_activo = false;
