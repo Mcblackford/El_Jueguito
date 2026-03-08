@@ -9,7 +9,6 @@ enum cloudstate {
 
 estadonube = cloudstate.spawn;
 
-nubeaccel = 1.5;
-nubedeccel = 0.01;
+nubedeccel = 0.2;
 nubespd = 0;
 movingtime = 0;

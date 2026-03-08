@@ -92,11 +92,11 @@ if !instance_exists(lightHabObj) && (cursorObj.sprite_index == luzCur) {
 if place_meeting(x, y+1, colisionObj) {
 	if cursorObj.cursorstate == 0 {
 		sprite_index = hechizofrontalSpr;
-		image_xscale = -2.5;
+		image_xscale = 2.5;
 	}
 	if cursorObj.cursorstate == 1 {
 		sprite_index = hechizofrontalSpr;
-		image_xscale = 2.5;
+		image_xscale = -2.5;
 	}
 	if cursorObj.cursorstate == 2 {
 		sprite_index = hechizoarribaSpr;
@@ -107,11 +107,11 @@ if place_meeting(x, y+1, colisionObj) {
 } else {
 	if cursorObj.cursorstate == 0 {
 		sprite_index = hechizofrontalSpr;
-		image_xscale = -2.5;
+		image_xscale = 2.5;
 	}
 	if cursorObj.cursorstate == 1 {
 		sprite_index = hechizofrontalSpr;
-		image_xscale = 2.5;
+		image_xscale = -2.5;
 	}
 	if cursorObj.cursorstate == 2 {
 		sprite_index = hechizoarribaSpr;

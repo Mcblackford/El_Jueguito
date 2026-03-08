@@ -1,5 +1,11 @@
 depth = -110;
-endtimer++;
+
+if speed == 0 {
+	endtimer++;
+} else {
+	endtimer+= 0;
+}
+
 image_xscale = 2.7;
 image_yscale = 2.7;
 
@@ -21,26 +27,4 @@ else if estadonube == cloudstate.death {
 
 if electrifiedcloud == false && place_meeting(x,y,thunderballObj) {
 	electrifiedcloud = true;
-}
-
-// Movimiento
-
-if place_meeting(x,y,windColisionObj) && speed == 0 {
-	
-	movingtime = 200;
-	
-	if speed <= 30 {
-		nubespd += nubeaccel;
-	}
-	speed = 10
-	point_direction(x,y,x-1,y)
-}
-
-if movingtime > 0 {
-	movingtime--;
-}
-
-if speed > 0 && (movingtime == 0) {
-	nubespd -= nubedeccel;
-	speed = nubespd;
 }

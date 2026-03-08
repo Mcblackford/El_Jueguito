@@ -2,10 +2,10 @@ function caja_moveable(){ //
 
 cajadecel++;
 
-if cursorObj.cursorstate == 1 {
+if cursorObj.cursorstate == 0 {
 	sidedvalue = -1;
 }
-if cursorObj.cursorstate == 0 {
+if cursorObj.cursorstate == 1 {
 	sidedvalue = 1;
 }
 if cursorObj.cursorstate > 1 {
