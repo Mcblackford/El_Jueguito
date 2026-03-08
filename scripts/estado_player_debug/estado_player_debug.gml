@@ -17,7 +17,14 @@ if izq {
 	y+= 0;
 }
 
-if keyboard_check(vk_control) && keyboard_check_pressed(ord("R")) || keyboard_check_pressed(vk_control) && keyboard_check(ord("R"))  {
+// Control
+
+if (
+
+keyboard_check(vk_control) && keyboard_check_pressed(ord("R")) ||
+keyboard_check_pressed(vk_control) && keyboard_check(ord("R"))  
+
+) {
 	estado = states.control;
 }
 

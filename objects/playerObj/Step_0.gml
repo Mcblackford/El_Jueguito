@@ -34,11 +34,15 @@ else if (estado == states.song) {
 
 ///
 
-// Colisión de Pantalla
+// Seleccion de Habilidades
 
 if !instance_exists(spellswheelObj) {
 	var _ruedadehechizos = instance_create_layer(0,0,"instances",spellswheelObj)
 }
+
+habilidad_en_seleccion()
+
+// Colisión de Pantalla
 
 if !instance_exists(pantallaup) {
 	instance_create_depth(x,y,-98,pantallaup)

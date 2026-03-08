@@ -145,9 +145,7 @@ y += yspd;
 
 // Hechizo
 
-if habilidad && (habilidadcooldown <= 0) && (cursorObj.sprite_index != standarCur) && cursorObj.sprite_index != armoniaCur && cursorObj.sprite_index != armoniaCurB && cursorObj.sprite_index != armoniaCurC {
-	estado = states.hechizo
-}
+condicion_de_hechizo()
 
 // Muerte
 
@@ -168,15 +166,11 @@ if tab {
 
 // Debug
 
-if keyboard_check(vk_control) && keyboard_check_pressed(ord("R")) || keyboard_check_pressed(vk_control) && keyboard_check(ord("R")) {
-	estado = states.debug
-}
+condicion_de_debug()
 
 // Music
 
-if (cursorObj.sprite_index == armoniaCur || cursorObj.sprite_index == armoniaCurB || cursorObj.sprite_index == armoniaCurC) && (moving != true) && place_meeting(x,y+1,colisionObj) {
-	estado = states.song
-}
+condicion_musical()
 
 // Sprites
 

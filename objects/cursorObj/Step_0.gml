@@ -2,92 +2,38 @@ x = mouse_x;
 y = mouse_y;
 depth = -9000;
 
-arriba = keyboard_check( ord("W") );
-abajo = keyboard_check( ord("S") );
+// Sprites
 
-function nullcursor() {
+if playerObj.currenthab == habs.null {
 	sprite_index = standarCur;
-}
+	
+} else if playerObj.currenthab == habs.fuego {
+	sprite_index = fuegoCur;
 
+} else if playerObj.currenthab == habs.viento {
+	sprite_index = vientoCur;
 
-if instance_exists(spellswheelObj) {
-	
-	
-	if spellswheelObj.nullselect == true {
-		nullcursor()
-	}
-	
-// Habilidades
-	
-	else if spellswheelObj.fuegoselect == true {
-		if playerObj.fuegospell == true {
-			sprite_index = fuegoCur;
-		} else {
-			nullcursor()
-		}
-	}
-	
-	else if spellswheelObj.vientoselect == true {
-		if playerObj.vientospell == true {
-			sprite_index = vientoCur;
-		} else {
-			nullcursor()
-		}
-	}
-	
-	else if spellswheelObj.imanselect == true {
-		if playerObj.imanspell == true {
-			sprite_index = imanCur;
-		} else {
-			nullcursor()
-		}
-	}
-		
-	else if spellswheelObj.rayoselect == true {
-		if playerObj.rayospell == true {
-			sprite_index = rayoCur;
-		} else {
-			nullcursor()
-		}
-	}
-	
-	else if spellswheelObj.nubeselect == true {
-		if playerObj.nubespell == true {
-			sprite_index = nubeCur;
-		} else {
-			nullcursor()
-		}
-	}
-	
-	else if spellswheelObj.luzselect == true {
-		if playerObj.luzspell == true {
-			sprite_index = luzCur;
-		} else {
-			nullcursor()
-		}
-	}
-	
-	else if spellswheelObj.armoniaselect == true {
-		if playerObj.armoniaspell == true {
-			if arriba {
-				sprite_index = armoniaCurB;
-			} else if abajo {
-				sprite_index = armoniaCurC;
-			} else {
-				sprite_index = armoniaCur;
-			}
-		} else {
-			nullcursor()
-		}
-	}
-	
-	else {
-		nullcursor()
-	}
+} else if playerObj.currenthab == habs.iman {
+	sprite_index = imanCur;
 
+} else if playerObj.currenthab == habs.rayo {
+	sprite_index = rayoCur;
 
-} else {
-	nullcursor()
+} else if playerObj.currenthab == habs.nube {
+	sprite_index = nubeCur;
+
+} else if playerObj.currenthab == habs.luz {
+	sprite_index = luzCur;
+
+} else if playerObj.currenthab == habs.armonia {
+	sprite_index = armoniaCur;
+
+} else if playerObj.currenthab == habs.armoniamayor {
+	sprite_index = armoniaCurB;
+
+} else if playerObj.currenthab == habs.armoniamenor {
+	sprite_index = armoniaCurC;
+
 }
 
 // Estado de Colisión de Pantalla

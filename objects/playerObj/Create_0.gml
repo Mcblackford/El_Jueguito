@@ -57,6 +57,8 @@ habilidadcooldown = 0;
 
 // Habilidades
 
+	// Desbloqueo
+
 fuegospell = true;
 vientospell = true;
 imanspell = true;
@@ -64,5 +66,22 @@ rayospell = true;
 nubespell = true;
 luzspell = true;
 armoniaspell = true;
+
+	// Seleccion
+	
+enum habs {
+	fuego,
+	viento,
+	iman,
+	rayo,
+	nube,
+	luz,
+	armonia,
+	armoniamayor,
+	armoniamenor,
+	null
+}
+
+currenthab = habs.null;
 
 ruedaselect = 0;

@@ -9,8 +9,8 @@
   "name":"cloudObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"cloudHab",
-    "path":"folders/Players/Habilidades/cloudHab.yy",
+    "name":"Habilidad_Nube",
+    "path":"folders/Players/Habilidades/Habilidad_Nube.yy",
   },
   "parentObjectId":null,
   "persistent":false,

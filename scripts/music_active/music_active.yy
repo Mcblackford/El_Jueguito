@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"music_active",
   "parent":{
-    "name":"songHab",
-    "path":"folders/Players/Habilidades/songHab.yy",
+    "name":"Habilidad_Musica",
+    "path":"folders/Players/Habilidades/Habilidad_Musica.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

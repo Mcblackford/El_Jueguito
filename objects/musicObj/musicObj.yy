@@ -10,8 +10,8 @@
   "name":"musicObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"songHab",
-    "path":"folders/Players/Habilidades/songHab.yy",
+    "name":"Habilidad_Musica",
+    "path":"folders/Players/Habilidades/Habilidad_Musica.yy",
   },
   "parentObjectId":null,
   "persistent":false,

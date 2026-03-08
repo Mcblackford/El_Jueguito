@@ -44,9 +44,7 @@ if walljumpTimer <= 0 {
 
 // Hechizo
 
-if habilidad && (habilidadcooldown <= 0) && (cursorObj.sprite_index != standarCur) {
-	estado = states.hechizo
-}
+condicion_de_hechizo()
 
 // Colision
 

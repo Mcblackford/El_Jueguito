@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"habilidad_en_seleccion",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"habilidad_en_seleccion",
+  "parent":{
+    "name":"Seleccion_Hab_Player_1",
+    "path":"folders/Players/Player_1/Seleccion_Hab_Player_1.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
