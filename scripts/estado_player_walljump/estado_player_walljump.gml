@@ -4,7 +4,11 @@ depth = -99;
 
 // Inputs
 
-Inputs()
+interact = keyboard_check_pressed( ord("E"));
+jump = keyboard_check_pressed( vk_space );
+jumphold = keyboard_check(vk_space);
+habilidad = mouse_check_button_pressed(mb_left);
+tab = keyboard_check_pressed(vk_tab);
 
 // Colision
 

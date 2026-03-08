@@ -13,6 +13,6 @@ note5 = 0;
 note6 = 0;
 note7 = 0;
 
-musicendtimer = 0;
+musicendtimer = 180;
 
 estadomus = musicstate.active;

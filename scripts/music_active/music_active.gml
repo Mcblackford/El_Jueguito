@@ -1,5 +1,7 @@
 function music_active(){
 
+musicendtimer--;
+
 if playerObj.currenthab == habs.armonia {
 	currentmelody = cursorObj.cursorstate + 1;
 } else if playerObj.currenthab == habs.armoniamayor {
@@ -9,6 +11,10 @@ if playerObj.currenthab == habs.armonia {
 }
 
 habilidad = mouse_check_button_pressed(mb_left);
+
+if habilidad {
+	musicendtimer = 180;
+}
 
 if habilidad && note1 == 0 {
 	note1 = currentmelody;
@@ -44,6 +50,10 @@ if habilidad && note1 == 0 {
 			}
 		}
 	}
+}
+
+if musicendtimer <= 0 {
+	estadomus = musicstate.inactive;
 }
 
 }

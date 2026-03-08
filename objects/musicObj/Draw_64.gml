@@ -7,3 +7,4 @@ draw_text(0,88, "note 3 = " + string(note3));
 draw_text(0,110, "note 4 = " + string(note4));
 draw_text(0,132, "note 5 = " + string(note5));
 draw_text(0,154, "note 6 = " + string(note6));
+draw_text(0,176, "timer = " + string(musicendtimer));
