@@ -28,7 +28,7 @@ y += yspd;
 
 // Transición
 
-if !place_meeting(x,y,roomwalkObj) {
+if !place_meeting(x,y,roomWalkObj) {
 	estado = states.control
 }
 

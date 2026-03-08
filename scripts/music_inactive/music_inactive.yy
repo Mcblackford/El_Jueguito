@@ -6,7 +6,7 @@
   "name":"music_inactive",
   "parent":{
     "name":"songHab",
-    "path":"folders/Objetos/Habilidades/songHab.yy",
+    "path":"folders/Players/Habilidades/songHab.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

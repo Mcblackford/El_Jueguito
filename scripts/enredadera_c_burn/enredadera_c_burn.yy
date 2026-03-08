@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"enredadera_c_burn",
   "parent":{
-    "name":"enredaderaCofre",
-    "path":"folders/Objetos/Plataformas y colisiones/Enredadera/enredaderaCofre.yy",
+    "name":"Enredadera_De_Cofre",
+    "path":"folders/Objetos/Objetos_Overworld_Interact/Enredadera/Enredadera_De_Cofre.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

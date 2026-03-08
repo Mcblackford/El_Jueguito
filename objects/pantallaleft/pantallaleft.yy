@@ -8,8 +8,8 @@
   "name":"pantallaleft",
   "overriddenProperties":[],
   "parent":{
-    "name":"ScreenColl",
-    "path":"folders/Objetos/ScreenColl.yy",
+    "name":"Colision_Pantalla",
+    "path":"folders/Objetos/Colisiones/Colisiones_Esp/Misc/Colision_Pantalla.yy",
   },
   "parentObjectId":null,
   "persistent":false,

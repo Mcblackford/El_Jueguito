@@ -9,8 +9,8 @@
   "name":"botonObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interruptores",
-    "path":"folders/Objetos/Interruptores.yy",
+    "name":"Presionar",
+    "path":"folders/Objetos/Colisiones/Puertas_E_Interruptores/Presionar.yy",
   },
   "parentObjectId":null,
   "persistent":false,

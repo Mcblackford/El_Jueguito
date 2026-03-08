@@ -15,7 +15,7 @@ if cursorObj.cursorstate > 1 {
 }
 
 if cursorObj.cursorstate <= 1 {
-	if place_meeting(x,y,windcolision) {
+	if place_meeting(x,y,windColisionObj) {
 		if cursorObj.cursordistance == 1 {
 			speedvalue = 10;
 		} else if cursorObj.cursordistance == 2 {
@@ -33,7 +33,7 @@ if cursorObj.cursorstate <= 1 {
 }
 
 if cursorObj.cursorstate = 2 {
-	if place_meeting(x,y,windcolision) {
+	if place_meeting(x,y,windColisionObj) {
 		if cursorObj.cursordistance == 1 {
 			speedupvalue = -10;
 		} else if cursorObj.cursordistance == 2 {
@@ -49,7 +49,7 @@ if cursorObj.cursorstate = 2 {
 }
 
 if cursorObj.cursorstate = 3 {
-	if place_meeting(x,y,windcolision) {
+	if place_meeting(x,y,windColisionObj) {
 		hspeed = 0;
 	}
 }

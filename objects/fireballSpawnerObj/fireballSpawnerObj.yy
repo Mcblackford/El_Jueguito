@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"ColisionEsquina",
-  "eventList":[],
+  "%Name":"fireballSpawnerObj",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"ColisionEsquina",
+  "name":"fireballSpawnerObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Colisiones de cajas",
-    "path":"folders/Objetos/Plataformas y colisiones/Colisiones de cajas.yy",
+    "name":"Colisiones_Esp",
+    "path":"folders/Objetos/Colisiones/Colisiones_Esp.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Coliesq",
-    "path":"sprites/Coliesq/Coliesq.yy",
+    "name":"fuegoSpr",
+    "path":"sprites/fuegoSpr/fuegoSpr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

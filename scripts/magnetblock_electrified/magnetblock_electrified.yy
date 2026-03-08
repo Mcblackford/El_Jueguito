@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"magnetblock_electrified",
   "parent":{
-    "name":"MagnetBlock",
-    "path":"folders/Objetos/Plataformas y colisiones/MagnetBlock.yy",
+    "name":"Caja_Magnetica",
+    "path":"folders/Objetos/Objetos_Overworld_Interact/Caja_Magnetica.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

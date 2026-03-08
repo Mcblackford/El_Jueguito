@@ -9,8 +9,8 @@
   "name":"cajaObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Caja",
-    "path":"folders/Objetos/Plataformas y colisiones/Caja.yy",
+    "name":"Caja_De_Madera",
+    "path":"folders/Objetos/Objetos_Overworld_Interact/Caja_De_Madera.yy",
   },
   "parentObjectId":null,
   "persistent":false,

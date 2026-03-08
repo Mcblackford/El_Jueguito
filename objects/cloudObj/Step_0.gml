@@ -25,7 +25,7 @@ if electrifiedcloud == false && place_meeting(x,y,thunderballObj) {
 
 // Movimiento
 
-if place_meeting(x,y,windcolision) && speed == 0 {
+if place_meeting(x,y,windColisionObj) && speed == 0 {
 	
 	movingtime = 200;
 	

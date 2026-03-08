@@ -10,8 +10,8 @@
   "name":"semisolidObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Plataformas y colisiones",
-    "path":"folders/Objetos/Plataformas y colisiones.yy",
+    "name":"Plataformas",
+    "path":"folders/Objetos/Colisiones/Plataformas.yy",
   },
   "parentObjectId":null,
   "persistent":false,

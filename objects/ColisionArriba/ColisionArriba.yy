@@ -6,8 +6,8 @@
   "name":"ColisionArriba",
   "overriddenProperties":[],
   "parent":{
-    "name":"Colisiones de cajas",
-    "path":"folders/Objetos/Plataformas y colisiones/Colisiones de cajas.yy",
+    "name":"Colisiones_Cajas_Moviles",
+    "path":"folders/Objetos/Colisiones/Colisiones_Cajas_Moviles.yy",
   },
   "parentObjectId":null,
   "persistent":false,

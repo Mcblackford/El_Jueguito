@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"enredadera_cuer_burn",
   "parent":{
-    "name":"enredaderaCuerda",
-    "path":"folders/Objetos/Plataformas y colisiones/Enredadera/enredaderaCuerda.yy",
+    "name":"Enredadera_Cuerda",
+    "path":"folders/Objetos/Objetos_Overworld_Interact/Enredadera/Enredadera_Cuerda.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

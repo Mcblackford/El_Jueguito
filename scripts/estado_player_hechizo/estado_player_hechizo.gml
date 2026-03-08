@@ -4,7 +4,7 @@ depth = -99;
 
 yspd = 0;
 
-habilidad = mouse_check_button_pressed(mb_left);
+Inputs()
 
 // Cooldown
 
@@ -64,8 +64,8 @@ if !instance_exists(fireballObj) && (cursorObj.sprite_index == fuegoCur) {
 
 	// --Viento--
 
-if !instance_exists(windcolision) && (cursorObj.sprite_index == vientoCur) {
-	instance_create_layer(playerObj.x, playerObj.y, "Instances", windcolision);
+if !instance_exists(windColisionObj) && (cursorObj.sprite_index == vientoCur) {
+	instance_create_layer(playerObj.x, playerObj.y, "Instances", windColisionObj);
 }
 
 	// --Iman--

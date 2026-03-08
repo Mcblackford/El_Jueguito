@@ -4,8 +4,7 @@ depth = -99;
 
 // Inputs
 
-habilidad = mouse_check_button_pressed(mb_left);
-tab = keyboard_check(vk_tab);
+Inputs()
 
 // Colision
 
@@ -72,13 +71,15 @@ y += yspd;
 
 // Muerte
 
-if (place_meeting(x,y,deathObj) || place_meeting(x, y, puertaObj) || place_meeting(x, y, puertaSumObj)) {
-	estado = states.muerte
-}
+condicion_de_muerte()
+
+// Tieso
 
 if tab {
 	estado = states.tieso
 }
+
+// Sprite
 
 sprite_index = saltoSpr;
 

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"caja_dusted",
   "parent":{
-    "name":"Caja",
-    "path":"folders/Objetos/Plataformas y colisiones/Caja.yy",
+    "name":"Caja_De_Madera",
+    "path":"folders/Objetos/Objetos_Overworld_Interact/Caja_De_Madera.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

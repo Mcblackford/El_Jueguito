@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Enredadera",
-    "path":"folders/Objetos/Plataformas y colisiones/Enredadera.yy",
+    "path":"folders/Objetos/Objetos_Overworld_Interact/Enredadera.yy",
   },
   "parentObjectId":null,
   "persistent":false,

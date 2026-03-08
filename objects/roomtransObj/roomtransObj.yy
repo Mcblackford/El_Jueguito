@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"roomtransObj",
+  "%Name":"roomTransObj",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"roomtransObj",
+  "name":"roomTransObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Plataformas y colisiones",
-    "path":"folders/Objetos/Plataformas y colisiones.yy",
+    "name":"Room_Transicion",
+    "path":"folders/Objetos/Colisiones/Colisiones_Esp/Room_Transicion.yy",
   },
   "parentObjectId":null,
   "persistent":true,

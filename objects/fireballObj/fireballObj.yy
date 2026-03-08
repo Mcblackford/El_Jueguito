@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Habilidades",
-    "path":"folders/Objetos/Habilidades.yy",
+    "path":"folders/Players/Habilidades.yy",
   },
   "parentObjectId":null,
   "persistent":false,

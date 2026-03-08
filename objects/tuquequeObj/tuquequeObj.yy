@@ -6,8 +6,8 @@
   "name":"tuquequeObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Entidades",
-    "path":"folders/Objetos/Entidades.yy",
+    "name":"Compa_Tuqueqeue",
+    "path":"folders/Objetos/NPCs/Compa_Tuqueqeue.yy",
   },
   "parentObjectId":null,
   "persistent":true,

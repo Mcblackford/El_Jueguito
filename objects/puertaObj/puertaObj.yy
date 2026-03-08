@@ -9,8 +9,8 @@
   "name":"puertaObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Plataformas y colisiones",
-    "path":"folders/Objetos/Plataformas y colisiones.yy",
+    "name":"Mantener",
+    "path":"folders/Objetos/Colisiones/Puertas_E_Interruptores/Mantener.yy",
   },
   "parentObjectId":{
     "name":"colisionObj",

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"estado_player_transicion",
+  "%Name":"estado_player_musical",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"estado_player_transicion",
+  "name":"estado_player_musical",
   "parent":{
     "name":"Estados_Player_1",
     "path":"folders/Players/Player_1/Estados_Player_1.yy",

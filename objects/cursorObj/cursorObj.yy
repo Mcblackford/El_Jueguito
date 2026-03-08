@@ -9,8 +9,8 @@
   "name":"cursorObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Cursor",
+    "path":"folders/Objetos/GUI_E_Impesindibles/Cursor.yy",
   },
   "parentObjectId":null,
   "persistent":true,

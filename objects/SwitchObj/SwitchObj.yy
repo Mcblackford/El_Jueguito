@@ -9,8 +9,8 @@
   "name":"switchObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interruptores",
-    "path":"folders/Objetos/Interruptores.yy",
+    "name":"Mantener",
+    "path":"folders/Objetos/Colisiones/Puertas_E_Interruptores/Mantener.yy",
   },
   "parentObjectId":null,
   "persistent":false,

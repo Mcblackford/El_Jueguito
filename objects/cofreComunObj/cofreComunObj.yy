@@ -9,8 +9,8 @@
   "name":"cofreComunObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"ItemsObjs",
-    "path":"folders/Objetos/ItemsObjs.yy",
+    "name":"Cofre_Comun",
+    "path":"folders/Objetos/Objetos_Overworld_Interact/Cofres/Cofre_Comun.yy",
   },
   "parentObjectId":null,
   "persistent":false,

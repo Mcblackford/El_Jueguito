@@ -12,15 +12,7 @@ if habilidadcooldown > 0 {
 
 moving = false
 
-der = keyboard_check( ord("D") );
-izq = keyboard_check( ord("A") );
-arriba = keyboard_check( ord("W") );
-abajo = keyboard_check( ord("S") );
-interact = keyboard_check_pressed( ord("E"));
-jump = keyboard_check_pressed( vk_space );
-jumphold = keyboard_check(vk_space);
-habilidad = mouse_check_button_pressed(mb_left);
-tab = keyboard_check_pressed(vk_tab);
+Inputs()
 
 if der {
 	image_xscale = -2.5;
@@ -159,13 +151,11 @@ if habilidad && (habilidadcooldown <= 0) && (cursorObj.sprite_index != standarCu
 
 // Muerte
 
-if (place_meeting(x,y,deathObj) || place_meeting(x, y, puertaObj) || place_meeting(x, y, puertaSumObj)) {
-	estado = states.muerte
-}
+condicion_de_muerte()
 
 // Transición
 
-if (place_meeting(x,y, roomwalkObj)) {
+if (place_meeting(x,y, roomWalkObj)) {
 	estado = states.transicion
 }
 

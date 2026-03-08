@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"itemEjem1",
+  "%Name":"ItemObtObj",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"itemEjem1",
+  "name":"ItemObtObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"ItemsObjs",
-    "path":"folders/Objetos/ItemsObjs.yy",
+    "name":"Item_Recogible",
+    "path":"folders/Objetos/Objetos_Overworld_Interact/Item_Recogible.yy",
   },
   "parentObjectId":null,
   "persistent":false,

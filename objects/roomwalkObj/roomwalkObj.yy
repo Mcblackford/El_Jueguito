@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"roomwalkObj",
+  "%Name":"roomWalkObj",
   "eventList":[],
   "managed":true,
-  "name":"roomwalkObj",
+  "name":"roomWalkObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Plataformas y colisiones",
-    "path":"folders/Objetos/Plataformas y colisiones.yy",
+    "name":"Room_Transicion",
+    "path":"folders/Objetos/Colisiones/Colisiones_Esp/Room_Transicion.yy",
   },
   "parentObjectId":null,
   "persistent":false,

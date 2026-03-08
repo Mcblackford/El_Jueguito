@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"songHab",
-    "path":"folders/Objetos/Habilidades/songHab.yy",
+    "path":"folders/Players/Habilidades/songHab.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -6,7 +6,7 @@
   "name":"spellwheel_inactivo",
   "parent":{
     "name":"Spellwheel",
-    "path":"folders/Objetos/Spellwheel.yy",
+    "path":"folders/Objetos/GUI_E_Impesindibles/Spellwheel.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -9,8 +9,8 @@
   "name":"deathObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Plataformas y colisiones",
-    "path":"folders/Objetos/Plataformas y colisiones.yy",
+    "name":"Colisiones_Esp",
+    "path":"folders/Objetos/Colisiones/Colisiones_Esp.yy",
   },
   "parentObjectId":null,
   "persistent":false,

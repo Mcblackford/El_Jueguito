@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"estado_player_debug",
   "parent":{
-    "name":"Estados",
-    "path":"folders/Objetos/Jugador/Estados.yy",
+    "name":"Estados_Player_1",
+    "path":"folders/Players/Player_1/Estados_Player_1.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

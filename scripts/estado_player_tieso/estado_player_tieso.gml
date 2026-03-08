@@ -2,8 +2,8 @@ function estado_player_tieso(){ // Inicio del Script
 
 // Imputs
 
-der = keyboard_check(ord("D")) || keyboard_check_pressed(vk_right);
-izq = keyboard_check(ord("A")) || keyboard_check_pressed(vk_left);
+der = keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right);
+izq = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);
 arriba = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
 abajo = keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down);
 atras = keyboard_check_pressed(ord("Q"));

@@ -11,8 +11,8 @@
   "name":"cameraObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Camara",
+    "path":"folders/Objetos/GUI_E_Impesindibles/Camara.yy",
   },
   "parentObjectId":null,
   "persistent":true,

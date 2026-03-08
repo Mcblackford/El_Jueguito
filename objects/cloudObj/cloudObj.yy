@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"cloudHab",
-    "path":"folders/Objetos/Habilidades/cloudHab.yy",
+    "path":"folders/Players/Habilidades/cloudHab.yy",
   },
   "parentObjectId":null,
   "persistent":false,

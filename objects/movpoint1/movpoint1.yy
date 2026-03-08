@@ -8,8 +8,8 @@
   "name":"movpoint1",
   "overriddenProperties":[],
   "parent":{
-    "name":"colisionMovPoints",
-    "path":"folders/Objetos/colisionMovPoints.yy",
+    "name":"Puntos_Plat_Movil",
+    "path":"folders/Objetos/Colisiones/Puntos_Plat_Movil.yy",
   },
   "parentObjectId":null,
   "persistent":false,

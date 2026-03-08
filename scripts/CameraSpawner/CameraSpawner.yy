@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"CameraSpawner",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Camara",
+    "path":"folders/Objetos/GUI_E_Impesindibles/Camara.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

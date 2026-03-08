@@ -29,7 +29,7 @@ else if (estado == states.debug) {
 }
 
 else if (estado == states.song) {
-	estado_player_song()
+	estado_player_musical()
 }
 
 ///

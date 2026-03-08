@@ -12,7 +12,7 @@ if cursorObj.cursorstate > 1 {
 	sidedvalue = 0;
 }
 
-if place_meeting(x,y,windcolision) {
+if place_meeting(x,y,windColisionObj) {
 	if cursorObj.cursordistance == 1 {
 		vientofuer = 5;
 		cajadecel = 0.1;

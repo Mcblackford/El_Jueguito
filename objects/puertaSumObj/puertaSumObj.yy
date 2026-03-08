@@ -9,8 +9,8 @@
   "name":"puertaSumObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Plataformas y colisiones",
-    "path":"folders/Objetos/Plataformas y colisiones.yy",
+    "name":"Presionar",
+    "path":"folders/Objetos/Colisiones/Puertas_E_Interruptores/Presionar.yy",
   },
   "parentObjectId":{
     "name":"colisionObj",

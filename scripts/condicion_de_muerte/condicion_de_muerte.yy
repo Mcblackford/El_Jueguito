@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"condicion_de_muerte",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"condicion_de_muerte",
+  "parent":{
+    "name":"Condiciones_De_Cambio",
+    "path":"folders/Players/Player_1/Estados_Player_1/Condiciones_De_Cambio.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

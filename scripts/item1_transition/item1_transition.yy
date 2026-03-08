@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"item1_transition",
   "parent":{
-    "name":"itemEjem1",
-    "path":"folders/Objetos/ItemsObjs/itemEjem1.yy",
+    "name":"Item_Obt",
+    "path":"folders/Objetos/Objetos_Overworld_Interact/Item_Recogible/Item_Obt.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

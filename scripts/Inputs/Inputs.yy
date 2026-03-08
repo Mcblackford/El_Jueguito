@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"estado_player_song",
+  "%Name":"Inputs",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"estado_player_song",
+  "name":"Inputs",
   "parent":{
-    "name":"Estados",
-    "path":"folders/Objetos/Jugador/Estados.yy",
+    "name":"Players",
+    "path":"folders/Players.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

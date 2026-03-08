@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"cofre_cerrado",
   "parent":{
-    "name":"Cofre",
-    "path":"folders/Objetos/ItemsObjs/Cofre.yy",
+    "name":"Cofre_Comun_Scripts",
+    "path":"folders/Objetos/Objetos_Overworld_Interact/Cofres/Cofre_Comun/Cofre_Comun_Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

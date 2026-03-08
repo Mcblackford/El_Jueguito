@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"itemEjem3",
+  "%Name":"windColisionObj",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"itemEjem3",
+  "name":"windColisionObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"ItemsObjs",
-    "path":"folders/Objetos/ItemsObjs.yy",
+    "name":"Misc",
+    "path":"folders/Objetos/Colisiones/Colisiones_Esp/Misc.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"itemC",
-    "path":"sprites/itemC/itemC.yy",
+    "name":"winddowncolSpr",
+    "path":"sprites/winddowncolSpr/winddowncolSpr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

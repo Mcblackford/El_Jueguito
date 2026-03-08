@@ -1,4 +1,4 @@
-function estado_player_song(){ //
+function estado_player_musical(){ //
 
 sprite_index = caidaSpr;
 
@@ -22,7 +22,7 @@ if (place_meeting(x,y,deathObj) || place_meeting(x, y, puertaObj) || place_meeti
 
 // Transición
 
-if (place_meeting(x,y, roomwalkObj)) {
+if (place_meeting(x,y, roomWalkObj)) {
 	estado = states.transicion
 }
 

@@ -2,10 +2,7 @@ function estado_player_debug(){
 
 depth = -999
 
-der = keyboard_check( ord("D") );
-izq = keyboard_check( ord("A") );
-arriba = keyboard_check( ord("W") );
-abajo = keyboard_check( ord("S") );
+Inputs()
 
 if izq {
 	x += -15;

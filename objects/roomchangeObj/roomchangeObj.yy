@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"roomchangeObj",
+  "%Name":"roomChangeObj",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"playerObj","path":"objects/playerObj/playerObj.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"roomchangeObj",
+  "name":"roomChangeObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Plataformas y colisiones",
-    "path":"folders/Objetos/Plataformas y colisiones.yy",
+    "name":"Room_Transicion",
+    "path":"folders/Objetos/Colisiones/Colisiones_Esp/Room_Transicion.yy",
   },
   "parentObjectId":null,
   "persistent":false,

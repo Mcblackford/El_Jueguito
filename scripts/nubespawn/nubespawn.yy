@@ -6,7 +6,7 @@
   "name":"nubespawn",
   "parent":{
     "name":"cloudHab",
-    "path":"folders/Objetos/Habilidades/cloudHab.yy",
+    "path":"folders/Players/Habilidades/cloudHab.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
