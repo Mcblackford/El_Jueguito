@@ -160,6 +160,11 @@ if (place_meeting(x,y, roomWalkObj)) {
 // Tieso
 
 if tab {
+	
+	if !instance_exists(InventarioBackgroundObj) {
+		var _fondo_de_inv = instance_create_layer(x,y, "instances", InventarioBackgroundObj)
+	}
+	
 	invGUIObj.activo = true;
 	estado = states.tieso
 }
@@ -188,13 +193,13 @@ if (moving == true) && (coyoteHangTmr < coyoteHangFrm) && (yspd == 0) {
 		}
 		
 		if cursorObj.cursorstate <= 1 {
-		sprite_index = tiesoSpr;
+		sprite_index = tiesoSpr_v2;
 		}
 		if cursorObj.cursorstate == 2 {
-		sprite_index = tiesoupSpr;
+		sprite_index = tiesoupSpr_v2;
 		}
 		if cursorObj.cursorstate == 3 {
-		sprite_index = tiesodownSpr;
+		sprite_index = tiesodownSpr_v2;
 		}
 	}
 	

@@ -6,3 +6,6 @@ botones = false;
 sub_selector= 0;
 
 sec_act = TIPO_NORMI;
+
+alfasumaspr = 0.1;
+alfasprite = 0;

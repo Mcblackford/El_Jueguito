@@ -1,3 +1,5 @@
+depth = -2;
+
 if (activo) {
     if (keyboard_check_pressed(ord("E")) || keyboard_check_pressed(vk_enter)) {
         if (botones) {
