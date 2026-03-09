@@ -34,6 +34,10 @@ else if (estado == states.song) {
 
 ///
 
+if !instance_exists(playerTailObj) {
+	var _cola = instance_create_layer(x,y, "instances", playerTailObj)
+}
+
 // Seleccion de Habilidades
 
 if !instance_exists(spellswheelObj) {

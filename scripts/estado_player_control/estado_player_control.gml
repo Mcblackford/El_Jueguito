@@ -176,7 +176,17 @@ condicion_musical()
 
 if (moving == true) && (coyoteHangTmr < coyoteHangFrm) && (yspd == 0) {
 		sprite_index = caminSpr;
+		
+		with playerTailObj {
+			sprite_index = emptycollSpr
+		}
+		
 	} else {
+		
+		with playerTailObj {
+			sprite_index = tiesocolaSpr
+		}
+		
 		if cursorObj.cursorstate <= 1 {
 		sprite_index = tiesoSpr;
 		}
