@@ -1,0 +1,1 @@
+imagescalevalue = 0.5;
