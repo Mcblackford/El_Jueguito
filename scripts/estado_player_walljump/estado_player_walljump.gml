@@ -75,11 +75,9 @@ y += yspd;
 
 condicion_de_muerte()
 
-// Tieso
+// Inventario
 
-if tab {
-	estado = states.tieso
-}
+condicion_de_inventario()
 
 // Sprite
 

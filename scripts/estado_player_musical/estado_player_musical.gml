@@ -1,5 +1,7 @@
 function estado_player_musical(){ //
 
+Inputs()
+
 sprite_index = caidaSpr;
 
 if !instance_exists(musicObj) {
@@ -22,12 +24,9 @@ if (place_meeting(x,y, roomWalkObj)) {
 	estado = states.transicion
 }
 
-// Tieso
+// Inventario
 
-if tab {
-	invGUIObj.activo = true;
-	estado = states.tieso
-}
+condicion_de_inventario()
 
 // Debug
 

@@ -157,17 +157,9 @@ if (place_meeting(x,y, roomWalkObj)) {
 	estado = states.transicion
 }
 
-// Tieso
+// Inventario
 
-if tab {
-	
-	if !instance_exists(InventarioBackgroundObj) {
-		var _fondo_de_inv = instance_create_layer(x,y, "instances", InventarioBackgroundObj)
-	}
-	
-	invGUIObj.activo = true;
-	estado = states.tieso
-}
+condicion_de_inventario()
 
 // Debug
 

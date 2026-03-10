@@ -1,0 +1,1 @@
+draw_sprite_ext(standarCur, -1, mouse_x - cameraObj.x + 640, mouse_y - cameraObj.y + 432, 2, 2, 0, c_white, invGUIObj.alfasprite);
