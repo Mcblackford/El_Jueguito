@@ -1,4 +1,4 @@
-if place_meeting(x, y, colisionObj) {
+if place_meeting(x, y, colisionObj) || place_meeting(x,y, cajaObj) || place_meeting(x,y, enredaderaCuerdaObj) || place_meeting(x,y, enredaderaObj) {
 	instance_destroy()
 }
 

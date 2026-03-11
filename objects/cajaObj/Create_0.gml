@@ -23,3 +23,5 @@ randomwind = 0;
 sidedvalue = 0;
 vientofuer = 0;
 colisionvalue = 0;
+
+ciclotimerbox = 0;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"caja_spawn_fire",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"caja_spawn_fire",
+  "parent":{
+    "name":"Caja_De_Madera",
+    "path":"folders/Objetos/Objetos_Overworld_Interact/Caja_De_Madera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

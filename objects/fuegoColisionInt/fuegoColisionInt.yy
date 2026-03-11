@@ -35,5 +35,5 @@
     "path":"sprites/fuegoSpr/fuegoSpr.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

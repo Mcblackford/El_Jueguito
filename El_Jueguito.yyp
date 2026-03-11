@@ -152,6 +152,7 @@
     {"id":{"name":"caja_iddle","path":"scripts/caja_iddle/caja_iddle.yy",},},
     {"id":{"name":"caja_moveable","path":"scripts/caja_moveable/caja_moveable.yy",},},
     {"id":{"name":"caja_onfire","path":"scripts/caja_onfire/caja_onfire.yy",},},
+    {"id":{"name":"caja_spawn_fire","path":"scripts/caja_spawn_fire/caja_spawn_fire.yy",},},
     {"id":{"name":"caja_todust","path":"scripts/caja_todust/caja_todust.yy",},},
     {"id":{"name":"cantidadItem","path":"scripts/cantidadItem/cantidadItem.yy",},},
     {"id":{"name":"cofre_abierto","path":"scripts/cofre_abierto/cofre_abierto.yy",},},
