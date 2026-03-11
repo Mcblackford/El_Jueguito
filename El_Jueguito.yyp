@@ -209,6 +209,7 @@
     {"id":{"name":"nubeiddle","path":"scripts/nubeiddle/nubeiddle.yy",},},
     {"id":{"name":"nubespawn","path":"scripts/nubespawn/nubespawn.yy",},},
     {"id":{"name":"obtenerItem","path":"scripts/obtenerItem/obtenerItem.yy",},},
+    {"id":{"name":"plataforma_de_viento_scrpt","path":"scripts/plataforma_de_viento_scrpt/plataforma_de_viento_scrpt.yy",},},
     {"id":{"name":"spellwheel_activo","path":"scripts/spellwheel_activo/spellwheel_activo.yy",},},
     {"id":{"name":"spellwheel_inactivo","path":"scripts/spellwheel_inactivo/spellwheel_inactivo.yy",},},
     {"id":{"name":"usarItem","path":"scripts/usarItem/usarItem.yy",},},

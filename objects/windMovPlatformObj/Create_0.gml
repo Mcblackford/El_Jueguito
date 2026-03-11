@@ -13,6 +13,6 @@ Wpointy_5 = 0;
 Wpointx_6 = 0;
 Wpointy_6 = 0;
 
-windsped = 0;
-
 trayectoplat = 0;
+
+acceldec = 0.5;

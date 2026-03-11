@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"plataforma_de_viento_scrpt",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"plataforma_de_viento_scrpt",
+  "parent":{
+    "name":"Molinillo_Para_Plataforma",
+    "path":"folders/Objetos/Objetos_Overworld_Interact/Molinillo_Para_Plataforma.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -27,3 +27,9 @@ if place_meeting(x,y, windColisionObj) {
 }
 
 image_angle += molinillorotacion;
+
+with plataformavientoID {
+	
+	plataforma_de_viento_scrpt()
+	
+}

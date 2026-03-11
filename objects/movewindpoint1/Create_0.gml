@@ -1,2 +1,2 @@
-windplatformID = x;
-windplatformID = y;
+windplatformID.Wpointx_1 = x;
+windplatformID.Wpointy_1 = y;
