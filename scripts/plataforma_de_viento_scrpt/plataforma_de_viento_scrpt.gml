@@ -1,23 +1,29 @@
 function plataforma_de_viento_scrpt(){ ///
 
-if collision_rectangle(x-8, y+8, x, y, movewindStart, true, true) {
-	trayectoplat = 0;
-} else if collision_rectangle(x-8, y+8, x, y, movewindpoint1, true, true) {
-	trayectoplat = 1;
-} else if collision_rectangle(x-8, y+8, x, y, movewindpoint2, true, true) {
-	trayectoplat = 2;
-} else if collision_rectangle(x-8, y+8, x, y, movewindpoint3, true, true) {
-	trayectoplat = 3;
-} else if collision_rectangle(x-8, y+8, x, y, movewindpoint4, true, true) {
-	trayectoplat = 4;
-} else if collision_rectangle(x-8, y+8, x, y, movewindpoint5, true, true) {
-	trayectoplat = 5;
-} else if collision_rectangle(x-8, y+8, x, y, movewindpoint6, true, true) {
-	trayectoplat = 6;
-}
-
 if molinilloObj.molinilloactivo == true {
-
+	
+	changetimer++;
+	
+	if collision_rectangle(x-8, y+8, x, y, movewindStart, true, true) {
+		trayectoplat = 0;
+	} else if collision_rectangle(x-8, y+8, x, y, movewindpoint1, true, true) && trayectoplat == 0 {
+		trayectoplat = 1;
+	} else if collision_rectangle(x-8, y+8, x, y, movewindpoint2, true, true) && trayectoplat == 1 {
+		trayectoplat = 2;
+	} else if collision_rectangle(x-8, y+8, x, y, movewindpoint3, true, true) && trayectoplat == 2 {
+		trayectoplat = 3;
+	} else if collision_rectangle(x-8, y+8, x, y, movewindpoint4, true, true) && trayectoplat == 3 {
+		trayectoplat = 4;
+	} else if collision_rectangle(x-8, y+8, x, y, movewindpoint5, true, true) && trayectoplat == 4 {
+		trayectoplat = 5;
+	} else if collision_rectangle(x-8, y+8, x, y, movewindpoint6, true, true) && trayectoplat == 5 {
+		trayectoplat = 6;
+	}
+	
+	if trayectoplat > 0 && changetimer == 0 {
+		trayectoplat -= 1;
+	}
+	
 	if trayectoplat < 6 {
 		
 		speed = molinilloObj.molinillorotacion;
@@ -42,13 +48,25 @@ if molinilloObj.molinilloactivo == true {
 
 else if molinilloObj.molinilloactivo == false {
 	
-	if speed == 0 && !collision_rectangle(x-8, y+8, x, y, movewindStart, true, true) 
-	&& !collision_rectangle(x-8, y+8, x, y, movewindpoint1, true, true) 
-	&& !collision_rectangle(x-8, y+8, x, y, movewindpoint2, true, true) 
-	&& !collision_rectangle(x-8, y+8, x, y, movewindpoint3, true, true) 
-	&& !collision_rectangle(x-8, y+8, x, y, movewindpoint4, true, true) 
-	&& !collision_rectangle(x-8, y+8, x, y, movewindpoint5, true, true) 
-	&& !collision_rectangle(x-8, y+8, x, y, movewindpoint6, true, true) {
+	changetimer = 0;
+	
+		if collision_rectangle(x-8, y+8, x, y, movewindStart, true, true){
+		trayectoplat = 0;
+	} else if collision_rectangle(x-8, y+8, x, y, movewindpoint1, true, true){
+		trayectoplat = 1;
+	} else if collision_rectangle(x-8, y+8, x, y, movewindpoint2, true, true){
+		trayectoplat = 2;
+	} else if collision_rectangle(x-8, y+8, x, y, movewindpoint3, true, true){
+		trayectoplat = 3;
+	} else if collision_rectangle(x-8, y+8, x, y, movewindpoint4, true, true){
+		trayectoplat = 4;
+	} else if collision_rectangle(x-8, y+8, x, y, movewindpoint5, true, true){
+		trayectoplat = 5;
+	} else if collision_rectangle(x-8, y+8, x, y, movewindpoint6, true, true){
+		trayectoplat = 6;
+	}
+	
+	if trayectoplat < 6 && speed == 0 {
 		trayectoplat += 1;
 	}
 	
