@@ -80,6 +80,7 @@
     {"name":"inst_1F41AFB0","path":"rooms/testRoom2/testRoom2.yy",},
     {"name":"inst_3C324496","path":"rooms/testRoom2/testRoom2.yy",},
     {"name":"inst_66EFA385","path":"rooms/testRoom2/testRoom2.yy",},
+    {"name":"inst_30F63618","path":"rooms/testRoom2/testRoom2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -230,6 +231,7 @@
         {"$GMRInstance":"v4","%Name":"inst_1F41AFB0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1F41AFB0","objectId":{"name":"ColisionDer","path":"objects/ColisionDer/ColisionDer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":20.5,"x":1056.0,"y":832.0,},
         {"$GMRInstance":"v4","%Name":"inst_3C324496","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3C324496","objectId":{"name":"ColisionAbajo","path":"objects/ColisionAbajo/ColisionAbajo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":30.0,"scaleY":1.0,"x":1664.0,"y":352.0,},
         {"$GMRInstance":"v4","%Name":"inst_66EFA385","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66EFA385","objectId":{"name":"jumpOrb","path":"objects/jumpOrb/jumpOrb.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":1568.0,"y":544.0,},
+        {"$GMRInstance":"v4","%Name":"inst_30F63618","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_30F63618","objectId":{"name":"molinilloObj","path":"objects/molinilloObj/molinilloObj.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1856.0,"y":256.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
