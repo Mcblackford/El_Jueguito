@@ -12,7 +12,10 @@
     "name":"Plataformas",
     "path":"folders/Objetos/Colisiones/Plataformas.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"semisolidObj",
+    "path":"objects/semisolidObj/semisolidObj.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
