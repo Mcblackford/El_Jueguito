@@ -38,5 +38,5 @@
     "path":"sprites/windpoint_3/windpoint_3.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

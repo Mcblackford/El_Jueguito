@@ -23,6 +23,4 @@ Wpointy_6 = puntoW6.y;
 
 trayectoplat = 0;
 
-changetimer = 0;
-
-acceldec = 0.5;
+acceldec = 0.1;
