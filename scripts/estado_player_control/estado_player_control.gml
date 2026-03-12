@@ -143,18 +143,6 @@ x += xspd;
 y += yspd;
 }
 
-// Colision Semisolida
-
-var _closest_semisolid = instance_nearest(x,y, semisolidObj)
-
-if collision_rectangle(x-22, y, x+22, y+5, _closest_semisolid, true, true) && !collision_rectangle(x-22, y-15, x+22, y-40, _closest_semisolid, true, true) && (yspd > 0) {
-	y = _closest_semisolid.y;
-	contsuelo = true;
-	coyoteHangTmr = 0;
-	coyoteJumpTmr = 0;
-	yspd += 0;
-}
-
 // Hechizo
 
 condicion_de_hechizo()

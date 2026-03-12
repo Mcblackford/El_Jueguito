@@ -36,17 +36,6 @@ if yspd != 0 && place_meeting(x, y + yspd, colisionObj) {
 	yspd = 0;
 }
 
-var _closest_semisolid = instance_nearest(x,y, semisolidObj)
-
-if collision_rectangle(x-22, y, x+22, y+5, _closest_semisolid, true, true) && !collision_rectangle(x-22, y-15, x+22, y-40, _closest_semisolid, true, true) && (yspd > 0) {
-	y = _closest_semisolid.y;
-	contsuelo = true;
-	coyoteHangTmr = 0;
-	coyoteJumpTmr = 0;
-	yspd += 0;
-}
-
-
 // Habilidades
 
 if (place_meeting(x,y+1,colisionObj) && (habilidadcooldown == 30)) || (!place_meeting(x,y+1,colisionObj) && (habilidadcooldown == 75)) {
