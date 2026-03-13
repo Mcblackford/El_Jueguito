@@ -44,7 +44,7 @@ if (activo) {
 	 if (activo && !botones) {
         if (keyboard_check_pressed(vk_right)) { 
             sec_act= TIPO_CLAVE; 
-            selector = 0; 
+            selector = 0;
         }
         if (keyboard_check_pressed(vk_left)) { 
             sec_act = TIPO_NORMI; 

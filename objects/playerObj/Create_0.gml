@@ -55,6 +55,8 @@ coyoteJumpTmr = 0;
 
 habilidadcooldown = 0;
 
+selecttimer = 0;
+
 // Habilidades
 
 	// Desbloqueo

@@ -267,6 +267,7 @@
     {"id":{"name":"inbtwSpr","path":"sprites/inbtwSpr/inbtwSpr.yy",},},
     {"id":{"name":"inventarioclaveSpr","path":"sprites/inventarioclaveSpr/inventarioclaveSpr.yy",},},
     {"id":{"name":"inventarioSpr","path":"sprites/inventarioSpr/inventarioSpr.yy",},},
+    {"id":{"name":"invselecSpr_1","path":"sprites/invselecSpr_1/invselecSpr_1.yy",},},
     {"id":{"name":"invselecSpr","path":"sprites/invselecSpr/invselecSpr.yy",},},
     {"id":{"name":"itemA","path":"sprites/itemA/itemA.yy",},},
     {"id":{"name":"itemAcont","path":"sprites/itemAcont/itemAcont.yy",},},

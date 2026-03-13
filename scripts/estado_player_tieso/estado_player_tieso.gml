@@ -1,5 +1,11 @@
 function estado_player_tieso(){ // Inicio del Script
 
+// Timer de Inventario
+
+if selecttimer > 0 && () {
+	selecttimer--
+}
+
 // Imputs
 
 der = keyboard_check_pressed(ord("D"));
@@ -85,6 +91,7 @@ if (!invGUIObj.botones) {
 			if (my > item_y_min && my < item_y_max && d < visible_cantidad) {
 				invGUIObj.selector = d;
 				if (mouse_check_button_pressed(mb_left)) {
+					selecttimer = 60;
 					invGUIObj.botones = true;
 					invGUIObj.sub_selector = 1;
 				}
@@ -112,7 +119,7 @@ if (invGUIObj.botones) {
 	}
 	
 	// cancelar seleccion have
-	if (mouse_check_button_pressed(mb_right)) {
+	if selecttimer <= 0 {
 		invGUIObj.botones = false;
 	}
 }
