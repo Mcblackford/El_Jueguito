@@ -89,6 +89,10 @@ if !instance_exists(lightHabObj) && (cursorObj.sprite_index == luzCur) {
 
 // Sprites
 
+with playerTailObj {
+	sprite_index = emptycollSpr
+}
+
 if place_meeting(x, y+1, colisionObj) {
 	if cursorObj.cursorstate == 0 {
 		sprite_index = hechizofrontalSpr;
