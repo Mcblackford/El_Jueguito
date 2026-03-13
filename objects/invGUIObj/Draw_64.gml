@@ -43,10 +43,18 @@ for (var i=i1;i<i2;i++){
 		draw_sprite_ext(itemVar[ITEM_VAR_SPRITE], 0, x + 852, y + 204 , 5.5 , 5.5 ,0 ,c_white ,alfasprite);
 		draw_text_ext(x + 680, y + 438, string(itemVar[ITEM_VAR_DESCRP]), 34 ,540)
 		
-		if botones == false {
-			draw_sprite_ext(invselecSpr, frame, x + 156, y + 190 + posy, 2.88 , 3.12,0,c_white,alfasprite*0.75); // selector momentaneo
+		if sec_act == TIPO_NORMI {
+			if botones == false {
+				draw_sprite_ext(invselecSpr, frame, x + 156, y + 190 + posy, 2.88 , 3.12,0,c_white,alfasprite*0.75); // selector momentaneo
+			} else {
+				draw_sprite_ext(invselecSpr_1, frame, x + 156, y + 190 + posy, 2.88 , 3.12,0,c_white,alfasprite*0.5);
+			}
 		} else {
-			draw_sprite_ext(invselecSpr_1, frame, x + 156, y + 190 + posy, 2.88 , 3.12,0,c_white,alfasprite*0.5);
+			if botones == false {
+				draw_sprite_ext(invselecEspSpr, frame, x + 156, y + 190 + posy, 2.88 , 3.12,0,c_white,alfasprite); // selector momentaneo
+			} else {
+				draw_sprite_ext(invselecEspSpr_1, frame, x + 156, y + 190 + posy, 2.88 , 3.12,0,c_white,alfasprite*0.5);
+			}
 		}
 	}
 	
