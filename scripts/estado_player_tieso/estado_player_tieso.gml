@@ -1,8 +1,10 @@
 function estado_player_tieso(){ // Inicio del Script
 
 // Timer de Inventario
-
-if selecttimer > 0 && () {
+var mx = device_mouse_x_to_gui(0);
+var my = device_mouse_y_to_gui(0);
+var visible_cantidad = cantidadItem(invGUIObj.sec_act)
+if selecttimer > 0 && (mx > invGUIObj.x + 160 && mx < invGUIObj.x +660) {
 	selecttimer--
 }
 
@@ -78,9 +80,7 @@ if (!invGUIObj.botones) {
 
 //Intento para lo del mouse, presiento mi decadencia en la locura
 
-var mx = device_mouse_x_to_gui(0);
-var my = device_mouse_y_to_gui(0);
-var visible_cantidad = cantidadItem(invGUIObj.sec_act)
+
 
 if (!invGUIObj.botones) {
 	if (mx > invGUIObj.x + 160 && mx < invGUIObj.x +660) {
