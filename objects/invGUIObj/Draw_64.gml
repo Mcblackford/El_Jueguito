@@ -32,7 +32,11 @@ for (var i=i1;i<i2;i++){
 	var itemVar= global.items[item[INVENTARIO_ITEM]];
 	if (itemVar[ITEM_VAR_TIPO]) == sec_act {
 	draw_set_font(short_story_x16);
-	draw_set_colour(c_gray);
+	if sec_act == TIPO_NORMI {
+		draw_set_colour(#534027);
+	} else {
+		draw_set_colour(#283131);
+	}
 	var posy = dibujo * 39;
 	
 	if (dibujo == selector) {
@@ -40,9 +44,9 @@ for (var i=i1;i<i2;i++){
 		draw_text_ext(x + 680, y + 438, string(itemVar[ITEM_VAR_DESCRP]), 34 ,540)
 		
 		if botones == false {
-			draw_sprite_ext(invselecSpr, frame, x + 156, y + 190 + posy, 2.89 , 3,0,c_white,alfasprite*0.5); // selector momentaneo
+			draw_sprite_ext(invselecSpr, frame, x + 156, y + 190 + posy, 2.88 , 3.12,0,c_white,alfasprite*0.75); // selector momentaneo
 		} else {
-			draw_sprite_ext(invselecSpr_1, frame, x + 156, y + 190 + posy, 2.89 , 3,0,c_white,alfasprite*0.5);
+			draw_sprite_ext(invselecSpr_1, frame, x + 156, y + 190 + posy, 2.88 , 3.12,0,c_white,alfasprite*0.5);
 		}
 	}
 	
@@ -60,13 +64,13 @@ for (var i=i1;i<i2;i++){
 	draw_set_font(scrambled_eggs_x30)
 	// botones
 	if (botones && sub_selector == 0) {
-		draw_sprite_ext(invselecSpr, frame, x + 672, y + 618, 1.53, 3.2,0, c_white, alfasprite); // Dibujar resaltado
+		draw_sprite_ext(invselecbut, frame, x + 672, y + 618, 2.845, 2.845,0, c_white, alfasprite); // Dibujar resaltado
 	}
 	draw_text(x + 730, y + 618, "XD");
 
 	//boton 2
 	if (botones && sub_selector == 1) {
-		draw_sprite_ext(invselecSpr, frame, x + 962, y + 618, 1.53, 3.2,0, c_white, alfasprite);
+		draw_sprite_ext(invselecbut, frame, x + 962, y + 618, 2.845, 2.845,0, c_white, alfasprite);
 	}
 	draw_text(x + 1010, y + 618, "USAR");
 	draw_set_font(short_story_x16)
