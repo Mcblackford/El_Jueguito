@@ -66,11 +66,11 @@ for (var i=i1;i<i2;i++){
 	if (botones && sub_selector == 0) {
 		draw_sprite_ext(invselecbut, frame, x + 672, y + 618, 2.845, 2.845,0, c_white, alfasprite); // Dibujar resaltado
 	}
-	draw_text(x + 730, y + 618, "XD");
+	draw_text(x + 690, y + 617, "TIRAR");
 
 	//boton 2
 	if (botones && sub_selector == 1) {
 		draw_sprite_ext(invselecbut, frame, x + 962, y + 618, 2.845, 2.845,0, c_white, alfasprite);
 	}
-	draw_text(x + 1010, y + 618, "USAR");
+	draw_text(x + 1005, y + 617, "USAR");
 	draw_set_font(short_story_x16)
