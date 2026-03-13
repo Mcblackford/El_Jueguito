@@ -197,10 +197,16 @@ if (moving == true) && (coyoteHangTmr < coyoteHangFrm) && (yspd == 0) {
 	
 	if ( yspd < 0 ) && (contsuelo == false) {
 		sprite_index = saltoSpr;
+		with playerTailObj {
+			sprite_index = emptycollSpr
+		}
 	}
 	
 	if ( yspd > 0 ) && (contsuelo == false) {
 		sprite_index = caidaSpr;
+		with playerTailObj {
+			sprite_index = emptycollSpr
+		}
 	}
 		
 	if ( accelTimer > 0 ) && (moving == false) && (contsuelo == true) {

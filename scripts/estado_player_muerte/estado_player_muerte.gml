@@ -3,6 +3,10 @@ function estado_player_muerte(){ // Inicio del Script
 sprite_index = deathSpr;
 depth = -120;
 
+with playerTailObj {
+	sprite_index = emptycollSpr
+}
+
 // Muerte
 
 if place_meeting(x,y, deathObj) {
