@@ -69,4 +69,51 @@ if (!invGUIObj.botones) {
         }
     }
 }
+
+//Intento para lo del mouse, presiento mi decadencia en la locura
+
+var mx = device_mouse_x_to_gui(0);
+var my = device_mouse_y_to_gui(0);
+var visible_cantidad = cantidadItem(invGUIObj.sec_act)
+
+if (!invGUIObj.botones) {
+	if (mx > invGUIObj.x + 160 && mx < invGUIObj.x +660) {
+		for (var d = 0; d < 12; d++) {
+			var item_y_min = invGUIObj.y + 191 + (d * 39);
+			var item_y_max = item_y_min + 39;
+			
+			if (my > item_y_min && my < item_y_max && d < visible_cantidad) {
+				invGUIObj.selector = d;
+				if (mouse_check_button_pressed(mb_left)) {
+					invGUIObj.botones = true;
+					invGUIObj.sub_selector = 1;
+				}
+			}
+		}
+	}
+}
+// botoncillos
+if (invGUIObj.botones) {
+	// bboton 0
+	if (mx > invGUIObj.x + 672 && mx < invGUIObj.x + 820 && my < invGUIObj.y + 680) {
+		invGUIObj.sub_selector = 0;
+		if (mouse_check_button_pressed(mb_left)) {
+			keyboard_key_press(vk_enter)
+			keyboard_key_release(vk_enter)
+		}
+	}
+	// boton 1
+	if (mx > invGUIObj.x + 962 && mx < invGUIObj.x + 1110 && my > invGUIObj.y + 618 && my < invGUIObj.y + 680) {
+		invGUIObj.sub_selector = 1;
+		if (mouse_check_button_pressed(mb_left)) {
+			keyboard_key_press(vk_enter)
+			keyboard_key_release(vk_enter)
+		}
+	}
+	
+	// cancelar seleccion have
+	if (mouse_check_button_pressed(mb_right)) {
+		invGUIObj.botones = false;
+	}
+}
 } // Fin del Script
