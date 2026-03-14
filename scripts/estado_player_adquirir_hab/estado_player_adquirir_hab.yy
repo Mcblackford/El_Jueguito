@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"estado_player_adquirir_hab",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"estado_player_adquirir_hab",
+  "parent":{
+    "name":"Estados_Player_1",
+    "path":"folders/Players/Player_1/Estados_Player_1.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

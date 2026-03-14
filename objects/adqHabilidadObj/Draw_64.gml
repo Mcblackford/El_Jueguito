@@ -1,0 +1,1 @@
+draw_sprite(adquirirhabSpr, -1, 0,0)

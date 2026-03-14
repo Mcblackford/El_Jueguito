@@ -32,6 +32,10 @@ else if (estado == states.song) {
 	estado_player_musical()
 }
 
+else if (estado == states.adquirhab) {
+	estado_player_adquirir_hab()
+}
+
 ///
 
 if !instance_exists(playerTailObj) {

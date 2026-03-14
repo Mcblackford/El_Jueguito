@@ -4,6 +4,10 @@ depth = -99;
 
 // Cooldown
 
+if waittimer < 300 {
+	waittimer = 300;
+}
+
 if habilidadcooldown > 0 {
 	habilidadcooldown--;
 }

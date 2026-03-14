@@ -1,4 +1,4 @@
-if (playerObj.estado == states.hechizo) && (cursorObj.sprite_index == vientoCur) {
+if (playerObj.estado == states.hechizo) && (playerObj.currenthab == habs.viento) {
 	if (windtimer < 5) {
 	
 		windtimer++;

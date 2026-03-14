@@ -42,7 +42,7 @@ if (place_meeting(x,y+1,colisionObj) && (habilidadcooldown == 30)) || (!place_me
 
 	// --Fuego--
 
-if (cursorObj.sprite_index == fuegoCur) {
+if currenthab == habs.fuego {
 	var fireball = instance_create_layer (playerObj.x, playerObj.y-64, "Instances", fireballObj);
 	if cursorObj.cursordistance <= 1 {
 		fireball.direction = point_direction(x, y-64, mouse_x,mouse_y);
@@ -56,7 +56,7 @@ if (cursorObj.sprite_index == fuegoCur) {
 
 	// --Rayo--
 	
- if !instance_exists(thunderballObj) && (cursorObj.sprite_index == rayoCur) {
+ if currenthab == habs.rayo {
 	var thunderball = instance_create_layer (playerObj.x, playerObj.y-64, "Instances", thunderballObj);
 	thunderball.direction = point_direction (x, y-64, mouse_x, mouse_y);
 	thunderball.speed = 30;
@@ -64,24 +64,24 @@ if (cursorObj.sprite_index == fuegoCur) {
 
 	// --Viento--
 
-if !instance_exists(windColisionObj) && (cursorObj.sprite_index == vientoCur) {
+if !instance_exists(windColisionObj) && currenthab == habs.viento {
 	instance_create_layer(playerObj.x, playerObj.y, "Instances", windColisionObj);
 }
 
 	// --Iman--
 	
-if !instance_exists(magnetObj) && (cursorObj.sprite_index == imanCur) {
+if !instance_exists(magnetObj) && currenthab == habs.iman {
 	var magnetpoint = instance_create_layer(mouse_x,mouse_y, "instances", magnetObj);
 }
 
 	// --Nube--
-if (cursorObj.sprite_index == nubeCur) {
+if currenthab == habs.nube {
 	var nube = instance_create_layer(mouse_x,mouse_y, "instances", cloudObj);
 }
 
-// --Iman--
+	// --Luz--
 	
-if !instance_exists(lightHabObj) && (cursorObj.sprite_index == luzCur) {
+if !instance_exists(lightHabObj) && currenthab == habs.luz {
 	var hagaselaluz = instance_create_layer(mouse_x,mouse_y, "instances", lightHabObj);
 }
 

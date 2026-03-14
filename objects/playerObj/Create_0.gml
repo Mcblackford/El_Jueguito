@@ -8,7 +8,8 @@ enum states {
 	hechizo,
 	muerte,
 	debug,
-	song
+	song,
+	adquirhab
 }
 
 estado = states.control;
@@ -57,17 +58,19 @@ habilidadcooldown = 0;
 
 selecttimer = 60;
 
+waittimer = 300;
+
 // Habilidades
 
 	// Desbloqueo
 
-fuegospell = true;
-vientospell = true;
-imanspell = true;
-rayospell = true;
-nubespell = true;
-luzspell = true;
-armoniaspell = true;
+fuegospell = false;
+vientospell = false;
+imanspell = false;
+rayospell = false;
+nubespell = false;
+luzspell = false;
+armoniaspell = false;
 
 	// Seleccion
 	
