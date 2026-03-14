@@ -293,6 +293,7 @@
     {"id":{"name":"muerteSpr","path":"sprites/muerteSpr/muerteSpr.yy",},},
     {"id":{"name":"musicaseleccionActiveSpr","path":"sprites/musicaseleccionActiveSpr/musicaseleccionActiveSpr.yy",},},
     {"id":{"name":"musicaseleccionSpr","path":"sprites/musicaseleccionSpr/musicaseleccionSpr.yy",},},
+    {"id":{"name":"notifItemSpr","path":"sprites/notifItemSpr/notifItemSpr.yy",},},
     {"id":{"name":"nubeCur","path":"sprites/nubeCur/nubeCur.yy",},},
     {"id":{"name":"nubeDeathElectSpr","path":"sprites/nubeDeathElectSpr/nubeDeathElectSpr.yy",},},
     {"id":{"name":"nubeDeathSpr","path":"sprites/nubeDeathSpr/nubeDeathSpr.yy",},},
