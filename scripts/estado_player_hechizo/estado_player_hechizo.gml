@@ -42,7 +42,7 @@ if (place_meeting(x,y+1,colisionObj) && (habilidadcooldown == 30)) || (!place_me
 
 	// --Fuego--
 
-if !instance_exists(fireballObj) && (cursorObj.sprite_index == fuegoCur) {
+if (cursorObj.sprite_index == fuegoCur) {
 	var fireball = instance_create_layer (playerObj.x, playerObj.y-64, "Instances", fireballObj);
 	if cursorObj.cursordistance <= 1 {
 		fireball.direction = point_direction(x, y-64, mouse_x,mouse_y);
