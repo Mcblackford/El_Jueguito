@@ -11,6 +11,9 @@ if trigger = 0 {
 		}
 		if !instance_exists(adqHabilidadObj) {
 			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
+			with _adquiriendo {
+				textstate = 0;
+			}
 		}
 	}
 	
@@ -24,6 +27,9 @@ if trigger = 0 {
 		}
 		if !instance_exists(adqHabilidadObj) {
 			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
+			with _adquiriendo {
+				textstate = 1;
+			}
 		}
 	}
 	
@@ -37,6 +43,9 @@ if trigger = 0 {
 		}
 		if !instance_exists(adqHabilidadObj) {
 			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
+			with _adquiriendo {
+				textstate = 2;
+			}
 		}
 	}
 	
@@ -50,6 +59,9 @@ if trigger = 0 {
 		}
 		if !instance_exists(adqHabilidadObj) {
 			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
+			with _adquiriendo {
+				textstate = 3;
+			}
 		}
 	}
 	
@@ -63,6 +75,9 @@ if trigger = 0 {
 		}
 		if !instance_exists(adqHabilidadObj) {
 			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
+			with _adquiriendo {
+				textstate = 4;
+			}
 		}
 	}
 	
@@ -76,6 +91,9 @@ if trigger = 0 {
 		}
 		if !instance_exists(adqHabilidadObj) {
 			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
+			with _adquiriendo {
+				textstate = 5;
+			}
 		}
 	}
 	
@@ -89,6 +107,9 @@ if trigger = 0 {
 		}
 		if !instance_exists(adqHabilidadObj) {
 			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
+			with _adquiriendo {
+				textstate = 6;
+			}
 		}
 	}
 	

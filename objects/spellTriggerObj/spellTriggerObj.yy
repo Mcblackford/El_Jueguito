@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"fuegoseleccionActiveSpr",
-    "path":"sprites/fuegoseleccionActiveSpr/fuegoseleccionActiveSpr.yy",
+    "name":"spriteTriggerSpr",
+    "path":"sprites/spriteTriggerSpr/spriteTriggerSpr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

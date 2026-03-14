@@ -34,7 +34,7 @@ if ruedamove = 1 {
 }
 
 
-if ruedatimer <= 0 || (playerObj.estado == states.tieso) {
+if ruedatimer <= 0 || (playerObj.estado == states.tieso) || (playerObj.estado == states.adquirhab) {
 	estadoderueda = ruedaestado.inactivo;
 }
 
