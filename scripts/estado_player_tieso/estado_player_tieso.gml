@@ -121,6 +121,7 @@ if (invGUIObj.botones) {
 	// cancelar seleccion have
 	if selecttimer <= 0 {
 		invGUIObj.botones = false;
+		selecttimer= 60
 	}
 }
 } // Fin del Script
