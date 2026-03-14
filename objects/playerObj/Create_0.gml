@@ -55,7 +55,7 @@ coyoteJumpTmr = 0;
 
 habilidadcooldown = 0;
 
-selecttimer = 0;
+selecttimer = 60;
 
 // Habilidades
 
