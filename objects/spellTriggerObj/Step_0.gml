@@ -9,6 +9,9 @@ if trigger = 0 {
 			fuegospell = true;
 			playerObj.estado = states.adquirhab;
 		}
+		if !instance_exists(adqHabilidadObj) {
+			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
+		}
 	}
 	
 } else if trigger = 1 {
@@ -18,6 +21,9 @@ if trigger = 0 {
 		with playerObj {
 			vientospell = true;
 			playerObj.estado = states.adquirhab;
+		}
+		if !instance_exists(adqHabilidadObj) {
+			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
 		}
 	}
 	
@@ -29,6 +35,9 @@ if trigger = 0 {
 			imanspell = true;
 			playerObj.estado = states.adquirhab;
 		}
+		if !instance_exists(adqHabilidadObj) {
+			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
+		}
 	}
 	
 } else if trigger = 3 {
@@ -38,6 +47,9 @@ if trigger = 0 {
 		with playerObj {
 			rayospell = true;
 			playerObj.estado = states.adquirhab;
+		}
+		if !instance_exists(adqHabilidadObj) {
+			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
 		}
 	}
 	
@@ -49,6 +61,9 @@ if trigger = 0 {
 			nubespell = true;
 			playerObj.estado = states.adquirhab;
 		}
+		if !instance_exists(adqHabilidadObj) {
+			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
+		}
 	}
 	
 } else if trigger = 5 {
@@ -59,6 +74,9 @@ if trigger = 0 {
 			luzspell = true;
 			playerObj.estado = states.adquirhab;
 		}
+		if !instance_exists(adqHabilidadObj) {
+			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
+		}
 	}
 	
 } else if trigger = 6 {
@@ -68,6 +86,9 @@ if trigger = 0 {
 		with playerObj {
 			armoniaspell = true;
 			playerObj.estado = states.adquirhab;
+		}
+		if !instance_exists(adqHabilidadObj) {
+			var _adquiriendo = instance_create_layer(x,y, "instances", adqHabilidadObj)
 		}
 	}
 	
