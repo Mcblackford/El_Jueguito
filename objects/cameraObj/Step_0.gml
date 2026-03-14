@@ -1,4 +1,10 @@
 
+if playerObj.estado != states.adquirhab {
+	follow = camerafollowObj;
+} else {
+	follow = playerObj;
+}
+
 if follow != noone {
 	xTo = follow.x
 	yTo = follow.y
