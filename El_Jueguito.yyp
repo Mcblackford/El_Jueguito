@@ -217,6 +217,7 @@
     {"id":{"name":"Not_Item_Move","path":"scripts/Not_Item_Move/Not_Item_Move.yy",},},
     {"id":{"name":"Not_Item_Show","path":"scripts/Not_Item_Show/Not_Item_Show.yy",},},
     {"id":{"name":"Not_Item_Spaw","path":"scripts/Not_Item_Spaw/Not_Item_Spaw.yy",},},
+    {"id":{"name":"Not_Item_Unb","path":"scripts/Not_Item_Unb/Not_Item_Unb.yy",},},
     {"id":{"name":"nubedeath","path":"scripts/nubedeath/nubedeath.yy",},},
     {"id":{"name":"nubeiddle","path":"scripts/nubeiddle/nubeiddle.yy",},},
     {"id":{"name":"nubespawn","path":"scripts/nubespawn/nubespawn.yy",},},

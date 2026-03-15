@@ -13,8 +13,8 @@ var item = inventarioObj.inventario
 
 if place_meeting(x,y,playerObj) && (interact || (habilidad && (cursorObj.sprite_index = standarCur))) {
 	agregarItem(itemID,cantidad);
-
-
+	
+	var _notificacion = instance_create_layer(playerObj.x,playerObj.y-600+randomval, "instances", notifItemObj)
 
 	estadoitem = itemstate.pocket;
 }

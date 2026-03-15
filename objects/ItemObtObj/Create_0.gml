@@ -17,3 +17,5 @@ itemtier = tiervar;
 nombre = noone;
 descpt = noone;
 esprai = noone;
+
+randomval = random_range(-500,500);

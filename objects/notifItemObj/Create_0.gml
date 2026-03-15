@@ -3,7 +3,7 @@ desc = noone;
 sprite = noone;
 cant = noone;
 
-timernot = 300;
+timernot = 60;
 
 enum notif {
 	unb,
@@ -14,3 +14,10 @@ enum notif {
 }
 
 estadonot = notif.unb;
+
+alfasprite = 0;
+alfasumaspr = 0.1;
+
+inity = 0;
+sumposy = 0;
+semiposy = 0;
