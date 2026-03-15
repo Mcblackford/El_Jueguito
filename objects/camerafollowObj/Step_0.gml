@@ -2,7 +2,7 @@
 var _target = playerObj;
 if instance_exists(_target) {
 	var _max_dist = 160;
-	var _min_dist = 90;
+	var _min_dist = 100;
 	var _dist = point_distance(_target.x, _target.y-64, mouse_x, mouse_y)
 	if (_dist <= _max_dist ) && (_dist > _min_dist) {
 		x = mouse_x;
