@@ -1,6 +1,6 @@
 function Not_Item_Show(){
 
-if instance_number(other) > 1 {
+if instance_number(notifItemObj) > 1 {
 	estadonot = notif.move
 }
 

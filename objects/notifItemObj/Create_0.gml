@@ -3,7 +3,7 @@ desc = noone;
 sprite = noone;
 cant = noone;
 
-timernot = 60;
+timernot = 120;
 
 enum notif {
 	unb,
@@ -21,3 +21,4 @@ alfasumaspr = 0.1;
 inity = 0;
 sumposy = 0;
 semiposy = 0;
+velocidaddesuma = 20;

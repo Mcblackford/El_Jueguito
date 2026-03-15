@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"luzCur",
-    "path":"sprites/luzCur/luzCur.yy",
+    "name":"ItemNotSpr",
+    "path":"sprites/ItemNotSpr/ItemNotSpr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

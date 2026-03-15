@@ -295,6 +295,7 @@
     {"id":{"name":"itemBdesbanecer","path":"sprites/itemBdesbanecer/itemBdesbanecer.yy",},},
     {"id":{"name":"itemBemergente","path":"sprites/itemBemergente/itemBemergente.yy",},},
     {"id":{"name":"itemC","path":"sprites/itemC/itemC.yy",},},
+    {"id":{"name":"ItemNotSpr","path":"sprites/ItemNotSpr/ItemNotSpr.yy",},},
     {"id":{"name":"jumporbSpr","path":"sprites/jumporbSpr/jumporbSpr.yy",},},
     {"id":{"name":"luzCur","path":"sprites/luzCur/luzCur.yy",},},
     {"id":{"name":"luzseleccionActiveSpr","path":"sprites/luzseleccionActiveSpr/luzseleccionActiveSpr.yy",},},

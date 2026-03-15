@@ -1,7 +1,7 @@
 function Not_Item_Move(){
 
-if sumposy < 50 {
-	sumposy++
+if sumposy < 100 {
+	sumposy+= velocidaddesuma;
 }
 
 if timernot <= 0 {
