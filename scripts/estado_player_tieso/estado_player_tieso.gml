@@ -4,7 +4,7 @@ function estado_player_tieso(){ // Inicio del Script
 var mx = device_mouse_x_to_gui(0);
 var my = device_mouse_y_to_gui(0);
 var visible_cantidad = cantidadItem(invGUIObj.sec_act)
-if selecttimer > 0 && (mx > invGUIObj.x + 160 && mx < invGUIObj.x +660) {
+if selecttimer > 0 && (mx > invGUIObj.x + 160 && mx < invGUIObj.x +625) {
 	selecttimer--
 }
 
@@ -83,9 +83,9 @@ if (!invGUIObj.botones) {
 
 
 if (!invGUIObj.botones) {
-	if (mx > invGUIObj.x + 160 && mx < invGUIObj.x +660) {
+	if (mx > invGUIObj.x + 160 && mx < invGUIObj.x +625) {
 		for (var d = 0; d < 12; d++) {
-			var item_y_min = invGUIObj.y + 191 + (d * 39);
+			var item_y_min = invGUIObj.y + 200 + (d * 39);
 			var item_y_max = item_y_min + 39;
 			
 			if (my > item_y_min && my < item_y_max && d < visible_cantidad) {
@@ -102,7 +102,7 @@ if (!invGUIObj.botones) {
 // botoncillos
 if (invGUIObj.botones) {
 	// bboton 0
-	if (mx > invGUIObj.x + 672 && mx < invGUIObj.x + 820 && my < invGUIObj.y + 680) {
+	if (mx > invGUIObj.x + 672 && mx < invGUIObj.x + 922 && my > invGUIObj.y + 618 && my < invGUIObj.y + 672) {
 		invGUIObj.sub_selector = 0;
 		if (mouse_check_button_pressed(mb_left)) {
 			keyboard_key_press(vk_enter)
@@ -110,7 +110,7 @@ if (invGUIObj.botones) {
 		}
 	}
 	// boton 1
-	if (mx > invGUIObj.x + 962 && mx < invGUIObj.x + 1110 && my > invGUIObj.y + 618 && my < invGUIObj.y + 680) {
+	if (mx > invGUIObj.x + 962 && mx < invGUIObj.x + 1214 && my > invGUIObj.y + 618 && my < invGUIObj.y + 672) {
 		invGUIObj.sub_selector = 1;
 		if (mouse_check_button_pressed(mb_left)) {
 			keyboard_key_press(vk_enter)
