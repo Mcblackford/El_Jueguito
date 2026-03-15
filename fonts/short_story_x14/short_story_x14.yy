@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"short_story_x10",
+  "%Name":"short_story_x14",
   "AntiAlias":0,
   "applyKerning":0,
   "ascender":20,
@@ -398,7 +398,7 @@
   "last":0,
   "lineHeight":34,
   "maintainGms1Font":false,
-  "name":"short_story_x10",
+  "name":"short_story_x14",
   "parent":{
     "name":"Fuentes",
     "path":"folders/Fuentes.yy",
