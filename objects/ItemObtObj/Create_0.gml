@@ -15,3 +15,5 @@ randomhspd = 0;
 randomitemvalue = 0;
 itemtier = tiervar;
 nombre = noone;
+descpt = noone;
+esprai = noone;

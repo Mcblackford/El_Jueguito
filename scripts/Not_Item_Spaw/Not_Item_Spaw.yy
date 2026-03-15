@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Not_Item_Spaw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Not_Item_Spaw",
+  "parent":{
+    "name":"Notif_Scripts",
+    "path":"folders/Objetos/GUI_E_Impesindibles/Notificacion_Item/Notif_Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
