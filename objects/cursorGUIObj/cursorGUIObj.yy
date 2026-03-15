@@ -35,5 +35,5 @@
     "path":"sprites/standarCur/standarCur.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
