@@ -13,7 +13,9 @@ var item = inventarioObj.inventario
 
 if place_meeting(x,y,playerObj) && (interact || (habilidad && (cursorObj.sprite_index = standarCur))) {
 	agregarItem(itemID,cantidad);
-	
+
+
+
 	estadoitem = itemstate.pocket;
 }
 

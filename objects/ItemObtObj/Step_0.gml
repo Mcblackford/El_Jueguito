@@ -21,3 +21,5 @@ else if estadoitem == itemstate.takeable {
 else if estadoitem == itemstate.pocket {
 	item1_pocket()
 }
+
+nombre = global.items[itemID][ITEM_VAR_NAME]

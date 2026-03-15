@@ -4,8 +4,8 @@ function initItems(){
 	
 	// items normales
 	global.items[ITEM_POCION] = crearItem("Poción de salud", "Te da +10 puntos de vida.",pocionSpr, itemPocion, 99, TIPO_NORMI);
-	global.items[ITEM_POCION1] = crearItem("Poción de salud 1", "Te da +10 puntos de vida.",pocionSpr, itemPocion, 99, TIPO_NORMI);
-	global.items[ITEM_POCION2] = crearItem("Poción de salud 2", "Te da +10 puntos de vida.",pocionSpr, itemPocion, 99, TIPO_NORMI);
+	global.items[ITEM_POCION1] = crearItem("Tuqueque", "e un tuqueque.",tuquequeSpr, itemPocion, 99, TIPO_NORMI);
+	global.items[ITEM_POCION2] = crearItem("lareconcha", "Te da +10 puntos de vida.",itemA, itemPocion, 99, TIPO_NORMI);
 
 
 	// items clave
