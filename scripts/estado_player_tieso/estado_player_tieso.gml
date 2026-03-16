@@ -125,13 +125,13 @@ if (invGUIObj.botones) {
 	}
 }
 // seleccion de categoria
-if (mx > invGUIObj.x + 182 && mx < invGUIObj.x + 428 && my > invGUIObj.y + 0 && my < invGUIObj.y + 115) {
+if (mx > invGUIObj.x + 144 && mx < invGUIObj.x + 390 && my > invGUIObj.y + 0 && my < invGUIObj.y + 115) {
 	if (mouse_check_button_pressed(mb_left)) {
 		invGUIObj.sec_act = TIPO_NORMI;
 	}
 }
 
-if (mx > invGUIObj.x + 463 && mx < invGUIObj.x + 710 && my > invGUIObj.y + 0 && my < invGUIObj.y + 115) {
+if (mx > invGUIObj.x + 425 && mx < invGUIObj.x + 672 && my > invGUIObj.y + 0 && my < invGUIObj.y + 115) {
 	if (mouse_check_button_pressed(mb_left)) {
 		invGUIObj.sec_act = TIPO_CLAVE;
 	}
