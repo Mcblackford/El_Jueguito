@@ -89,6 +89,7 @@
   },
   "name":"El_Jueguito",
   "resources":[
+    {"id":{"name":"Brief_x24","path":"fonts/Brief_x24/Brief_x24.yy",},},
     {"id":{"name":"scrambled_eggs_x20","path":"fonts/scrambled_eggs_x20/scrambled_eggs_x20.yy",},},
     {"id":{"name":"scrambled_eggs_x30","path":"fonts/scrambled_eggs_x30/scrambled_eggs_x30.yy",},},
     {"id":{"name":"short_story_x10","path":"fonts/short_story_x10/short_story_x10.yy",},},
