@@ -4,7 +4,7 @@ draw_sprite_ext(notifItemSpr, -1, 0, posicionYfinal, 2.135, 2.135, 0, c_white, a
 
 draw_set_font(Brief_x24)
 draw_set_colour(c_white)
-draw_text_ext(519, posicionYfinal + 49, name + sumstring + string(cant), 10, 800)
+draw_text_ext(519, posicionYfinal + 49, itemname + sumstring + string(cant), 10, 800)
 
 draw_set_font(short_story_x10)
 draw_set_colour(c_white)

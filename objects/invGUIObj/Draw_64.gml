@@ -41,7 +41,7 @@ for (var i=i1;i<i2;i++){
 	
 	if (dibujo == selector) {
 		draw_sprite_ext(itemVar[ITEM_VAR_SPRITE], 0, x + 852, y + 204 , 5.5 , 5.5 ,0 ,c_white ,alfasprite);
-		draw_text_ext(x + 680, y + 438, string(itemVar[ITEM_VAR_DESCRP]), 34 ,540)
+		draw_text_ext(x + 680, y + 433, string(itemVar[ITEM_VAR_DESCRP]), 31 ,540)
 		
 		if sec_act == TIPO_NORMI {
 			if botones == false {

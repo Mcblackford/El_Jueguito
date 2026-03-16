@@ -16,12 +16,10 @@ if place_meeting(x,y,playerObj) && (interact || (habilidad && (cursorObj.sprite_
 	
 	var _notificacion = instance_create_layer(playerObj.x,playerObj.y-600+randomval, "instances", notifItemObj)
 	
-	with _notificacion {
-		name = ItemObtObj.nombre;
-		desc = ItemObtObj.descpt;
-		sprite = ItemObtObj.esprai;
-		cant = ItemObtObj.cantidad;
-	}
+	_notificacion.itemname = nombre;
+	_notificacion.desc = descpt;
+	_notificacion.sprite = esprai;
+	_notificacion.cant = cantidad;
 
 	estadoitem = itemstate.pocket;
 }

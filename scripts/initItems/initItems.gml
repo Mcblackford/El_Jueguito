@@ -5,7 +5,7 @@ function initItems(){
 	// items normales
 	global.items[ITEM_POCION] = crearItem("Poción de salud", "Te da +10 puntos de vida.",pocionSpr, itemPocion, 99, TIPO_NORMI);
 	global.items[ITEM_POCION1] = crearItem("Tuqueque", "e un tuqueque.",tuquequeSpr, itemPocion, 99, TIPO_NORMI);
-	global.items[ITEM_POCION2] = crearItem("lareconcha", "hakuna matataaaaaa una forma de seeeeeerr, hakuna matataaaaaaaa, no hay nada que temeeeeeerrr, sin preocuparseeee, así es comop hay que vivirrrr",itemA, itemPocion, 99, TIPO_NORMI);
+	global.items[ITEM_POCION2] = crearItem("lareconcha", "hakuna matataaaaaa una forma de seeeeeerr, hakuna matataaaaaaaa, no hay nada que temeeeeeerrr, sin preocuparseeee, así es comop hay que vivirrrr, aaayyy",itemA, itemPocion, 99, TIPO_NORMI);
 
 
 	// items clave

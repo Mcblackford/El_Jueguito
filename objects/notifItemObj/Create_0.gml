@@ -1,4 +1,4 @@
-name = noone;
+itemname = noone;
 desc = noone;
 sprite = noone;
 cant = 0;
