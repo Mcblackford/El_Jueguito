@@ -1,7 +1,7 @@
-name = "Poción";
+name = noone;
 desc = noone;
 sprite = noone;
-cant = "2";
+cant = 0;
 sumstring = " +"
 
 fadetimer = 0;
