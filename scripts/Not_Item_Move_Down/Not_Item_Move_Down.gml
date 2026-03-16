@@ -1,6 +1,6 @@
 function Not_Item_Move_Down(){
 
-if alfasprite > 0.5 {
+if alfasprite > 0.4 {
 	alfasprite -= alfasumaspr;
 }
 

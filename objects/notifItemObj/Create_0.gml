@@ -21,6 +21,7 @@ estadonotif = notificacion.hiden;
 alfasprite = 0;
 alfasumaspr = 0.075;
 alfasumaslow = 0.1;
+alfasumaveryslow = 0.01;
 
 posicionYinicial = 0;
 sumaY = -150;

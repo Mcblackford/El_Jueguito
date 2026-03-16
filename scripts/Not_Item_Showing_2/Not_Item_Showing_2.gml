@@ -1,5 +1,9 @@
 function Not_Item_Showing_2(){
 
+if alfasprite > 0.6 {
+	alfasprite -= alfasumaveryslow;
+}
+
 if playerObj.notificationcount == 1 {
 	estadonotif = notificacion.showing_1;
 }
