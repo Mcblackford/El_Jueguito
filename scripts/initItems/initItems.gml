@@ -3,12 +3,12 @@ function initItems(){
 	global.items = [];
 	
 	// items normales
-	global.items[ITEM_POCION] = crearItem("Poción de salud", "Te da +10 puntos de vida.",pocionSpr, itemPocion, 99, TIPO_NORMI);
-	global.items[ITEM_POCION1] = crearItem("Tuqueque", "e un tuqueque.",tuquequeSpr, itemPocion, 99, TIPO_NORMI);
-	global.items[ITEM_POCION2] = crearItem("lareconcha", "hakuna matataaaaaa una forma de seeeeeerr, hakuna matataaaaaaaa, no hay nada que temeeeeeerrr, sin preocuparseeee, así es comop hay que vivirrrr, aaayyy",itemA, itemPocion, 99, TIPO_NORMI);
+	global.items[ITEM_POCION] = crearItem("Poción de salud", "Te da +10 puntos de vida.",pocionSpr, itemPocion, 99, TIPO_NORMI, "Te da +10 puntos de vida.");
+	global.items[ITEM_POCION1] = crearItem("Tuqueque", "e un tuqueque.",tuquequeSpr, itemPocion, 99, TIPO_NORMI, "e un tuqueque.");
+	global.items[ITEM_POCION2] = crearItem("lareconcha", "hakuna matataaaaaa una forma de seeeeeerr, hakuna matataaaaaaaa, no hay nada que temeeeeeerrr, sin preocuparseeee, así es comop hay que vivirrrr, aaayyy",itemA, itemPocion, 99, TIPO_NORMI, "hakuna matataaaaaa una forma de seeeeeerr, hakuna matataaaaaaaa, no hay nada que temeeeeeerrr, sin preocupar...");
 
 
 	// items clave
-	global.items[ITEM_IMPORTANTE] = crearItem("Item importante", "Definitamente se ve como un item importante.", hfuegoPag , itemNouso, 1, TIPO_CLAVE);
-	global.items[ITEM_PAGINA] = crearItem("Página", "Es una página", hrayoPag, itemPagina, 1, TIPO_CLAVE);
+	global.items[ITEM_IMPORTANTE] = crearItem("Item importante", "Definitamente se ve como un item importante.", hfuegoPag , itemNouso, 1, TIPO_CLAVE, "Definitamente se ve como un item importante.");
+	global.items[ITEM_PAGINA] = crearItem("Página", "Es una página", hrayoPag, itemPagina, 1, TIPO_CLAVE, "Es una página");
 }

@@ -7,6 +7,7 @@ function macros(){
 	#macro ITEM_VAR_ACCION 3
 	#macro ITEM_VAR_MAX 4
 	#macro ITEM_VAR_TIPO 5
+	#macro ITEM_VAR_TEXTO_NOTIF 6
 	//------------------
 	
 	// nombre/items en general

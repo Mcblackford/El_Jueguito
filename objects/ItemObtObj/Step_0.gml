@@ -23,5 +23,5 @@ else if estadoitem == itemstate.pocket {
 }
 
 nombre = global.items[itemID][ITEM_VAR_NAME]
-descpt = global.items[itemID][ITEM_VAR_DESCRP]
+descpt = global.items[itemID][ITEM_VAR_TEXTO_NOTIF]
 esprai = global.items[itemID][ITEM_VAR_SPRITE]

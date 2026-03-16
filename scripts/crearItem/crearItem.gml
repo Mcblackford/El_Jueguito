@@ -1,5 +1,5 @@
 //aca estamos creando el script para poder empezar a crear items, no tocar, a menos que quieras agregegar mas variables a los item (obviamente pasa primero por #macros)
-function crearItem(nombre,descripcion, sprite, accion, valormax, tipo){
+function crearItem(nombre,descripcion, sprite, accion, valormax, tipo, texto_notif){
 	var item = [];
 
 	item[ITEM_VAR_NAME] = nombre;
@@ -8,5 +8,6 @@ function crearItem(nombre,descripcion, sprite, accion, valormax, tipo){
 	item[ITEM_VAR_ACCION] = accion;
 	item[ITEM_VAR_MAX] = valormax;
 	item[ITEM_VAR_TIPO] = tipo;
+	item[ITEM_VAR_TEXTO_NOTIF] = texto_notif;
 	return item;
 }
