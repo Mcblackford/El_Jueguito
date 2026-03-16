@@ -6,7 +6,7 @@ if alfasprite > 0 {
 	alfasprite = 0;
 }
 
-if sumaY < 150 {
+if sumaY < 140 {
 	sumaY += velocidaddesuma;
 }
 

@@ -7,8 +7,10 @@ direction = point_direction(x,y, playerObj.x, playerObj.y)
 
 if estadonotif == notificacion.spawn {
 	Not_Item_Spawn()
-} else if estadonotif == notificacion.showing {
-	Not_Item_Showing()
+} else if estadonotif == notificacion.showing_1 {
+	Not_Item_Showing_1()
+} else if estadonotif == notificacion.showing_2 {
+	Not_Item_Showing_2()
 } else if estadonotif == notificacion.movedown {
 	Not_Item_Move_Down()
 } else if estadonotif == notificacion.fade {

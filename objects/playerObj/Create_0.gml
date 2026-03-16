@@ -60,6 +60,8 @@ selecttimer = 60;
 
 waittimer = 300;
 
+notificationcount = 0;
+
 // Habilidades
 
 	// Desbloqueo
