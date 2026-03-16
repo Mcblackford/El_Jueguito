@@ -1,4 +1,4 @@
-function Not_Item_Spaw(){
+function Not_Item_Spawn(){
 
 if alfasprite < 1 {
 	alfasprite += alfasumaspr;
@@ -7,7 +7,7 @@ if alfasprite < 1 {
 }
 
 if alfasprite == 1 {
-	estadonot = notif.show;
+	estadonotif = notificacion.showing;
 }
 
 }

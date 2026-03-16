@@ -3,22 +3,22 @@ desc = noone;
 sprite = noone;
 cant = noone;
 
-timernot = 120;
+fadetimer = 120;
 
-enum notif {
-	unb,
-	spaw,
-	show,
-	move,
+enum notificacion {
+	hiden,
+	spawn,
+	showing,
+	movedown,
 	fade
 }
 
-estadonot = notif.unb;
+estadonotif = notificacion.hiden;
 
 alfasprite = 0;
 alfasumaspr = 0.1;
 
-inity = 0;
-sumposy = 0;
-semiposy = 0;
+posicionYinicial = 0;
+sumaY = 0;
+posicionYfinal = 0;
 velocidaddesuma = 20;

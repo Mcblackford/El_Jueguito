@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Not_Item_Move",
+  "%Name":"Not_Item_Move_Down",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Not_Item_Move",
+  "name":"Not_Item_Move_Down",
   "parent":{
     "name":"Notif_Scripts",
     "path":"folders/Objetos/GUI_E_Impesindibles/Notificacion_Item/Notif_Scripts.yy",
