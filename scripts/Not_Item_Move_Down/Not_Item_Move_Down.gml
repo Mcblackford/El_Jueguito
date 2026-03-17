@@ -9,6 +9,9 @@ if sumaY < 140 {
 }
 
 if fadetimer <= 0 || instance_number(notifItemObj) > 2 {
+	with playerObj {
+		notificationcount = notificationcount - 1
+	}
 	estadonotif = notificacion.fade;
 }
 

@@ -1,4 +1,5 @@
 fadetimer--;
+rotationsum++;
 
 posicionYfinal = posicionYinicial + sumaY;
 

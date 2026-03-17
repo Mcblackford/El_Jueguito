@@ -238,6 +238,7 @@
     {"id":{"name":"bloqueWindMovSpr","path":"sprites/bloqueWindMovSpr/bloqueWindMovSpr.yy",},},
     {"id":{"name":"botonactSpr","path":"sprites/botonactSpr/botonactSpr.yy",},},
     {"id":{"name":"botonSpr","path":"sprites/botonSpr/botonSpr.yy",},},
+    {"id":{"name":"brilloNotifSpr","path":"sprites/brilloNotifSpr/brilloNotifSpr.yy",},},
     {"id":{"name":"caidaSpr","path":"sprites/caidaSpr/caidaSpr.yy",},},
     {"id":{"name":"CajaBurnSpr","path":"sprites/CajaBurnSpr/CajaBurnSpr.yy",},},
     {"id":{"name":"CajaDustedSpr","path":"sprites/CajaDustedSpr/CajaDustedSpr.yy",},},

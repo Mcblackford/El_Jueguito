@@ -5,9 +5,6 @@ if alfasprite > 0.6 && playerObj.notificationcount == 1 {
 }
 
 if playerObj.notificationcount > 1 {
-	with playerObj {
-		notificationcount = notificationcount - 1
-	}
 	estadonotif = notificacion.movedown
 }
 

@@ -13,9 +13,6 @@ if sumaY < 0 {
 }
 
 if playerObj.notificationcount > 1 {
-	with playerObj {
-		notificationcount = notificationcount - 1
-	}
 	estadonotif = notificacion.movedown
 } 
 

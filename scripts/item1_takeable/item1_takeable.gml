@@ -20,6 +20,7 @@ if place_meeting(x,y,playerObj) && (interact || (habilidad && (playerObj.current
 	_notificacion.desc = descpt;
 	_notificacion.sprite = esprai;
 	_notificacion.cant = cantidad;
+	_notificacion.tier = tiervar;
 
 	estadoitem = itemstate.pocket;
 }

@@ -2,10 +2,12 @@ itemname = noone;
 desc = noone;
 sprite = noone;
 cant = 0;
-sumstring = " +"
+sumstring = " +";
+tier = 0;
 
 fadetimer = 0;
 fadetimerini = 120;
+rotationsum = 0;
 
 enum notificacion {
 	hiden,
