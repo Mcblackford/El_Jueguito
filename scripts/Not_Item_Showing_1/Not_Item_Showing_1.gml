@@ -1,6 +1,6 @@
 function Not_Item_Showing_1(){
 
-if alfasprite > 0.6 {
+if alfasprite > 0.6 && playerObj.notificationcount == 1 {
 	alfasprite -= alfasumaveryslow;
 }
 
