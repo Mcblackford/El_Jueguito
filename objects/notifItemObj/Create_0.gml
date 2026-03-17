@@ -9,7 +9,8 @@ fadetimerini = 120;
 
 enum notificacion {
 	hiden,
-	spawn,
+	spawn_1,
+	spawn_2,
 	showing_1,
 	showing_2,
 	movedown,
