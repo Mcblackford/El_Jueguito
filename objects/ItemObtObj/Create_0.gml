@@ -19,3 +19,4 @@ descpt = noone;
 esprai = noone;
 
 randomval = random_range(-500,1000);
+randomx = random_range(-500, 500)

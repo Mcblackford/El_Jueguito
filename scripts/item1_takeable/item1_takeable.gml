@@ -11,10 +11,10 @@ habilidad = mouse_check_button_pressed(mb_left);
 
 var item = inventarioObj.inventario
 
-if place_meeting(x,y,playerObj) && (interact || (habilidad && (cursorObj.sprite_index = standarCur))) {
+if place_meeting(x,y,playerObj) && (interact || (habilidad && (playerObj.currenthab == habs.null))) {
 	agregarItem(itemID,cantidad);
 	
-	var _notificacion = instance_create_layer(playerObj.x,playerObj.y-600+randomval, "instances", notifItemObj)
+	var _notificacion = instance_create_layer(playerObj.x + randomx ,playerObj.y-600+randomval, "instances", notifItemObj)
 	
 	_notificacion.itemname = nombre;
 	_notificacion.desc = descpt;

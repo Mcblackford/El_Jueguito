@@ -2,7 +2,7 @@ function Not_Item_Hiden(){
 
 fadetimer = fadetimerini;
 
-if place_meeting(x,y, playerObj) && playerObj.notificationcount < 2 {
+if place_meeting(x,y, playerObj) && playerObj.notificationcount <= 1 {
 	with playerObj {
 		notificationcount = notificationcount + 1
 	}
