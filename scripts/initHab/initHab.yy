@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"macros",
+  "%Name":"initHab",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"macros",
+  "name":"initHab",
   "parent":{
-    "name":"El_Jueguito",
-    "path":"El_Jueguito.yyp",
+    "name":"Habilidades",
+    "path":"folders/Habilidades.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

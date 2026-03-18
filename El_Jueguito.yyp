@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Fuentes","folderPath":"folders/Fuentes.yy","name":"Fuentes","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Habilidades","folderPath":"folders/Habilidades.yy","name":"Habilidades","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Items","folderPath":"folders/Items.yy","name":"Items","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Inventario","folderPath":"folders/Items/Inventario.yy","name":"Inventario","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Items/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -183,6 +184,7 @@
     {"id":{"name":"condicion_de_inventario","path":"scripts/condicion_de_inventario/condicion_de_inventario.yy",},},
     {"id":{"name":"condicion_de_muerte","path":"scripts/condicion_de_muerte/condicion_de_muerte.yy",},},
     {"id":{"name":"condicion_musical","path":"scripts/condicion_musical/condicion_musical.yy",},},
+    {"id":{"name":"crearHab","path":"scripts/crearHab/crearHab.yy",},},
     {"id":{"name":"crearItem","path":"scripts/crearItem/crearItem.yy",},},
     {"id":{"name":"enredadera_c_burn","path":"scripts/enredadera_c_burn/enredadera_c_burn.yy",},},
     {"id":{"name":"enredadera_c_idle","path":"scripts/enredadera_c_idle/enredadera_c_idle.yy",},},
@@ -198,6 +200,7 @@
     {"id":{"name":"estado_player_transicion","path":"scripts/estado_player_transicion/estado_player_transicion.yy",},},
     {"id":{"name":"estado_player_walljump","path":"scripts/estado_player_walljump/estado_player_walljump.yy",},},
     {"id":{"name":"habilidad_en_seleccion","path":"scripts/habilidad_en_seleccion/habilidad_en_seleccion.yy",},},
+    {"id":{"name":"initHab","path":"scripts/initHab/initHab.yy",},},
     {"id":{"name":"initItems","path":"scripts/initItems/initItems.yy",},},
     {"id":{"name":"Inputs","path":"scripts/Inputs/Inputs.yy",},},
     {"id":{"name":"item1_emerging","path":"scripts/item1_emerging/item1_emerging.yy",},},

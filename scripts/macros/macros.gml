@@ -27,4 +27,8 @@ function macros(){
 	#macro TIPO_NORMI 0
 	#macro TIPO_CLAVE 1
 	//-------------------
+	
+	// habilidades
+	#macro HAB_FIREBALL 0
+	//-------------------
 }
