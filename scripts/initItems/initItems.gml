@@ -3,9 +3,9 @@ function initItems(){
 	global.items = [];
 	
 	// items normales
-	global.items[ITEM_POCION] = crearItem("Poción de salud", "Te da +10 puntos de vida.",pocionSpr, itemPocion, 99, TIPO_NORMI, "Te da +10 puntos de vida.");
-	global.items[ITEM_POCION1] = crearItem("Tuqueque", "e un tuqueque.",tuquequeSpr, itemPocion, 99, TIPO_NORMI, "e un tuqueque.");
-	global.items[ITEM_POCION2] = crearItem("lareconcha", "hakuna matataaaaaa una forma de seeeeeerr, hakuna matataaaaaaaa, no hay nada que temeeeeeerrr, sin preocuparseeee, así es comop hay que vivirrrr, aaayyy",itemA, itemPocion, 99, TIPO_NORMI, "hakuna matataaaaaa una forma de seeeeeerr, hakuna matataaaaaaaa, no hay nada que temeeeeeerrr, sin preocupar...");
+	global.items[ITEM_POCION] = crearItem("Poción de Salud", "Te da +10 puntos de vida.",pocionSpr, itemPocion, 99, TIPO_NORMI, "Te da +10 puntos de vida.");
+	global.items[ITEM_HIERBA] = crearItem("Hierba Buena", "Restaura una pequeña cantidad de vida, también se puede utilizar en recetas.",hierbaSpr, itemPocion, 99, TIPO_NORMI, "Restaura una pequeña cantidad de vida, también se puede utilizar en recetas.");
+	global.items[ITEM_LLAVE_VIEJA] = crearItem("Llave Vieja", "Una llave pequeña que puede abrir algunas puertas y cerraduras.",llaveViejaSpr, itemPocion, 99, TIPO_NORMI, "Una llave pequeña que puede abrir algunas puertas y cerraduras.");
 
 
 	// items clave
