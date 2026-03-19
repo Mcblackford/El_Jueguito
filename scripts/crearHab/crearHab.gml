@@ -1,4 +1,4 @@
-function crearHab(_nombre, _tipo, _poder,_precision, _usos, _efecto){
+function crearHab(_nombre, _tipo, _poder,_precision, _usos, _efecto) constructor {
 nombre = _nombre;
 tipo = _tipo;
 poder = _poder;

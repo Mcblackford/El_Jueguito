@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"crearStats",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"crearStats",
+  "parent":{
+    "name":"Habilidades",
+    "path":"folders/Habilidades.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

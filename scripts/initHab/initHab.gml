@@ -1,5 +1,7 @@
 function initHab(){
-	global.habilidades = [];
+	global.habilidades = {
 	
-	global.habilidades[HAB_FIREBALL] = crearHab("Bola e fuego",fuego,40,95,20,quemar);
+	fireball: new crearHab("Bola e fuego","fuego",40,95,20,"quemar"),
+	watergun: new crearHab("Pistola agua", "agua", 40,95,20,"nada"),
+	}
 }

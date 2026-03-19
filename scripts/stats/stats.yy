@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"stats",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"stats",
+  "parent":{
+    "name":"El_Jueguito",
+    "path":"El_Jueguito.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
