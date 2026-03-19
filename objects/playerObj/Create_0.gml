@@ -69,8 +69,8 @@ notificationcount = 0;
 fuegospell = false;
 vientospell = false;
 imanspell = false;
-rayospell = false;
-nubespell = false;
+rayospell = true;
+nubespell = true;
 luzspell = false;
 armoniaspell = false;
 

@@ -14,3 +14,5 @@ nubespd = 0;
 movingtime = 0;
 
 ciclotimernube = 0;
+
+gotatimer = 0;

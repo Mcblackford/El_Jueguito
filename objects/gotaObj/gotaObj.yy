@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"windMovPlatformObj",
+  "%Name":"gotaObj",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"windMovPlatformObj",
+  "name":"gotaObj",
   "overriddenProperties":[],
   "parent":{
-    "name":"Plataformas",
-    "path":"folders/Objetos/Colisiones/Plataformas.yy",
+    "name":"Habilidad_Nube",
+    "path":"folders/Players/Habilidades/Habilidad_Nube.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -26,17 +25,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"molinilloID","filters":[
-        "GMObject",
-      ],"listItems":[],"multiselect":false,"name":"molinilloID","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"bloqueWindMovSpr",
-    "path":"sprites/bloqueWindMovSpr/bloqueWindMovSpr.yy",
+    "name":"gototaSpr",
+    "path":"sprites/gototaSpr/gototaSpr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

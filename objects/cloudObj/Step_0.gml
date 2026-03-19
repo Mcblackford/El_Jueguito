@@ -1,5 +1,11 @@
 depth = -110;
 
+gotatimer++;
+
+if gotatimer >= 30 {
+	gotatimer = 0;
+}
+
 if ciclotimernube <= 0 {
 	ciclotimernube = 10;
 } else {
