@@ -1,8 +1,13 @@
 depth = -110;
 
+choosesprite = random(3);
+roundnumb = round(choosesprite);
+
+randomx = random_range(-40, 40);
+
 gotatimer++;
 
-if gotatimer >= 30 {
+if gotatimer >= 5 {
 	gotatimer = 0;
 }
 

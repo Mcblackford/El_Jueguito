@@ -1,6 +1,11 @@
 endtimer = 0;
 electrifiedcloud = false;
 
+choosesprite = random(3)
+roundnumb = 0;
+
+randomx = 0;
+
 enum cloudstate {
 	spawn,
 	iddle,
