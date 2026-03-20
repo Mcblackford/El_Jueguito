@@ -1,5 +1,8 @@
 function nubeiddle(){
 
+var _lluvia = part_system_create(lluviaPart)
+part_system_position(_lluvia,x,y)
+
 sprite_index = nubeIddleSpr;
 if electrifiedcloud == true {
 	sprite_index = nubeIddleElectSpr;
