@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"lluviaSpr_1",
-    "path":"sprites/lluviaSpr_1/lluviaSpr_1.yy",
+    "name":"emptycollSpr",
+    "path":"sprites/emptycollSpr/emptycollSpr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

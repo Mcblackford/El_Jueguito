@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"lluviaSpr_3",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":31,
-  "bbox_left":1,
-  "bbox_right":62,
+  "bbox_left":16,
+  "bbox_right":47,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
