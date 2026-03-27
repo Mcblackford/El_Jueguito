@@ -219,6 +219,9 @@ if (moving == true) && (coyoteHangTmr < coyoteHangFrm) && (yspd == 0) {
 	
 	if place_meeting(x, y, walljumpableObj) && (moving == true) && (yspd > 0) {
 		sprite_index = wallcaidaSpr;
+		with playerTailObj {
+			sprite_index = tiesocolaSpr;
+		}
 	}
 	
 	if place_meeting(x, y, walljumpableObj) && (yspd <= 0) && (moving = true) && contsuelo == false {

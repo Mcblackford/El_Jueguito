@@ -1,6 +1,9 @@
 function estado_player_transicion(){ // Inicio del Script
 
 sprite_index = caminSpr;
+with playerTailObj {
+	sprite_index = emptycollSpr
+}
 depth = -99;
 
 xspd = -3 * image_xscale
