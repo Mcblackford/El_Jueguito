@@ -288,6 +288,7 @@
     {"id":{"name":"enredaderaCofreSpr","path":"sprites/enredaderaCofreSpr/enredaderaCofreSpr.yy",},},
     {"id":{"name":"enredaderaCuerdaBurnSpr","path":"sprites/enredaderaCuerdaBurnSpr/enredaderaCuerdaBurnSpr.yy",},},
     {"id":{"name":"enredaderaCuerdaSpr","path":"sprites/enredaderaCuerdaSpr/enredaderaCuerdaSpr.yy",},},
+    {"id":{"name":"fondopichula","path":"sprites/fondopichula/fondopichula.yy",},},
     {"id":{"name":"fuegoCur","path":"sprites/fuegoCur/fuegoCur.yy",},},
     {"id":{"name":"fuegoseleccionActiveSpr","path":"sprites/fuegoseleccionActiveSpr/fuegoseleccionActiveSpr.yy",},},
     {"id":{"name":"fuegoseleccionSpr","path":"sprites/fuegoseleccionSpr/fuegoseleccionSpr.yy",},},
