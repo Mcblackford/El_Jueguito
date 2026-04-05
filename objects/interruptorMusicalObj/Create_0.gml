@@ -1,21 +1,8 @@
-enum musicstate {
-	active,
-	inactive
-}
+active = false;
 
-currentmelody = 0;
-
-note1 = 0;
-note2 = 0;
-note3 = 0;
-note4 = 0;
-note5 = 0;
-note6 = 0;
-note7 = 0;
-
-musicendtimer = 180;
-
-estadomus = musicstate.active;
+puertasum = false;
+boton = botonID;
+boton_activo = false;
 
 // MODO COMUN
 /// izquierda = 1

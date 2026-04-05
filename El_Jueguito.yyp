@@ -92,7 +92,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.221",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"El_Jueguito",
   "resources":[
@@ -128,6 +128,7 @@
     {"id":{"name":"fireballSpawnerObj","path":"objects/fireballSpawnerObj/fireballSpawnerObj.yy",},},
     {"id":{"name":"fuegoColisionInt","path":"objects/fuegoColisionInt/fuegoColisionInt.yy",},},
     {"id":{"name":"gotaObj","path":"objects/gotaObj/gotaObj.yy",},},
+    {"id":{"name":"interruptorMusicalObj","path":"objects/interruptorMusicalObj/interruptorMusicalObj.yy",},},
     {"id":{"name":"InventarioBackgroundObj","path":"objects/InventarioBackgroundObj/InventarioBackgroundObj.yy",},},
     {"id":{"name":"inventarioObj","path":"objects/inventarioObj/inventarioObj.yy",},},
     {"id":{"name":"invGUIObj","path":"objects/invGUIObj/invGUIObj.yy",},},
@@ -257,6 +258,8 @@
     {"id":{"name":"armoniaCurB","path":"sprites/armoniaCurB/armoniaCurB.yy",},},
     {"id":{"name":"armoniaCurC","path":"sprites/armoniaCurC/armoniaCurC.yy",},},
     {"id":{"name":"bloqueMovSpr","path":"sprites/bloqueMovSpr/bloqueMovSpr.yy",},},
+    {"id":{"name":"bloqueMusActSpr","path":"sprites/bloqueMusActSpr/bloqueMusActSpr.yy",},},
+    {"id":{"name":"bloqueMusSpr","path":"sprites/bloqueMusSpr/bloqueMusSpr.yy",},},
     {"id":{"name":"bloqueSpr","path":"sprites/bloqueSpr/bloqueSpr.yy",},},
     {"id":{"name":"bloqueWindMovSpr","path":"sprites/bloqueWindMovSpr/bloqueWindMovSpr.yy",},},
     {"id":{"name":"botonactSpr","path":"sprites/botonactSpr/botonactSpr.yy",},},
