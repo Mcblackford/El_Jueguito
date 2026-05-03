@@ -24,4 +24,7 @@ sidedvalue = 0;
 vientofuer = 0;
 colisionvalue = 0;
 
+inclinacion = 0;
+valorinclin = 1;
+
 ciclotimerbox = 0;

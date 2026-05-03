@@ -1,5 +1,7 @@
 function caja_moveable(){ //
 
+image_angle = inclinacion;
+
 cajadecel++;
 
 if cursorObj.cursorstate == 0 {

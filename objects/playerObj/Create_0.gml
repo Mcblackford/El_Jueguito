@@ -66,13 +66,13 @@ notificationcount = 0;
 
 	// Desbloqueo
 
-fuegospell = false;
-vientospell = false;
-imanspell = false;
+fuegospell = true;
+vientospell = true;
+imanspell = true;
 rayospell = true;
 nubespell = true;
-luzspell = false;
-armoniaspell = false;
+luzspell = true;
+armoniaspell = true;
 
 	// Seleccion
 	
