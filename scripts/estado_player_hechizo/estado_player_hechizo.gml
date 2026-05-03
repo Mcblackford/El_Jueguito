@@ -4,6 +4,14 @@ depth = -99;
 
 yspd = 0;
 
+if collision_rectangle(x - 12, y, x + 12, y + 1, semisolidObj, true, true) {
+	var movingplatform = collision_rectangle(x-24, y, x+24, y+6, semisolidObj, true, true)
+	if (movingplatform) {
+		x += movingplatform.vhoriz;
+		y = movingplatform.y;
+	}
+}
+
 Inputs()
 
 // Cooldown

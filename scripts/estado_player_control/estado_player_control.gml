@@ -40,7 +40,7 @@ if !(izq or der) || (izq && der) {
 
 xspd = ( der - izq ) * moveSpd;
 
-if collision_rectangle(x-22, y, x+22, y+5, colisionObj, true, true) {
+if collision_rectangle(x-22, y, x+22, y+5, colisionObj, true, true) || collision_rectangle(x - 12, y, x + 12, y + 1, semisolidObj, true, true) {
 	contsuelo = true;
 	coyoteHangTmr = 0;
 	coyoteJumpTmr = 0;
