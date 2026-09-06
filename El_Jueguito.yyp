@@ -88,7 +88,9 @@
     {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
     {"link":"io.gamemaker.gmparticlepresets-1.0.0","name":"io.gamemaker.gmparticlepresets-1.0.0","path":"io.gamemaker.gmparticlepresets-1.0.0.yyp",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"dialogos.csv","CopyToMask":-1,"filePath":"datafiles","name":"dialogos.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -118,6 +120,7 @@
     {"id":{"name":"ColisionIzq","path":"objects/ColisionIzq/ColisionIzq.yy",},},
     {"id":{"name":"colisionMovObj","path":"objects/colisionMovObj/colisionMovObj.yy",},},
     {"id":{"name":"colisionObj","path":"objects/colisionObj/colisionObj.yy",},},
+    {"id":{"name":"control_dialogos","path":"objects/control_dialogos/control_dialogos.yy",},},
     {"id":{"name":"cursorGUIObj","path":"objects/cursorGUIObj/cursorGUIObj.yy",},},
     {"id":{"name":"cursorObj","path":"objects/cursorObj/cursorObj.yy",},},
     {"id":{"name":"deathObj","path":"objects/deathObj/deathObj.yy",},},
