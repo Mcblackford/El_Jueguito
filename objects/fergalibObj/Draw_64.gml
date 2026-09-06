@@ -24,7 +24,7 @@ if (hablando) {
     draw_set_color(c_black);
     draw_rectangle(10, 10, 500, 100, false);
     
-
+	draw_set_font(short_story_x12);
     draw_set_color(c_white);
     
 
