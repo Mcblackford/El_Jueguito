@@ -1,9 +1,11 @@
+image_yscale = 2.5;
+
 if (instance_exists(playerObj)) {
 	if (playerObj.image_xscale > 0 || playerObj.xspd < 0) {
-		image_xscale = 2;
+		image_xscale = 2.5;
 		dis_x = 100;
 	} else if (playerObj.image_xscale < 0 || playerObj.xspd > 0) {
-		image_xscale = -2;
+		image_xscale = -2.5;
 		dis_x = -100;
 	}
 	var target_x = playerObj.x + dis_x;
@@ -29,8 +31,8 @@ if (instance_exists(playerObj)) {
 			y += dir_y;
 		}
 	}
-	if (point_distance(x, y, playerObj.x, playerObj.y) > 900) {
-		x = playerObj.x + dis_x;
-		y = playerObj.y + dis_y;
+	if (point_distance(x, y, playerObj.x, playerObj.y) > 550) {
+		x = next_x;
+		y = next_y; 
 	}
 }
