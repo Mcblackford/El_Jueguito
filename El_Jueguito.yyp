@@ -126,6 +126,7 @@
     {"id":{"name":"cursorGUIObj","path":"objects/cursorGUIObj/cursorGUIObj.yy",},},
     {"id":{"name":"cursorObj","path":"objects/cursorObj/cursorObj.yy",},},
     {"id":{"name":"deathObj","path":"objects/deathObj/deathObj.yy",},},
+    {"id":{"name":"DialogoNpcObj","path":"objects/DialogoNpcObj/DialogoNpcObj.yy",},},
     {"id":{"name":"electroColisionInt","path":"objects/electroColisionInt/electroColisionInt.yy",},},
     {"id":{"name":"enredaderaCuerdaObj","path":"objects/enredaderaCuerdaObj/enredaderaCuerdaObj.yy",},},
     {"id":{"name":"enredaderaObj","path":"objects/enredaderaObj/enredaderaObj.yy",},},
