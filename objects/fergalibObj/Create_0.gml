@@ -9,3 +9,5 @@ mi_text= "";
 
 alfasumaspr = 0.1;
 alfasprite = 0;
+
+colortext = #DC143C;
